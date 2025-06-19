@@ -25,7 +25,7 @@ importers:
     dependencies:
       '@repo/ui':
         specifier: workspace:*
-        version: link:../packages/ui
+        version: link:../packages/litte-ui
       next:
         specifier: ^15.3.4
         version: 15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -96,7 +96,7 @@ importers:
 
   internal/typescript-config: {}
 
-  packages/ui:
+  packages/litte-ui:
     dependencies:
       react:
         specifier: ^19.1.0

@@ -2,11 +2,13 @@
 	"name": "litte",
 	"private": true,
 	"scripts": {
-		"dev": "turbo run dev",
 		"build": "turbo run build",
+		"dev": "turbo run dev --filter=!docs",
+		"dev:docs": "turbo run dev --filter=docs",
+		"start": "turbo run start --filter=docs",
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
-		"check-types": "turbo run check-types",
+		"typecheck": "turbo run typecheck",
 		"update-deps": "npm-check-updates --configFileName .ncurc.json"
 	},
 	"devDependencies": {

@@ -6,9 +6,9 @@
 	"scripts": {
 		"dev": "next dev --turbopack",
 		"build": "next build",
-		"start": "next start",
+		"start": "pnpm dlx serve out -l 3000 -n -C",
 		"lint": "next lint --max-warnings 0",
-		"check-types": "tsc --noEmit"
+		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
 		"@repo/ui": "workspace:*",
