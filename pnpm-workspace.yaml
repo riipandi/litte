@@ -1,0 +1,4 @@
+packages:
+  - "docs"
+  - "internal/*"
+  - "packages/*"
