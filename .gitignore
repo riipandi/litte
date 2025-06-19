@@ -42,3 +42,7 @@ tmp/
 # Envars
 .env.*
 !.env.example
+
+# Storybook
+*storybook.log
+storybook-static
