@@ -5,7 +5,7 @@
 		"build": "turbo run build",
 		"dev": "turbo run dev --filter=!docs",
 		"dev:docs": "turbo run dev --filter=docs",
-		"start": "turbo run start --filter=docs",
+		"start": "turbo run start --filter=docs --filter=storybook",
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
 		"typecheck": "turbo run typecheck",

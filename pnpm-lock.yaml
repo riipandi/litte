@@ -96,8 +96,36 @@ importers:
 
   internal/typescript-config: {}
 
+  packages/litte-components/button:
+    dependencies:
+      lit:
+        specifier: ^3.3.0
+        version: 3.3.0
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../../internal/eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../../internal/typescript-config
+      '@turbo/gen':
+        specifier: ^2.5.4
+        version: 2.5.4(@types/node@24.0.3)(typescript@5.8.3)
+      '@types/node':
+        specifier: ^24.0.3
+        version: 24.0.3
+      eslint:
+        specifier: ^9.29.0
+        version: 9.29.0
+      typescript:
+        specifier: 5.8.3
+        version: 5.8.3
+
   packages/litte-storybook:
     dependencies:
+      '@litte/button':
+        specifier: workspace:*
+        version: link:../litte-components/button
       lit:
         specifier: ^3.3.0
         version: 3.3.0

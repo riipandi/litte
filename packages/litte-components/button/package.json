@@ -1,0 +1,23 @@
+{
+	"name": "@litte/button",
+	"version": "0.0.0",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"dev": "echo 'Not yet implemented'",
+		"build": "echo 'Not yet implemented'",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"lit": "^3.3.0"
+	},
+	"devDependencies": {
+		"@repo/eslint-config": "workspace:*",
+		"@repo/typescript-config": "workspace:*",
+		"@turbo/gen": "^2.5.4",
+		"@types/node": "^24.0.3",
+		"eslint": "^9.29.0",
+		"typescript": "5.8.3"
+	}
+}

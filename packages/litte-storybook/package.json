@@ -1,16 +1,15 @@
 {
-	"name": "@repo/storybook",
+	"name": "storybook",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev:vite": "vite",
-		"build": "tsc && vite build",
-		"preview": "vite preview",
-		"dev": "VITE_CJS_IGNORE_WARNING=true storybook dev -p 6006 --no-open",
-		"build-storybook": "VITE_CJS_IGNORE_WARNING=true storybook build -o storybook-static"
+		"dev": "storybook dev -p 6006 --no-open",
+		"build": "storybook build -o storybook-static",
+		"start": "pnpm dlx local-web-server -p 6006 -d storybook-static"
 	},
 	"dependencies": {
+		"@litte/button": "workspace:*",
 		"lit": "^3.3.0"
 	},
 	"devDependencies": {
