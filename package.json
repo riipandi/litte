@@ -1,10 +1,12 @@
 {
 	"name": "litte",
 	"private": true,
+	"type": "module",
 	"scripts": {
-		"build": "turbo run build",
 		"dev": "turbo run dev --filter=!docs",
 		"dev:docs": "turbo run dev --filter=docs",
+		"build:ui": "turbo run build --filter=!docs",
+		"build:docs": "turbo run build --filter=docs",
 		"start": "turbo run start --filter=docs --filter=storybook",
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
@@ -19,6 +21,6 @@
 	},
 	"packageManager": "pnpm@10.12.1",
 	"engines": {
-		"node": ">=24"
+		"node": ">=22"
 	}
 }

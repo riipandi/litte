@@ -1,12 +1,13 @@
 {
 	"name": "@litte/button",
 	"version": "0.0.0",
+	"type": "module",
 	"exports": {
 		".": "./src/index.ts"
 	},
 	"scripts": {
 		"dev": "echo 'Not yet implemented'",
-		"build": "echo 'Not yet implemented'",
+		"build": "rollup -c",
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
@@ -15,9 +16,15 @@
 	"devDependencies": {
 		"@repo/eslint-config": "workspace:*",
 		"@repo/typescript-config": "workspace:*",
+		"@rollup/plugin-node-resolve": "^16.0.1",
+		"@rollup/plugin-terser": "^0.4.4",
 		"@turbo/gen": "^2.5.4",
 		"@types/node": "^24.0.3",
+		"@web/rollup-plugin-copy": "^0.5.1",
 		"eslint": "^9.29.0",
+		"rollup": "^4.44.0",
+		"rollup-plugin-minify-html-literals": "^1.2.6",
+		"rollup-plugin-summary": "^3.0.1",
 		"typescript": "5.8.3"
 	}
 }

@@ -4,10 +4,27 @@ import type { StorybookConfig } from "@storybook/web-components-vite";
 /**
  * This function is used to resolve the absolute path of a package.
  * It is needed in projects that use Yarn PnP or are set up within a monorepo.
+ * Compatible with both ESM and CommonJS across Node.js versions.
  */
 function getAbsolutePath(value: string): string {
-	const basePath = import.meta.resolve(join(value, "package.json"));
-	return dirname(new URL(basePath).pathname);
+	try {
+		// Try ESM approach first (Node.js 24+)
+		if (typeof import.meta !== "undefined") {
+			const basePath = import.meta.resolve(join(value, "package.json"));
+			return dirname(new URL(basePath).pathname);
+		}
+	} catch (error) {
+		// Fall through to CommonJS approach
+	}
+
+	try {
+		// Fallback to CommonJS approach (Node.js 22 and older)
+		return dirname(require.resolve(join(value, "package.json")));
+	} catch (error) {
+		// Final fallback - construct path manually
+		const nodeModulesPath = join(process.cwd(), "node_modules", value);
+		return nodeModulesPath;
+	}
 }
 
 const config: StorybookConfig = {
