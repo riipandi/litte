@@ -5,8 +5,9 @@
 	"scripts": {
 		"dev": "turbo run dev --filter=!docs",
 		"dev:docs": "turbo run dev --filter=docs",
-		"build:ui": "turbo run build --filter=!docs",
+		"build:ui": "turbo run build --filter=@litte/*",
 		"build:docs": "turbo run build --filter=docs",
+		"build:storybook": "turbo run build --filter=storybook",
 		"start": "turbo run start --filter=docs --filter=storybook",
 		"lint": "turbo run lint",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
