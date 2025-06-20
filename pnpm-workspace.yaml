@@ -1,4 +1,8 @@
 packages:
-  - "docs"
   - "internal/*"
-  - "packages/*"
+  - "packages/**/*"
+  - "docs"
+
+catalog:
+  '@biomejs/biome': ^2.0.0
+  typescript: ^5.8.3

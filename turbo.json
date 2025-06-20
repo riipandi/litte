@@ -1,25 +1,25 @@
 {
-	"$schema": "https://turborepo.com/schema.json",
-	"ui": "tui",
-	"tasks": {
-		"build": {
-			"dependsOn": ["^build"],
-			"inputs": ["$TURBO_DEFAULT$", ".env*"],
-			"outputs": [".next/**", "!.next/cache/**"]
-		},
-		"lint": {
-			"dependsOn": ["^lint"]
-		},
-		"typecheck": {
-			"dependsOn": ["^typecheck"]
-		},
-		"dev": {
-			"cache": false,
-			"persistent": true
-		},
-		"start": {
-			"cache": false,
-			"dependsOn": ["^build"]
-		}
-	}
+    "$schema": "https://turborepo.com/schema.json",
+    "ui": "stream",
+    "tasks": {
+        "build": {
+            "dependsOn": ["^build"],
+            "inputs": ["$TURBO_DEFAULT$", ".env*"],
+            "outputs": [".next/**", "!.next/cache/**", "dist/**", "out/**"]
+        },
+        "lint": {},
+        "check": {},
+        "typecheck": {},
+        "dev": {
+            "cache": false,
+            "persistent": true
+        },
+        "start": {
+            "cache": false,
+            "dependsOn": ["^build"],
+            "persistent": true
+        },
+        "publish:dry": {},
+        "publish:npm": {}
+    }
 }

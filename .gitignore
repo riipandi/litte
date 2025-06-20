@@ -5,13 +5,6 @@ node_modules
 .pnp
 .pnp.js
 
-# Local env files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
 # Testing
 coverage
 
@@ -23,9 +16,9 @@ coverage
 
 # Build Outputs
 .next/
+build/
+dist/
 out/
-build
-dist
 
 # Debug
 npm-debug.log*
@@ -42,3 +35,7 @@ tmp/
 # Envars
 .env.*
 !.env.example
+
+# Storybook
+*storybook.log
+storybook-static
