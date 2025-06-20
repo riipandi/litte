@@ -1,10 +1,13 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
-        "allowImportingTsExtensions": true,
         "erasableSyntaxOnly": true,
         "experimentalDecorators": true,
-        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "lib": [
+            "ES2020",
+            "DOM",
+            "DOM.Iterable"
+        ],
         "module": "ESNext",
         "moduleDetection": "force",
         "moduleResolution": "bundler",
@@ -19,6 +22,11 @@
         "useDefineForClassFields": false,
         "verbatimModuleSyntax": true
     },
-    "include": ["src"],
-    "exclude": ["node_modules", "dist"]
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }

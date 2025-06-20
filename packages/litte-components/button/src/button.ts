@@ -2,7 +2,7 @@ import { clsx } from 'clsx'
 import { html, LitElement, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { styleMap } from 'lit/directives/style-map.js'
-import { buttonStyles } from './button.css.js'
+import { buttonStyles } from './button.css'
 
 export type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost'
 export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
