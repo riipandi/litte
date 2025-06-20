@@ -1,3 +1,5 @@
+/** biome-ignore-all lint/suspicious/noExplicitAny: [] */
+
 import { dirname, join } from "node:path";
 import type { StorybookConfig } from "@storybook/web-components-vite";
 
@@ -38,6 +40,28 @@ const config: StorybookConfig = {
 		disableTelemetry: true, // 👈 Disables telemetry
 		enableCrashReports: false, // 👈 Appends the crash reports to the telemetry events
 		disableWhatsNewNotifications: true, // 👈 Disables the Whats New notifications
+	},
+	async viteFinal(config, { configType }) {
+		const { mergeConfig } = await import("vite");
+		return mergeConfig(config, {
+			plugins: [],
+			...(configType === "PRODUCTION"
+				? {
+						base: "/",
+						build: {
+							chunkSizeWarningLimit: 1024 * 4,
+							rollupOptions: {
+								onwarn(warning: any, warn: any) {
+									if (warning.code === "MODULE_LEVEL_DIRECTIVE") {
+										return;
+									}
+									warn(warning);
+								},
+							},
+						},
+					}
+				: {}),
+		});
 	},
 };
 
