@@ -6,7 +6,12 @@ import summary from 'rollup-plugin-summary'
 
 export default defineConfig({
   plugins: [
-    typescript({ tsconfig: './tsconfig.json' }),
+    typescript({
+      tsconfig: './tsconfig.json',
+      declaration: true,
+      declarationDir: 'dist',
+      rootDir: 'src',
+    }),
     resolve({
       extensions: ['.ts', '.js', '.mjs'],
       exportConditions: ['es2020', 'es2015', 'module', 'import', 'default'],

@@ -13,13 +13,20 @@
     "bugs": {
         "url": "https://github.com/riipandi/litte/issues"
     },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "exports": {
-        ".": "./src/index.ts"
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        }
     },
     "scripts": {
         "build": "rollup -c",
         "cleanup": "pnpm dlx rimraf dist node_modules .turbo",
         "publish:dry": "pnpm publish --dry-run --no-git-checks",
+        "publish:npm": "pnpm publish --no-git-checks",
         "prepublishOnly": "pnpm -s build",
         "lint": "biome lint . --write",
         "check": "biome check . --write",
