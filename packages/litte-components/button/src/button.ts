@@ -7,68 +7,67 @@ export type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
 export type ButtonSize = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface ButtonProps {
-  variant?: ButtonVariant;
-  size?: ButtonSize;
-  disabled?: boolean;
-  loading?: boolean;
-  color?: string;
-  backgroundColor?: string;
+	variant?: ButtonVariant;
+	size?: ButtonSize;
+	disabled?: boolean;
+	loading?: boolean;
+	color?: string;
+	backgroundColor?: string;
 }
 
 @customElement("litte-button")
 export class LitteButton extends LitElement {
-  static styles = buttonStyles;
+	static styles = buttonStyles;
 
-  @property({ type: String })
-  variant: ButtonVariant = "primary";
+	@property({ type: String })
+	variant: ButtonVariant = "primary";
 
-  @property({ type: String })
-  size: ButtonSize = "md";
+	@property({ type: String })
+	size: ButtonSize = "md";
 
-  @property({ type: Boolean })
-  disabled = false;
+	@property({ type: Boolean })
+	disabled = false;
 
-  @property({ type: Boolean })
-  loading = false;
+	@property({ type: Boolean })
+	loading = false;
 
-  @property({ type: String })
-  color?: string;
+	@property({ type: String })
+	color?: string;
 
-  @property({ type: String })
-  backgroundColor?: string;
+	@property({ type: String })
+	backgroundColor?: string;
 
-  private _handleClick(e: Event) {
-    if (this.disabled || this.loading) {
-      e.preventDefault();
-      e.stopPropagation();
-      return;
-    }
+	private _handleClick(e: Event) {
+		// Let the native click event bubble up naturally
+		// No need to dispatch custom event, just let it pass through
+		if (this.disabled || this.loading) {
+			e.preventDefault();
+			e.stopPropagation();
+			return;
+		}
+	}
 
-    // Let the native click event bubble up naturally
-    // No need to dispatch custom event, just let it pass through
-  }
+	render() {
+		const classes = [
+			"litte-button",
+			`litte-button--${this.variant}`,
+			`litte-button--${this.size}`,
+			this.disabled && "litte-button--disabled",
+			this.loading && "litte-button--loading",
+		]
+			.filter(Boolean)
+			.join(" ");
 
-  render() {
-    const classes = [
-      "litte-button",
-      `litte-button--${this.variant}`,
-      `litte-button--${this.size}`,
-      this.disabled && "litte-button--disabled",
-      this.loading && "litte-button--loading",
-    ]
-      .filter(Boolean)
-      .join(" ");
+		const customStyles = {
+			...(this.backgroundColor && { backgroundColor: this.backgroundColor }),
+			...(this.color && { color: this.color }),
+		};
 
-    const customStyles = {
-      ...(this.backgroundColor && { backgroundColor: this.backgroundColor }),
-      ...(this.color && { color: this.color }),
-    };
+		const loadingSpinner = this.loading
+			? html`<span class="litte-button__spinner"></span>`
+			: nothing;
 
-    const loadingSpinner = this.loading
-      ? html`<span class="litte-button__spinner"></span>`
-      : nothing;
-
-    return html`
+		return html`
       <button
         type="button"
         class=${classes}
@@ -80,7 +79,7 @@ export class LitteButton extends LitElement {
         <slot></slot>
       </button>
     `;
-  }
+	}
 }
 
 // Example usage:
@@ -91,7 +90,7 @@ export class LitteButton extends LitElement {
 // <litte-button backgroundColor="#ff4444" color="white" @click=${handleClick}>Custom Colors</litte-button>
 
 declare global {
-  interface HTMLElementTagNameMap {
-    "litte-button": LitteButton;
-  }
+	interface HTMLElementTagNameMap {
+		"litte-button": LitteButton;
+	}
 }
