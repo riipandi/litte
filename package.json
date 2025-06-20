@@ -3,6 +3,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"build": "turbo run build",
 		"dev": "turbo run dev --filter=!docs",
 		"dev:docs": "turbo run dev --filter=docs",
 		"build:ui": "turbo run build --filter=@litte/*",
