@@ -11,6 +11,7 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
+		"clsx": "^2.1.1",
 		"lit": "^3.3.0"
 	},
 	"devDependencies": {

@@ -1,3 +1,4 @@
+import { clsx } from "clsx";
 import { LitElement, html, nothing } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { styleMap } from "lit/directives/style-map.js";
@@ -7,6 +8,7 @@ export type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
 export type ButtonSize = "xs" | "sm" | "md" | "lg" | "xl";
 
 export interface ButtonProps {
+	type?: HTMLButtonElement["type"];
 	variant?: ButtonVariant;
 	size?: ButtonSize;
 	disabled?: boolean;
@@ -18,6 +20,9 @@ export interface ButtonProps {
 @customElement("litte-button")
 export class LitteButton extends LitElement {
 	static styles = buttonStyles;
+
+	@property({ type: String })
+	type: HTMLButtonElement["type"] = "button";
 
 	@property({ type: String })
 	variant: ButtonVariant = "primary";
@@ -48,20 +53,20 @@ export class LitteButton extends LitElement {
 	}
 
 	render() {
-		const classes = [
+		const classes = clsx(
 			"litte-button",
 			`litte-button--${this.variant}`,
 			`litte-button--${this.size}`,
-			this.disabled && "litte-button--disabled",
-			this.loading && "litte-button--loading",
-		]
-			.filter(Boolean)
-			.join(" ");
+			{
+				"litte-button--disabled": this.disabled,
+				"litte-button--loading": this.loading,
+			},
+		);
 
-		const customStyles = {
+		const customStyles = styleMap({
 			...(this.backgroundColor && { backgroundColor: this.backgroundColor }),
 			...(this.color && { color: this.color }),
-		};
+		});
 
 		const loadingSpinner = this.loading
 			? html`<span class="litte-button__spinner"></span>`
@@ -69,9 +74,9 @@ export class LitteButton extends LitElement {
 
 		return html`
       <button
-        type="button"
+        type=${this.type}
         class=${classes}
-        style=${styleMap(customStyles)}
+        style=${customStyles}
         ?disabled=${this.disabled || this.loading}
         @click=${this._handleClick}
       >
