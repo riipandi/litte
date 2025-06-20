@@ -4,10 +4,12 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"dev": "next dev --turbopack",
+		"dev": "next dev",
 		"build": "next build",
 		"start": "pnpm dlx serve out -l 3000 -n -C",
-		"lint": "next lint --max-warnings 0",
+		"cleanup": "pnpm dlx rimraf dist node_modules .turbo",
+		"lint": "biome lint . --write",
+		"check": "biome check . --write",
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
@@ -16,12 +18,11 @@
 		"react-dom": "^19.1.0"
 	},
 	"devDependencies": {
-		"@repo/eslint-config": "workspace:*",
+		"@biomejs/biome": "catalog:",
 		"@repo/typescript-config": "workspace:*",
 		"@types/node": "^24.0.3",
-		"@types/react": "19.1.8",
 		"@types/react-dom": "19.1.6",
-		"eslint": "^9.29.0",
-		"typescript": "5.8.3"
+		"@types/react": "19.1.8",
+		"typescript": "catalog:"
 	}
 }

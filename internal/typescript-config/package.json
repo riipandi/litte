@@ -1,10 +1,13 @@
 {
-	"name": "@repo/typescript-config",
-	"version": "0.0.0",
-	"type": "module",
-	"private": true,
-	"license": "MIT",
-	"publishConfig": {
-		"access": "public"
-	}
+    "name": "@repo/typescript-config",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "license": "MIT",
+    "scripts": {
+        "cleanup": "pnpm dlx rimraf dist node_modules .turbo"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
 }

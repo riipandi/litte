@@ -1,4 +1,4 @@
-import { css } from "lit";
+import { css } from 'lit'
 
 export const buttonStyles = css`
   :host {
@@ -167,4 +167,4 @@ export const buttonStyles = css`
   .litte-button--ghost:focus-visible {
     outline-color: #475569;
   }
-`;
+`

@@ -1,78 +1,78 @@
-import { clsx } from "clsx";
-import { LitElement, html, nothing } from "lit";
-import { customElement, property } from "lit/decorators.js";
-import { styleMap } from "lit/directives/style-map.js";
-import { buttonStyles } from "./button.css.js";
+import { clsx } from 'clsx'
+import { html, LitElement, nothing } from 'lit'
+import { customElement, property } from 'lit/decorators.js'
+import { styleMap } from 'lit/directives/style-map.js'
+import { buttonStyles } from './button.css.js'
 
-export type ButtonVariant = "primary" | "secondary" | "outline" | "ghost";
-export type ButtonSize = "xs" | "sm" | "md" | "lg" | "xl";
+export type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost'
+export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
 export interface ButtonProps {
-	type?: HTMLButtonElement["type"];
-	variant?: ButtonVariant;
-	size?: ButtonSize;
-	disabled?: boolean;
-	loading?: boolean;
-	color?: string;
-	backgroundColor?: string;
+  type?: HTMLButtonElement['type']
+  variant?: ButtonVariant
+  size?: ButtonSize
+  disabled?: boolean
+  loading?: boolean
+  color?: string
+  backgroundColor?: string
 }
 
-@customElement("litte-button")
+@customElement('litte-button')
 export class LitteButton extends LitElement {
-	static styles = buttonStyles;
+  static styles = buttonStyles
 
-	@property({ type: String })
-	type: HTMLButtonElement["type"] = "button";
+  @property({ type: String })
+  type: HTMLButtonElement['type'] = 'button'
 
-	@property({ type: String })
-	variant: ButtonVariant = "primary";
+  @property({ type: String })
+  variant: ButtonVariant = 'primary'
 
-	@property({ type: String })
-	size: ButtonSize = "md";
+  @property({ type: String })
+  size: ButtonSize = 'md'
 
-	@property({ type: Boolean })
-	disabled = false;
+  @property({ type: Boolean })
+  disabled = false
 
-	@property({ type: Boolean })
-	loading = false;
+  @property({ type: Boolean })
+  loading = false
 
-	@property({ type: String })
-	color?: string;
+  @property({ type: String })
+  color?: string
 
-	@property({ type: String })
-	backgroundColor?: string;
+  @property({ type: String })
+  backgroundColor?: string
 
-	private _handleClick(e: Event) {
-		// Let the native click event bubble up naturally
-		// No need to dispatch custom event, just let it pass through
-		if (this.disabled || this.loading) {
-			e.preventDefault();
-			e.stopPropagation();
-			return;
-		}
-	}
+  private _handleClick(e: Event) {
+    // Let the native click event bubble up naturally
+    // No need to dispatch custom event, just let it pass through
+    if (this.disabled || this.loading) {
+      e.preventDefault()
+      e.stopPropagation()
+      return
+    }
+  }
 
-	render() {
-		const classes = clsx(
-			"litte-button",
-			`litte-button--${this.variant}`,
-			`litte-button--${this.size}`,
-			{
-				"litte-button--disabled": this.disabled,
-				"litte-button--loading": this.loading,
-			},
-		);
+  render() {
+    const classes = clsx(
+      'litte-button',
+      `litte-button--${this.variant}`,
+      `litte-button--${this.size}`,
+      {
+        'litte-button--disabled': this.disabled,
+        'litte-button--loading': this.loading,
+      }
+    )
 
-		const customStyles = styleMap({
-			...(this.backgroundColor && { backgroundColor: this.backgroundColor }),
-			...(this.color && { color: this.color }),
-		});
+    const customStyles = styleMap({
+      ...(this.backgroundColor && { backgroundColor: this.backgroundColor }),
+      ...(this.color && { color: this.color }),
+    })
 
-		const loadingSpinner = this.loading
-			? html`<span class="litte-button__spinner"></span>`
-			: nothing;
+    const loadingSpinner = this.loading
+      ? html`<span class="litte-button__spinner"></span>`
+      : nothing
 
-		return html`
+    return html`
       <button
         type=${this.type}
         class=${classes}
@@ -83,8 +83,8 @@ export class LitteButton extends LitElement {
         ${loadingSpinner}
         <slot></slot>
       </button>
-    `;
-	}
+    `
+  }
 }
 
 // Example usage:
@@ -95,7 +95,7 @@ export class LitteButton extends LitElement {
 // <litte-button backgroundColor="#ff4444" color="white" @click=${handleClick}>Custom Colors</litte-button>
 
 declare global {
-	interface HTMLElementTagNameMap {
-		"litte-button": LitteButton;
-	}
+  interface HTMLElementTagNameMap {
+    'litte-button': LitteButton
+  }
 }

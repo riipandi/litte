@@ -1,21 +1,26 @@
 {
-	"name": "storybook",
-	"version": "0.0.0",
-	"type": "module",
-	"private": true,
-	"scripts": {
-		"dev": "storybook dev -p 6006 --no-open",
-		"build": "storybook build -o dist",
-		"start": "pnpm dlx local-web-server -p 6006 -d dist"
-	},
-	"dependencies": {
-		"@litte/button": "workspace:*",
-		"lit": "^3.3.0"
-	},
-	"devDependencies": {
-		"@storybook/web-components-vite": "^9.0.12",
-		"storybook": "^9.0.12",
-		"typescript": "~5.8.3",
-		"vite": "^6.3.5"
-	}
+    "name": "storybook",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "dev": "storybook dev -p 6006 --no-open",
+        "build": "storybook build -o dist",
+        "start": "pnpm dlx local-web-server -p 6006 -d dist",
+        "cleanup": "pnpm dlx rimraf dist node_modules .turbo",
+        "lint": "biome lint . --write",
+        "check": "biome check . --write",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@litte/button": "workspace:*",
+        "lit": "^3.3.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "catalog:",
+        "@storybook/web-components-vite": "^9.0.12",
+        "storybook": "^9.0.12",
+        "typescript": "catalog:",
+        "vite": "^6.3.5"
+    }
 }
