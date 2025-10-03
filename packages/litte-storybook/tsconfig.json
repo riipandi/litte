@@ -1,24 +1,24 @@
 {
-	"$schema": "https://json.schemastore.org/tsconfig",
-	"compilerOptions": {
-		"allowImportingTsExtensions": true,
-		"erasableSyntaxOnly": true,
-		"experimentalDecorators": true,
-		"lib": ["ES2020", "DOM", "DOM.Iterable"],
-		"module": "ESNext",
-		"moduleDetection": "force",
-		"moduleResolution": "bundler",
-		"noEmit": true,
-		"noFallthroughCasesInSwitch": true,
-		"noUncheckedSideEffectImports": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"skipLibCheck": true,
-		"strict": true,
-		"target": "ES2020",
-		"useDefineForClassFields": false,
-		"verbatimModuleSyntax": true
-	},
-	"include": ["stories"],
-	"exclude": ["node_modules", "dist"]
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "allowImportingTsExtensions": true,
+        "erasableSyntaxOnly": true,
+        "experimentalDecorators": true,
+        "lib": ["ES2020", "DOM", "DOM.Iterable"],
+        "module": "ESNext",
+        "moduleDetection": "force",
+        "moduleResolution": "bundler",
+        "noEmit": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "target": "ES2020",
+        "useDefineForClassFields": false,
+        "verbatimModuleSyntax": true
+    },
+    "include": ["stories"],
+    "exclude": ["node_modules", "dist"]
 }

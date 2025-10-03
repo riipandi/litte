@@ -1,5 +1,5 @@
 {
-    "$schema": "https://biomejs.dev/schemas/2.0.0/schema.json",
+    "$schema": "https://biomejs.dev/schemas/2.2.5/schema.json",
     "vcs": {
         "enabled": true,
         "clientKind": "git",
@@ -8,7 +8,7 @@
     },
     "files": {
         "ignoreUnknown": true,
-        "includes": ["**", "!**/dist/**", "!**/out/**"]
+        "includes": ["**", "!**/dist/**", "!**/out/**", "!**/storybook-static/**"]
     },
     "formatter": {
         "enabled": true,
@@ -24,6 +24,7 @@
             "a11y": {
                 "noSvgWithoutTitle": "off",
                 "useKeyWithClickEvents": "off",
+                "useSemanticElements": "off",
                 "useValidAnchor": "off"
             },
             "complexity": {
@@ -33,7 +34,8 @@
             "correctness": {
                 "noUnusedImports": {
                     "level": "off",
-                    "fix": "none"
+                    "fix": "none",
+                    "options": {}
                 },
                 "noUnusedVariables": {
                     "level": "warn",
@@ -42,8 +44,9 @@
                         "ignoreRestSiblings": true
                     }
                 },
-                "useJsxKeyInIterable": "error",
-                "noUnknownFunction": "off"
+                "noChildrenProp": "off",
+                "noUnknownFunction": "off",
+                "useJsxKeyInIterable": "error"
             },
             "nursery": {
                 "useSortedClasses": {
@@ -51,7 +54,7 @@
                     "fix": "safe",
                     "options": {
                         "attributes": ["classList"],
-                        "functions": ["cn", "clx", "clsx", "cva", "tw"]
+                        "functions": ["clsx", "cn", "cx", "cva", "tv", "tw"]
                     }
                 }
             },
@@ -59,10 +62,12 @@
                 "noReExportAll": "off"
             },
             "security": {
-                "noDangerouslySetInnerHtmlWithChildren": "warn"
+                "noDangerouslySetInnerHtmlWithChildren": "warn",
+                "noDangerouslySetInnerHtml": "off"
             },
             "style": {
-                "noParameterAssign": "error",
+                "noNonNullAssertion": "off",
+                "noParameterAssign": "warn",
                 "useAsConstAssertion": "error",
                 "useDefaultParameterLast": "error",
                 "useEnumInitializers": "error",
@@ -95,13 +100,23 @@
                 "noDebugger": "off",
                 "noExplicitAny": "off",
                 "noConsole": {
-                    "level": "off",
+                    "level": "warn",
                     "fix": "none",
                     "options": {
-                        "allow": []
+                        "allow": [
+                            "assert",
+                            "error",
+                            "info",
+                            "warn",
+                            "debug",
+                            "time",
+                            "timeEnd",
+                            "timeLog"
+                        ]
                     }
                 },
                 "noDuplicateAtImportRules": "error",
+                "noUnknownAtRules": "off",
                 "noEmptyBlock": "warn"
             }
         }
@@ -141,5 +156,18 @@
                 "organizeImports": "on"
             }
         }
-    }
+    },
+    "overrides": [
+        {
+            "includes": ["**/server/**/*.ts"],
+            "linter": {
+                "enabled": true,
+                "rules": {
+                    "correctness": {
+                        "useHookAtTopLevel": "off"
+                    }
+                }
+            }
+        }
+    ]
 }

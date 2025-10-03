@@ -24,7 +24,7 @@
     },
     "scripts": {
         "build": "rollup -c",
-        "cleanup": "pnpm dlx rimraf dist node_modules .turbo",
+        "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
         "publish:dry": "pnpm publish --dry-run --no-git-checks",
         "publish:npm": "pnpm publish --no-git-checks",
         "prepublishOnly": "pnpm -s build",
@@ -41,14 +41,14 @@
         "lit": "^3.3.1"
     },
     "devDependencies": {
-        "@biomejs/biome": "catalog:",
+        "@biomejs/biome": "^2.2.5",
         "@repo/typescript-config": "workspace:*",
         "@rollup/plugin-node-resolve": "^16.0.1",
         "@rollup/plugin-typescript": "^12.1.4",
-        "@types/node": "^24.5.2",
+        "@types/node": "^24.6.2",
         "rollup-plugin-esbuild": "^6.2.1",
         "rollup-plugin-summary": "^3.0.1",
-        "rollup": "^4.52.2",
+        "rollup": "^4.52.4",
         "tslib": "2.8.1",
         "typescript": "catalog:"
     },

@@ -1,26 +1,26 @@
 {
-	"name": "storybook",
-	"version": "0.0.0",
-	"type": "module",
-	"private": true,
-	"scripts": {
-		"dev": "storybook dev -p 6006 --no-open",
-		"build": "storybook build -o dist",
-		"start": "pnpm dlx local-web-server -p 6006 -d dist",
-		"cleanup": "pnpm dlx rimraf dist node_modules .turbo",
-		"lint": "biome lint . --write",
-		"check": "biome check . --write",
-		"typecheck": "tsc --noEmit"
-	},
-	"dependencies": {
-		"@litte/button": "workspace:*",
-		"lit": "^3.3.1"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "catalog:",
-		"@storybook/web-components-vite": "^9.1.8",
-		"storybook": "^9.1.8",
-		"typescript": "catalog:",
-		"vite": "^7.1.7"
-	}
+    "name": "storybook",
+    "version": "0.0.0",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "dev": "storybook dev -p 6006 --no-open",
+        "build": "storybook build -o dist",
+        "start": "pnpm dlx local-web-server -p 6006 -d dist",
+        "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
+        "lint": "biome lint . --write",
+        "check": "biome check . --write",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@litte/button": "workspace:*",
+        "lit": "^3.3.1"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.5",
+        "@storybook/web-components-vite": "^9.1.10",
+        "storybook": "^9.1.10",
+        "typescript": "catalog:",
+        "vite": "^7.1.9"
+    }
 }

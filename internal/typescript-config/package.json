@@ -5,7 +5,7 @@
     "private": true,
     "license": "MIT",
     "scripts": {
-        "cleanup": "pnpm dlx rimraf dist node_modules .turbo"
+        "cleanup": "pnpm dlx del-cli dist node_modules .turbo"
     },
     "publishConfig": {
         "access": "public"

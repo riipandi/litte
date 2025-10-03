@@ -10,7 +10,7 @@
         "build:docs": "turbo run build --filter=docs",
         "build:storybook": "turbo run build --filter=storybook",
         "start": "turbo run start --filter=docs --filter=storybook",
-        "cleanup": "turbo cleanup --cache=local:rw && pnpm dlx rimraf pnpm-lock.yaml node_modules",
+        "cleanup": "turbo cleanup --cache=local:rw && pnpm dlx del-cli pnpm-lock.yaml node_modules",
         "update-deps": "npm-check-updates --configFileName .ncurc.json",
         "publish:dry": "turbo publish:dry --filter=@litte/* --cache=local:rw",
         "publish:npm": "turbo publish:npm --filter=@litte/* --cache=local:rw",
@@ -21,12 +21,12 @@
         "typecheck": "turbo typecheck --cache=local:rw"
     },
     "devDependencies": {
-        "@biomejs/biome": "catalog:",
-        "npm-check-updates": "^18.3.0",
+        "@biomejs/biome": "^2.2.5",
+        "npm-check-updates": "^19.0.0",
         "turbo": "^2.5.8",
         "typescript": "catalog:"
     },
-    "packageManager": "pnpm@10.17.1",
+    "packageManager": "pnpm@10.18.0",
     "engines": {
         "node": ">=22"
     }

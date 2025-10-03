@@ -1,28 +1,28 @@
 {
-	"name": "docs",
-	"version": "0.1.0",
-	"type": "module",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "pnpm dlx serve out -l 3000 -n -C",
-		"cleanup": "pnpm dlx rimraf dist node_modules .turbo",
-		"lint": "biome lint . --write",
-		"check": "biome check . --write",
-		"typecheck": "tsc --noEmit"
-	},
-	"dependencies": {
-		"next": "^15.5.4",
-		"react": "^19.1.1",
-		"react-dom": "^19.1.1"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "catalog:",
-		"@repo/typescript-config": "workspace:*",
-		"@types/node": "^24.5.2",
-		"@types/react-dom": "19.1.9",
-		"@types/react": "19.1.13",
-		"typescript": "catalog:"
-	}
+    "name": "docs",
+    "version": "0.1.0",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "pnpm dlx serve out -l 3000 -n -C",
+        "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
+        "lint": "biome lint . --write",
+        "check": "biome check . --write",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "next": "^15.5.4",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.5",
+        "@repo/typescript-config": "workspace:*",
+        "@types/node": "^24.6.2",
+        "@types/react-dom": "19.2.0",
+        "@types/react": "19.2.0",
+        "typescript": "catalog:"
+    }
 }
