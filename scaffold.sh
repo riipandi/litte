@@ -23,17 +23,17 @@ to_camel_case_styles() {
 }
 
 # Prompt for variables with aligned colons
-printf "%-46s: " "Enter Component ID (e.g. example-element)"
+printf "%-46s: " "Enter Component ID (e.g. example-component)"
 read CHANGEME_COMPONENT_ID
-validate_input "$CHANGEME_COMPONENT_ID" '^[a-z0-9-]+$' "Component ID must be lowercase letters, numbers, and hyphens (e.g. example-element)"
+validate_input "$CHANGEME_COMPONENT_ID" '^[a-z0-9-]+$' "Component ID must be lowercase letters, numbers, and hyphens (e.g. example-component)"
 
-printf "%-46s: " "Enter Component Name (e.g. ExampleElement)"
+printf "%-46s: " "Enter Component Name (e.g. ExampleComponent)"
 read CHANGEME_COMPONENT_NAME
-validate_input "$CHANGEME_COMPONENT_NAME" '^[A-Z][A-Za-z0-9]+$' "Component Name must be PascalCase (e.g. ExampleElement)"
+validate_input "$CHANGEME_COMPONENT_NAME" '^[A-Z][A-Za-z0-9]+$' "Component Name must be PascalCase (e.g. ExampleComponent)"
 
-printf "%-46s: " "Enter Component Title (e.g. Example Element)"
+printf "%-46s: " "Enter Component Title (e.g. Litte Component)"
 read CHANGEME_COMPONENT_TITLE
-validate_input "$CHANGEME_COMPONENT_TITLE" '^[A-Za-z0-9 ]+$' "Component Title can only contain letters, numbers, and spaces (e.g. Example Element)"
+validate_input "$CHANGEME_COMPONENT_TITLE" '^[A-Za-z0-9 ]+$' "Component Title can only contain letters, numbers, and spaces (e.g. Litte Component)"
 
 # Auto-generate Component Styles from Component ID
 CHANGEME_COMPONENT_STYLES=$(to_camel_case_styles "$CHANGEME_COMPONENT_ID")

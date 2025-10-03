@@ -82,7 +82,7 @@ importers:
 
   internal/typescript-config: {}
 
-  packages/litte-components/button:
+  packages/litte-components/avatar:
     dependencies:
       '@litte/element':
         specifier: workspace:*
@@ -116,7 +116,7 @@ importers:
         specifier: 'catalog:'
         version: 5.9.3
 
-  packages/litte-components/my-component:
+  packages/litte-components/button:
     dependencies:
       '@litte/element':
         specifier: workspace:*
