@@ -1,4 +1,11 @@
 {
-    "recommendations": ["esbenp.prettier-vscode", "runem.lit-plugin", "dbaeumer.vscode-eslint"],
+    "recommendations": [
+        "biomejs.biome",
+        "bradlc.vscode-tailwindcss",
+        "darkriszty.markdown-table-prettify",
+        "EditorConfig.EditorConfig",
+        "fill-labs.dependi",
+        "runem.lit-plugin"
+    ],
     "unwantedRecommendations": []
 }
