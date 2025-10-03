@@ -1,6 +1,6 @@
 {
     "name": "@repo/rollup-config",
-    "private": true,
+    "version": "0.0.1",
     "type": "module",
     "license": "MIT",
     "main": "./index.js",
@@ -24,5 +24,8 @@
     },
     "peerDependencies": {
         "rollup": "^4.52.4"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }

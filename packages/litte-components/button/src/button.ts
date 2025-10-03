@@ -1,5 +1,6 @@
+import { LitteElement } from '@litte/element'
 import { clsx } from 'clsx'
-import { html, LitElement, nothing } from 'lit'
+import { html, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { styleMap } from 'lit/directives/style-map.js'
 import { buttonStyles } from './button.css'
@@ -18,7 +19,7 @@ export interface ButtonProps {
 }
 
 @customElement('litte-button')
-export class LitteButton extends LitElement {
+export class LitteButton extends LitteElement {
   static styles = buttonStyles
 
   @property({ type: String })

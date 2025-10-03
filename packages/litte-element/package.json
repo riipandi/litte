@@ -1,5 +1,5 @@
 {
-    "name": "@litte/button",
+    "name": "@litte/element",
     "version": "0.0.1",
     "type": "module",
     "description": "UI components powered by Lit",
@@ -26,7 +26,7 @@
         "build": "rollup --config rollup.config.js",
         "dev": "rollup --watch --config rollup.config.js",
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
-        "prepublishOnly": "turbo run build --filter=@litte/button",
+        "prepublishOnly": "turbo run build --filter=@litte/element",
         "publish:dry": "pnpm publish --dry-run --no-git-checks",
         "publish:npm": "pnpm publish --no-git-checks",
         "lint": "biome lint . --write",
@@ -38,7 +38,6 @@
         "lit": "^3.3.1"
     },
     "dependencies": {
-        "@litte/element": "workspace:*",
         "clsx": "^2.1.1",
         "lit": "^3.3.1"
     },

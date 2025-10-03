@@ -1,9 +1,12 @@
 {
     "name": "@repo/typescript-config",
-    "private": true,
+    "version": "0.0.1",
     "type": "module",
     "license": "MIT",
     "scripts": {
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
