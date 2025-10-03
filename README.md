@@ -77,9 +77,7 @@ pnpm cleanup
 This project is released under the [MIT License][license-mit]. For a quick summary of the MIT License terms,
 visit [tldrlegal.com][tldr-mit].
 
-All copyright remains with the individual contributors.
-
-See the [LICENSE][license-mit] file for more information.
+All copyright remains with the individual contributors. See the [LICENSE][license-mit] file for more information.
 
 ---
 
