@@ -37,11 +37,7 @@ Import the component in your JavaScript or TypeScript file:
 import '@litte/CHANGEME_COMPONENT_ID'
 ```
 
-Use in your HTML:
-
-```html
-TODO: add example usage here
-```
+For detailed usage examples, see the [Litte Documentation](https://litte.dev/docs).
 
 ## License
 

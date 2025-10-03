@@ -3,6 +3,10 @@ set -euo pipefail
 
 ROOT_DIR=$(dirname "$0")
 
+# Get current version from ROOT_DIR/package.json
+CURRENT_VERSION=$(jq -r '.version' "$ROOT_DIR/package.json")
+echo "Current version: $CURRENT_VERSION"
+
 # Get new version from user
 printf "%-20s: " "Enter new version (e.g. 1.2.3)"
 read NEW_VERSION
@@ -30,4 +34,4 @@ else
     echo "pnpm is not installed. Please run code formatting manually."
 fi
 
-echo "Version updated to $NEW_VERSION in all package.json files."
+echo "Version updated from $CURRENT_VERSION to $NEW_VERSION in all package.json files."

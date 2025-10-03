@@ -39,6 +39,8 @@ export class MyElement extends LitteElement {
 }
 ```
 
+For detailed usage examples, see the [Litte Documentation](https://litte.dev/docs).
+
 ## License
 
 Licensed under the [MIT license][license-mit].
