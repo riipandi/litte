@@ -1,40 +1,87 @@
 import type { AvatarProps } from '@litte/avatar'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
+import { ifDefined } from 'lit/directives/if-defined.js'
 import '@litte/avatar'
 
-type AvatarStoryProps = AvatarProps & { content: string }
+type AvatarStoryProps = AvatarProps
 
 const meta: Meta<AvatarStoryProps> = {
   title: 'Components/Avatar',
   component: 'litte-avatar',
   tags: ['autodocs'],
   argTypes: {
-    disabled: {
-      control: { type: 'boolean' },
-      description: 'Disable the component',
+    src: { control: 'text', description: 'Image URL' },
+    alt: { control: 'text', description: 'Image alt text' },
+    initials: { control: 'text', description: 'Initials to display' },
+    icon: { control: 'text', description: 'SVG string or icon name' },
+    squared: { control: 'boolean', description: 'Rounded square shape' },
+    variant: {
+      control: { type: 'select' },
+      options: ['solid', 'faded'],
+      description: 'Render variant',
     },
-    loading: {
-      control: { type: 'boolean' },
-      description: 'Show loading state',
+    color: {
+      control: { type: 'select' },
+      options: ['neutral', 'critical', 'warning', 'positive', 'primary'],
+      description: 'Color scheme',
     },
+    size: { control: 'number', description: 'Size in px' },
+    class: { control: 'text', description: 'Additional class' },
   },
   args: {
-    disabled: false,
-    loading: false,
-    content: 'Hello World',
+    src: '',
+    alt: '',
+    initials: 'AR',
+    icon: '',
+    squared: false,
+    variant: 'solid',
+    color: 'neutral',
+    size: 36,
+    class: '',
   },
   render: (args) => html`
-    <div>
-      ${args.content}
-    </div>
+    <litte-avatar
+      src=${ifDefined(args.src)}
+      alt=${ifDefined(args.alt)}
+      initials=${ifDefined(args.initials)}
+      icon=${ifDefined(args.icon)}
+      ?squared=${args.squared}
+      variant=${ifDefined(args.variant)}
+      color=${ifDefined(args.color)}
+      size=${ifDefined(args.size)}
+      class=${ifDefined(args.class)}
+    ></litte-avatar>
   `,
 }
 
 export default meta
 type Story = StoryObj<AvatarStoryProps>
 
-// Default story for testing and property changes
 export const Default: Story = {
-  args: { content: 'Hello World' },
+  args: {
+    src: 'https://avatars.githubusercontent.com/u/921834?v=4',
+    alt: '',
+    initials: 'AR',
+    icon: '',
+    squared: false,
+    variant: 'solid',
+    color: 'neutral',
+    size: 36,
+    class: '',
+  },
+}
+
+export const Unsplash: Story = {
+  args: {
+    src: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2',
+    alt: 'Unsplash Avatar',
+    initials: '',
+    icon: '',
+    squared: false,
+    variant: 'solid',
+    color: 'neutral',
+    size: 48,
+    class: '',
+  },
 }
