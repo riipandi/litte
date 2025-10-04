@@ -1,5 +1,5 @@
 import { LitteElement } from '@litte/element'
-import { html, nothing } from 'lit'
+import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { CHANGEME_COMPONENT_STYLES } from './CHANGEME_COMPONENT_ID.css'
 
