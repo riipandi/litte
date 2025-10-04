@@ -1,6 +1,6 @@
 {
     "name": "@litte/button",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "type": "module",
     "description": "UI components powered by Lit",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -65,6 +65,8 @@
     },
     "keywords": [
         "design system",
+        "component-library",
+        "ui-kit",
         "lit",
         "components",
         "web components"
