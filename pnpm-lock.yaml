@@ -183,6 +183,9 @@ importers:
 
   packages/litte-storybook:
     dependencies:
+      '@litte/avatar':
+        specifier: workspace:*
+        version: link:../litte-components/avatar
       '@litte/button':
         specifier: workspace:*
         version: link:../litte-components/button

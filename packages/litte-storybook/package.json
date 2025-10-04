@@ -13,6 +13,7 @@
         "typecheck": "tsc --noEmit"
     },
     "dependencies": {
+        "@litte/avatar": "workspace:*",
         "@litte/button": "workspace:*",
         "lit": "^3.3.1"
     },
