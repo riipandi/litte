@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { CHANGEME_COMPONENT_STYLES } from './CHANGEME_COMPONENT_ID.css'
 
-export interface CHANGEME_COMPONENT_NAMEProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-CHANGEME_COMPONENT_ID')
 export class CHANGEME_COMPONENT_NAME extends LitteElement {
   static styles = CHANGEME_COMPONENT_STYLES

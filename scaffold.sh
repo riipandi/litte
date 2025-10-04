@@ -99,6 +99,7 @@ done
 
 # Rename component files
 mv "$TARGET_DIR/src/component.css.ts" "$TARGET_DIR/src/${CHANGEME_COMPONENT_ID}.css.ts"
+mv "$TARGET_DIR/src/component.types.ts" "$TARGET_DIR/src/${CHANGEME_COMPONENT_ID}.types.ts"
 mv "$TARGET_DIR/src/component.ts" "$TARGET_DIR/src/${CHANGEME_COMPONENT_ID}.ts"
 
 # Scaffold the storybook test file

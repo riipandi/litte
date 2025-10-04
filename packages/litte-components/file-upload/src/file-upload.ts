@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { fileUploadStyles } from './file-upload.css'
 
-export interface FileUploadProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-file-upload')
 export class FileUpload extends LitteElement {
   static styles = fileUploadStyles
