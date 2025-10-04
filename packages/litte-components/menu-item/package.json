@@ -1,6 +1,6 @@
 {
     "name": "@litte/menu-item",
-    "version": "0.0.9",
+    "version": "0.0.11",
     "type": "module",
     "description": "UI components powered by Lit",
     "author": "Aris Ripandi <aris@duck.com>",
