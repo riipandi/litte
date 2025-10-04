@@ -12,7 +12,7 @@ const meta: Meta<AvatarStoryProps> = {
   argTypes: {
     disabled: {
       control: { type: 'boolean' },
-      description: 'Disable the avatar',
+      description: 'Disable the component',
     },
     loading: {
       control: { type: 'boolean' },

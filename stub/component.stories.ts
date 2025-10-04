@@ -7,12 +7,12 @@ type CHANGEME_COMPONENT_NAMEStoryProps = CHANGEME_COMPONENT_NAMEProps & { conten
 
 const meta: Meta<CHANGEME_COMPONENT_NAMEStoryProps> = {
   title: 'Components/CHANGEME_COMPONENT_NAME',
-  component: 'litte-button',
+  component: 'litte-CHANGEME_COMPONENT_ID',
   tags: ['autodocs'],
   argTypes: {
     disabled: {
       control: { type: 'boolean' },
-      description: 'Disable the button',
+      description: 'Disable the component',
     },
     loading: {
       control: { type: 'boolean' },

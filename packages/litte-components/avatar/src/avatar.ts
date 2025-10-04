@@ -1,5 +1,5 @@
 import { LitteElement } from '@litte/element'
-import { html } from 'lit'
+import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { avatarStyles } from './avatar.css'
 

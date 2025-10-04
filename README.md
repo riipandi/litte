@@ -36,8 +36,47 @@ This monorepo contains everything you need to build, share, and maintain modern 
 
 ### Components
 
-- [`@litte/avatar`](http://npm.im/@litte/avatar): A lightweight, customizable avatar component
-- [`@litte/button`](http://npm.im/@litte/button): A lightweight, customizable button component
+- [`@litte/action-bar`](https://npm.im/@litte/action-bar): Litte Action Bar component
+- [`@litte/alert`](https://npm.im/@litte/alert): Litte Alert component
+- [`@litte/autocomplete`](https://npm.im/@litte/autocomplete): Litte Autocomplete component
+- [`@litte/avatar`](https://npm.im/@litte/avatar): Litte Avatar component
+- [`@litte/badge`](https://npm.im/@litte/badge): Litte Badge component
+- [`@litte/breadcrumbs`](https://npm.im/@litte/breadcrumbs): Litte Breadcrumbs component
+- [`@litte/button`](https://npm.im/@litte/button): Litte Button component
+- [`@litte/calendar`](https://npm.im/@litte/calendar): Litte Calendar component
+- [`@litte/card`](https://npm.im/@litte/card): Litte Card component
+- [`@litte/carousel`](https://npm.im/@litte/carousel): Litte Carousel component
+- [`@litte/checkbox`](https://npm.im/@litte/checkbox): Litte Checkbox component
+- [`@litte/context-menu`](https://npm.im/@litte/context-menu): Litte Context Menu component
+- [`@litte/divider`](https://npm.im/@litte/divider): Litte Divider component
+- [`@litte/dropdown-menu`](https://npm.im/@litte/dropdown-menu): Litte Dropdown Menu component
+- [`@litte/file-upload`](https://npm.im/@litte/file-upload): Litte File Upload component
+- [`@litte/hotkey`](https://npm.im/@litte/hotkey): Litte Hotkey component
+- [`@litte/link`](https://npm.im/@litte/link): Litte Link component
+- [`@litte/loader`](https://npm.im/@litte/loader): Litte Loader component
+- [`@litte/menu-item`](https://npm.im/@litte/menu-item): Litte Menu Item component
+- [`@litte/modal-dialog`](https://npm.im/@litte/modal-dialog): Litte Modal Dialog component
+- [`@litte/number-field`](https://npm.im/@litte/number-field): Litte Number Field component
+- [`@litte/overlay`](https://npm.im/@litte/overlay): Litte Overlay component
+- [`@litte/pagination`](https://npm.im/@litte/pagination): Litte Pagination component
+- [`@litte/pin-field`](https://npm.im/@litte/pin-field): Litte Pin Field component
+- [`@litte/popover`](https://npm.im/@litte/popover): Litte Popover component
+- [`@litte/progress-bar`](https://npm.im/@litte/progress-bar): Litte Progress Bar component
+- [`@litte/progress-indicator`](https://npm.im/@litte/progress-indicator): Litte Progress Indicator component
+- [`@litte/radio`](https://npm.im/@litte/radio): Litte Radio component
+- [`@litte/select`](https://npm.im/@litte/select): Litte Select component
+- [`@litte/skeleton`](https://npm.im/@litte/skeleton): Litte Skeleton component
+- [`@litte/slider`](https://npm.im/@litte/slider): Litte Slider component
+- [`@litte/stepper`](https://npm.im/@litte/stepper): Litte Stepper component
+- [`@litte/switch`](https://npm.im/@litte/switch): Litte Switch component
+- [`@litte/table`](https://npm.im/@litte/table): Litte Table component
+- [`@litte/tabs`](https://npm.im/@litte/tabs): Litte Tabs component
+- [`@litte/text-area`](https://npm.im/@litte/text-area): Litte Text Area component
+- [`@litte/text-field`](https://npm.im/@litte/text-field): Litte Text Field component
+- [`@litte/timeline`](https://npm.im/@litte/timeline): Litte Timeline component
+- [`@litte/toast`](https://npm.im/@litte/toast): Litte Toast component
+- [`@litte/toggle-button`](https://npm.im/@litte/toggle-button): Litte Toggle Button component
+- [`@litte/tooltip`](https://npm.im/@litte/tooltip): Litte Tooltip component
 
 ### Configuration
 
@@ -71,6 +110,11 @@ To clean all build artifacts, run:
 ```bash
 pnpm cleanup
 ```
+
+## Acknowledgement
+
+- https://reshaped.so
+- https://ui.shadcn.com
 
 ## License
 

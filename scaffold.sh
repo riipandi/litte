@@ -3,6 +3,15 @@ set -euo pipefail
 
 ROOT_DIR=$(dirname "$0")
 
+# Check for --skip-install flag
+SKIP_INSTALL=0
+for arg in "$@"; do
+    if [[ "$arg" == "--skip-install" ]]; then
+        SKIP_INSTALL=1
+        break
+    fi
+done
+
 # Function to validate input
 validate_input() {
     local value="$1"
@@ -22,18 +31,27 @@ to_camel_case_styles() {
     echo "${output}Styles"
 }
 
-# Prompt for variables with aligned colons
-printf "%-46s: " "Enter Component ID (e.g. example-component)"
-read CHANGEME_COMPONENT_ID
-validate_input "$CHANGEME_COMPONENT_ID" '^[a-z0-9-]+$' "Component ID must be lowercase letters, numbers, and hyphens (e.g. example-component)"
+# Get args or prompt
+if [[ $# -ge 3 ]]; then
+    CHANGEME_COMPONENT_ID="$1"
+    CHANGEME_COMPONENT_NAME="$2"
+    CHANGEME_COMPONENT_TITLE="$3"
+    validate_input "$CHANGEME_COMPONENT_ID" '^[a-z0-9-]+$' "Component ID must be lowercase letters, numbers, and hyphens (e.g. example-component)"
+    validate_input "$CHANGEME_COMPONENT_NAME" '^[A-Z][A-Za-z0-9]+$' "Component Name must be PascalCase (e.g. ExampleComponent)"
+    validate_input "$CHANGEME_COMPONENT_TITLE" '^[A-Za-z0-9 ]+$' "Component Title can only contain letters, numbers, and spaces (e.g. Litte Component)"
+else
+    printf "%-46s: " "Enter Component ID (e.g. example-component)"
+    read CHANGEME_COMPONENT_ID
+    validate_input "$CHANGEME_COMPONENT_ID" '^[a-z0-9-]+$' "Component ID must be lowercase letters, numbers, and hyphens (e.g. example-component)"
 
-printf "%-46s: " "Enter Component Name (e.g. ExampleComponent)"
-read CHANGEME_COMPONENT_NAME
-validate_input "$CHANGEME_COMPONENT_NAME" '^[A-Z][A-Za-z0-9]+$' "Component Name must be PascalCase (e.g. ExampleComponent)"
+    printf "%-46s: " "Enter Component Name (e.g. ExampleComponent)"
+    read CHANGEME_COMPONENT_NAME
+    validate_input "$CHANGEME_COMPONENT_NAME" '^[A-Z][A-Za-z0-9]+$' "Component Name must be PascalCase (e.g. ExampleComponent)"
 
-printf "%-46s: " "Enter Component Title (e.g. Litte Component)"
-read CHANGEME_COMPONENT_TITLE
-validate_input "$CHANGEME_COMPONENT_TITLE" '^[A-Za-z0-9 ]+$' "Component Title can only contain letters, numbers, and spaces (e.g. Litte Component)"
+    printf "%-46s: " "Enter Component Title (e.g. Litte Component)"
+    read CHANGEME_COMPONENT_TITLE
+    validate_input "$CHANGEME_COMPONENT_TITLE" '^[A-Za-z0-9 ]+$' "Component Title can only contain letters, numbers, and spaces (e.g. Litte Component)"
+fi
 
 # Auto-generate Component Styles from Component ID
 CHANGEME_COMPONENT_STYLES=$(to_camel_case_styles "$CHANGEME_COMPONENT_ID")
@@ -137,12 +155,16 @@ echo "Scaffold new component completed at $TARGET_DIR"
 echo "Remember to update the example usage in packages/litte-components/$CHANGEME_COMPONENT_ID/README.md"
 echo
 
-# Ask if user wants to run pnpm install
-printf "%-30s: " "Do you want to rebuild and run 'pnpm install' now? (y/N)"
-read run_pnpm
-if [[ "$run_pnpm" =~ ^[Yy]$ ]]; then
-    echo "Running pnpm install..."
-    pnpm --silent install
-    pnpm --silent build:ui
+# Ask if user wants to run pnpm install (unless --skip-install is set)
+if [[ $SKIP_INSTALL -eq 0 ]]; then
+    printf "%-30s: " "Do you want to rebuild and run 'pnpm install' now? (y/N)"
+    read run_pnpm
+    if [[ "$run_pnpm" =~ ^[Yy]$ ]]; then
+        echo "Running pnpm install..."
+        pnpm --silent install
+        pnpm --silent build:ui
+    fi
+else
+    echo "Skipping pnpm install due to --skip-install flag."
 fi
 echo "Done, exiting."
