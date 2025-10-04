@@ -47,6 +47,6 @@ Copyrights in this project are retained by their contributors.
 See the [LICENSE][license-mit] file for more information.
 
 [litte-homepage]: https://litte.dev
-[license-mit]: https://github.com/riipandi/@litte/react/blob/main/LICENSE
+[license-mit]: https://github.com/riipandi/litte/blob/main/LICENSE
 [typescript]: https://www.typescriptlang.org
 [lit]: https://lit.dev
