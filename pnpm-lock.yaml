@@ -82,6 +82,163 @@ importers:
 
   internal/typescript-config: {}
 
+  packages/litte-all-in-one:
+    dependencies:
+      '@litte/action-bar':
+        specifier: workspace:*
+        version: link:../litte-components/action-bar
+      '@litte/alert':
+        specifier: workspace:*
+        version: link:../litte-components/alert
+      '@litte/autocomplete':
+        specifier: workspace:*
+        version: link:../litte-components/autocomplete
+      '@litte/avatar':
+        specifier: workspace:*
+        version: link:../litte-components/avatar
+      '@litte/badge':
+        specifier: workspace:*
+        version: link:../litte-components/badge
+      '@litte/breadcrumbs':
+        specifier: workspace:*
+        version: link:../litte-components/breadcrumbs
+      '@litte/button':
+        specifier: workspace:*
+        version: link:../litte-components/button
+      '@litte/calendar':
+        specifier: workspace:*
+        version: link:../litte-components/calendar
+      '@litte/card':
+        specifier: workspace:*
+        version: link:../litte-components/card
+      '@litte/carousel':
+        specifier: workspace:*
+        version: link:../litte-components/carousel
+      '@litte/checkbox':
+        specifier: workspace:*
+        version: link:../litte-components/checkbox
+      '@litte/context-menu':
+        specifier: workspace:*
+        version: link:../litte-components/context-menu
+      '@litte/divider':
+        specifier: workspace:*
+        version: link:../litte-components/divider
+      '@litte/dropdown-menu':
+        specifier: workspace:*
+        version: link:../litte-components/dropdown-menu
+      '@litte/element':
+        specifier: workspace:*
+        version: link:../litte-element
+      '@litte/file-upload':
+        specifier: workspace:*
+        version: link:../litte-components/file-upload
+      '@litte/hotkey':
+        specifier: workspace:*
+        version: link:../litte-components/hotkey
+      '@litte/link':
+        specifier: workspace:*
+        version: link:../litte-components/link
+      '@litte/loader':
+        specifier: workspace:*
+        version: link:../litte-components/loader
+      '@litte/menu-item':
+        specifier: workspace:*
+        version: link:../litte-components/menu-item
+      '@litte/modal-dialog':
+        specifier: workspace:*
+        version: link:../litte-components/modal-dialog
+      '@litte/number-field':
+        specifier: workspace:*
+        version: link:../litte-components/number-field
+      '@litte/overlay':
+        specifier: workspace:*
+        version: link:../litte-components/overlay
+      '@litte/pagination':
+        specifier: workspace:*
+        version: link:../litte-components/pagination
+      '@litte/pin-field':
+        specifier: workspace:*
+        version: link:../litte-components/pin-field
+      '@litte/popover':
+        specifier: workspace:*
+        version: link:../litte-components/popover
+      '@litte/progress-bar':
+        specifier: workspace:*
+        version: link:../litte-components/progress-bar
+      '@litte/progress-indicator':
+        specifier: workspace:*
+        version: link:../litte-components/progress-indicator
+      '@litte/radio':
+        specifier: workspace:*
+        version: link:../litte-components/radio
+      '@litte/select':
+        specifier: workspace:*
+        version: link:../litte-components/select
+      '@litte/skeleton':
+        specifier: workspace:*
+        version: link:../litte-components/skeleton
+      '@litte/slider':
+        specifier: workspace:*
+        version: link:../litte-components/slider
+      '@litte/stepper':
+        specifier: workspace:*
+        version: link:../litte-components/stepper
+      '@litte/switch':
+        specifier: workspace:*
+        version: link:../litte-components/switch
+      '@litte/table':
+        specifier: workspace:*
+        version: link:../litte-components/table
+      '@litte/tabs':
+        specifier: workspace:*
+        version: link:../litte-components/tabs
+      '@litte/text-area':
+        specifier: workspace:*
+        version: link:../litte-components/text-area
+      '@litte/text-field':
+        specifier: workspace:*
+        version: link:../litte-components/text-field
+      '@litte/timeline':
+        specifier: workspace:*
+        version: link:../litte-components/timeline
+      '@litte/toast':
+        specifier: workspace:*
+        version: link:../litte-components/toast
+      '@litte/toggle-button':
+        specifier: workspace:*
+        version: link:../litte-components/toggle-button
+      '@litte/tooltip':
+        specifier: workspace:*
+        version: link:../litte-components/tooltip
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      lit:
+        specifier: ^3.3.1
+        version: 3.3.1
+    devDependencies:
+      '@biomejs/biome':
+        specifier: ^2.2.5
+        version: 2.2.5
+      '@repo/rollup-config':
+        specifier: workspace:*
+        version: link:../../internal/rollup-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../internal/typescript-config
+      '@types/node':
+        specifier: ^24.6.2
+        version: 24.6.2
+      rollup:
+        specifier: ^4.52.4
+        version: 4.52.4
+      tslib:
+        specifier: 2.8.1
+        version: 2.8.1
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
   packages/litte-components/action-bar:
     dependencies:
       '@litte/element':
@@ -729,40 +886,6 @@ importers:
         version: 5.9.3
 
   packages/litte-components/modal-dialog:
-    dependencies:
-      '@litte/element':
-        specifier: workspace:*
-        version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      lit:
-        specifier: ^3.3.1
-        version: 3.3.1
-    devDependencies:
-      '@biomejs/biome':
-        specifier: ^2.2.5
-        version: 2.2.5
-      '@repo/rollup-config':
-        specifier: workspace:*
-        version: link:../../../internal/rollup-config
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../../internal/typescript-config
-      '@types/node':
-        specifier: ^24.6.2
-        version: 24.6.2
-      rollup:
-        specifier: ^4.52.4
-        version: 4.52.4
-      tslib:
-        specifier: 2.8.1
-        version: 2.8.1
-      typescript:
-        specifier: 'catalog:'
-        version: 5.9.3
-
-  packages/litte-components/my-component:
     dependencies:
       '@litte/element':
         specifier: workspace:*
@@ -1603,9 +1726,6 @@ importers:
       '@litte/modal-dialog':
         specifier: workspace:*
         version: link:../litte-components/modal-dialog
-      '@litte/my-component':
-        specifier: workspace:*
-        version: link:../litte-components/my-component
       '@litte/number-field':
         specifier: workspace:*
         version: link:../litte-components/number-field

@@ -1,6 +1,6 @@
 {
     "name": "@litte/pagination",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "type": "module",
     "description": "UI components powered by Lit",
     "author": "Aris Ripandi <aris@duck.com>",
