@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { menuItemStyles } from './menu-item.css'
 
-export interface MenuItemProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-menu-item')
 export class MenuItem extends LitteElement {
   static styles = menuItemStyles

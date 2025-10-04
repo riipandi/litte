@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { timelineStyles } from './timeline.css'
 
-export interface TimelineProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-timeline')
 export class Timeline extends LitteElement {
   static styles = timelineStyles

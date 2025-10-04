@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { textFieldStyles } from './text-field.css'
 
-export interface TextFieldProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-text-field')
 export class TextField extends LitteElement {
   static styles = textFieldStyles

@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { tabsStyles } from './tabs.css'
 
-export interface TabsProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-tabs')
 export class Tabs extends LitteElement {
   static styles = tabsStyles

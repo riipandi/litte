@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { autocompleteStyles } from './autocomplete.css'
 
-export interface AutocompleteProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-autocomplete')
 export class Autocomplete extends LitteElement {
   static styles = autocompleteStyles

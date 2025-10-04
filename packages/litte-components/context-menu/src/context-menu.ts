@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { contextMenuStyles } from './context-menu.css'
 
-export interface ContextMenuProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-context-menu')
 export class ContextMenu extends LitteElement {
   static styles = contextMenuStyles

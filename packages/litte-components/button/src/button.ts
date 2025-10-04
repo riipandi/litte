@@ -4,19 +4,7 @@ import { html, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { styleMap } from 'lit/directives/style-map.js'
 import { buttonStyles } from './button.css'
-
-export type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost'
-export type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-
-export interface ButtonProps {
-  type?: HTMLButtonElement['type']
-  variant?: ButtonVariant
-  size?: ButtonSize
-  disabled?: boolean
-  loading?: boolean
-  color?: string
-  backgroundColor?: string
-}
+import type { ButtonSize, ButtonVariant } from './button.types'
 
 @customElement('litte-button')
 export class LitteButton extends LitteElement {

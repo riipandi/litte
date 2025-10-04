@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { dividerStyles } from './divider.css'
 
-export interface DividerProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-divider')
 export class Divider extends LitteElement {
   static styles = dividerStyles

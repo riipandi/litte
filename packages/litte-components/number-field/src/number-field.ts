@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { numberFieldStyles } from './number-field.css'
 
-export interface NumberFieldProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-number-field')
 export class NumberField extends LitteElement {
   static styles = numberFieldStyles

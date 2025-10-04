@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { actionBarStyles } from './action-bar.css'
 
-export interface ActionBarProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-action-bar')
 export class ActionBar extends LitteElement {
   static styles = actionBarStyles

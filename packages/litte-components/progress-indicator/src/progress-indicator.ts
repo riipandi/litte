@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { progressIndicatorStyles } from './progress-indicator.css'
 
-export interface ProgressIndicatorProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-progress-indicator')
 export class ProgressIndicator extends LitteElement {
   static styles = progressIndicatorStyles

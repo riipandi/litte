@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { linkStyles } from './link.css'
 
-export interface LinkProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-link')
 export class Link extends LitteElement {
   static styles = linkStyles

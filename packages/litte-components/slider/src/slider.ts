@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { sliderStyles } from './slider.css'
 
-export interface SliderProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-slider')
 export class Slider extends LitteElement {
   static styles = sliderStyles

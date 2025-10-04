@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { skeletonStyles } from './skeleton.css'
 
-export interface SkeletonProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-skeleton')
 export class Skeleton extends LitteElement {
   static styles = skeletonStyles

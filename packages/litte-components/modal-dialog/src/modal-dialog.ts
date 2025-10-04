@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { modalDialogStyles } from './modal-dialog.css'
 
-export interface ModalDialogProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-modal-dialog')
 export class ModalDialog extends LitteElement {
   static styles = modalDialogStyles

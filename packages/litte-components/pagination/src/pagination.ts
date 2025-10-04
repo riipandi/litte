@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { paginationStyles } from './pagination.css'
 
-export interface PaginationProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-pagination')
 export class Pagination extends LitteElement {
   static styles = paginationStyles

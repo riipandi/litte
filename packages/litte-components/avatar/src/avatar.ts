@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { avatarStyles } from './avatar.css'
 
-export interface AvatarProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-avatar')
 export class Avatar extends LitteElement {
   static styles = avatarStyles

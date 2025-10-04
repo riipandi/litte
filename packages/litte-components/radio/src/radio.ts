@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { radioStyles } from './radio.css'
 
-export interface RadioProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-radio')
 export class Radio extends LitteElement {
   static styles = radioStyles

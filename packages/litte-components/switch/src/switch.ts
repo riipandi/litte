@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { switchStyles } from './switch.css'
 
-export interface SwitchProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-switch')
 export class Switch extends LitteElement {
   static styles = switchStyles

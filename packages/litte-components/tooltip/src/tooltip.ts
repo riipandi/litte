@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { tooltipStyles } from './tooltip.css'
 
-export interface TooltipProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-tooltip')
 export class Tooltip extends LitteElement {
   static styles = tooltipStyles

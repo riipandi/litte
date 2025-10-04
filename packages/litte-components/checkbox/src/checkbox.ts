@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { checkboxStyles } from './checkbox.css'
 
-export interface CheckboxProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-checkbox')
 export class Checkbox extends LitteElement {
   static styles = checkboxStyles

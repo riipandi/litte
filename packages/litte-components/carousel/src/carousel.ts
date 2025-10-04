@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { carouselStyles } from './carousel.css'
 
-export interface CarouselProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-carousel')
 export class Carousel extends LitteElement {
   static styles = carouselStyles

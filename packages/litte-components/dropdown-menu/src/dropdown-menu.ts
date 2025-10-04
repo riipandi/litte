@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { dropdownMenuStyles } from './dropdown-menu.css'
 
-export interface DropdownMenuProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-dropdown-menu')
 export class DropdownMenu extends LitteElement {
   static styles = dropdownMenuStyles

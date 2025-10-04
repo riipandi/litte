@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { alertStyles } from './alert.css'
 
-export interface AlertProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-alert')
 export class Alert extends LitteElement {
   static styles = alertStyles

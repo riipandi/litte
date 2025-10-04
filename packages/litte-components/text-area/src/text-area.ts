@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { textAreaStyles } from './text-area.css'
 
-export interface TextAreaProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-text-area')
 export class TextArea extends LitteElement {
   static styles = textAreaStyles

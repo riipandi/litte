@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { hotkeyStyles } from './hotkey.css'
 
-export interface HotkeyProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-hotkey')
 export class Hotkey extends LitteElement {
   static styles = hotkeyStyles

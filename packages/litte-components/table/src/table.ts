@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { tableStyles } from './table.css'
 
-export interface TableProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-table')
 export class Table extends LitteElement {
   static styles = tableStyles

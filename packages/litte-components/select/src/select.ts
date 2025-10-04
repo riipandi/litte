@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { selectStyles } from './select.css'
 
-export interface SelectProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-select')
 export class Select extends LitteElement {
   static styles = selectStyles

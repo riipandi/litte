@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { toggleButtonStyles } from './toggle-button.css'
 
-export interface ToggleButtonProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-toggle-button')
 export class ToggleButton extends LitteElement {
   static styles = toggleButtonStyles

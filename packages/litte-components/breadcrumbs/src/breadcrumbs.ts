@@ -3,11 +3,6 @@ import { html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { breadcrumbsStyles } from './breadcrumbs.css'
 
-export interface BreadcrumbsProps {
-  disabled?: boolean
-  loading?: boolean
-}
-
 @customElement('litte-breadcrumbs')
 export class Breadcrumbs extends LitteElement {
   static styles = breadcrumbsStyles
