@@ -1,5 +1,4 @@
 import Image, { type ImageProps } from 'next/image'
-import { Button } from '#/components/button'
 
 type ThemeImageProps = Omit<ImageProps, 'src'> & {
   srcLight: string
@@ -65,7 +64,6 @@ export default function Home() {
             Read our docs
           </a>
         </div>
-        <Button variant="primary">Open alert</Button>
       </main>
       <footer className="flex justify-center gap-6 border-gray-200 border-t bg-gray-50 py-4 dark:border-gray-800 dark:bg-gray-900">
         <a

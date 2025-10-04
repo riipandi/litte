@@ -29,33 +29,18 @@ importers:
 
   docs:
     dependencies:
-      '@lit/react':
-        specifier: ^1.0.8
-        version: 1.0.8(@types/react@19.2.0)
-      '@tailwindcss/postcss':
-        specifier: ^4.1.14
-        version: 4.1.14
-      litte:
+      '@litte/react':
         specifier: workspace:*
-        version: link:../packages/litte-all-in-one
+        version: link:../packages/litte-react
       next:
         specifier: ^15.5.4
         version: 15.5.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
-      postcss:
-        specifier: ^8.5.6
-        version: 8.5.6
-      postcss-load-config:
-        specifier: ^6.0.1
-        version: 6.0.1(jiti@2.6.1)(postcss@8.5.6)
       react:
         specifier: ^19.2.0
         version: 19.2.0
       react-dom:
         specifier: ^19.2.0
         version: 19.2.0(react@19.2.0)
-      tailwindcss:
-        specifier: ^4.1.14
-        version: 4.1.14
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.2.5
@@ -63,6 +48,9 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../internal/typescript-config
+      '@tailwindcss/postcss':
+        specifier: ^4.1.14
+        version: 4.1.14
       '@types/node':
         specifier: ^24.6.2
         version: 24.6.2
@@ -72,6 +60,15 @@ importers:
       '@types/react-dom':
         specifier: 19.2.0
         version: 19.2.0(@types/react@19.2.0)
+      postcss:
+        specifier: ^8.5.6
+        version: 8.5.6
+      postcss-load-config:
+        specifier: ^6.0.1
+        version: 6.0.1(jiti@2.6.1)(postcss@8.5.6)
+      tailwindcss:
+        specifier: ^4.1.14
+        version: 4.1.14
       typescript:
         specifier: 'catalog:'
         version: 5.9.3
@@ -1672,6 +1669,175 @@ importers:
       '@types/node':
         specifier: ^24.6.2
         version: 24.6.2
+      rollup:
+        specifier: ^4.52.4
+        version: 4.52.4
+      tslib:
+        specifier: 2.8.1
+        version: 2.8.1
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
+  packages/litte-react:
+    dependencies:
+      '@lit/react':
+        specifier: ^1.0.8
+        version: 1.0.8(@types/react@19.2.0)
+      '@litte/action-bar':
+        specifier: workspace:*
+        version: link:../litte-components/action-bar
+      '@litte/alert':
+        specifier: workspace:*
+        version: link:../litte-components/alert
+      '@litte/autocomplete':
+        specifier: workspace:*
+        version: link:../litte-components/autocomplete
+      '@litte/avatar':
+        specifier: workspace:*
+        version: link:../litte-components/avatar
+      '@litte/badge':
+        specifier: workspace:*
+        version: link:../litte-components/badge
+      '@litte/breadcrumbs':
+        specifier: workspace:*
+        version: link:../litte-components/breadcrumbs
+      '@litte/button':
+        specifier: workspace:*
+        version: link:../litte-components/button
+      '@litte/calendar':
+        specifier: workspace:*
+        version: link:../litte-components/calendar
+      '@litte/card':
+        specifier: workspace:*
+        version: link:../litte-components/card
+      '@litte/carousel':
+        specifier: workspace:*
+        version: link:../litte-components/carousel
+      '@litte/checkbox':
+        specifier: workspace:*
+        version: link:../litte-components/checkbox
+      '@litte/context-menu':
+        specifier: workspace:*
+        version: link:../litte-components/context-menu
+      '@litte/divider':
+        specifier: workspace:*
+        version: link:../litte-components/divider
+      '@litte/dropdown-menu':
+        specifier: workspace:*
+        version: link:../litte-components/dropdown-menu
+      '@litte/element':
+        specifier: workspace:*
+        version: link:../litte-element
+      '@litte/file-upload':
+        specifier: workspace:*
+        version: link:../litte-components/file-upload
+      '@litte/hotkey':
+        specifier: workspace:*
+        version: link:../litte-components/hotkey
+      '@litte/link':
+        specifier: workspace:*
+        version: link:../litte-components/link
+      '@litte/loader':
+        specifier: workspace:*
+        version: link:../litte-components/loader
+      '@litte/menu-item':
+        specifier: workspace:*
+        version: link:../litte-components/menu-item
+      '@litte/modal-dialog':
+        specifier: workspace:*
+        version: link:../litte-components/modal-dialog
+      '@litte/number-field':
+        specifier: workspace:*
+        version: link:../litte-components/number-field
+      '@litte/overlay':
+        specifier: workspace:*
+        version: link:../litte-components/overlay
+      '@litte/pagination':
+        specifier: workspace:*
+        version: link:../litte-components/pagination
+      '@litte/pin-field':
+        specifier: workspace:*
+        version: link:../litte-components/pin-field
+      '@litte/popover':
+        specifier: workspace:*
+        version: link:../litte-components/popover
+      '@litte/progress-bar':
+        specifier: workspace:*
+        version: link:../litte-components/progress-bar
+      '@litte/progress-indicator':
+        specifier: workspace:*
+        version: link:../litte-components/progress-indicator
+      '@litte/radio':
+        specifier: workspace:*
+        version: link:../litte-components/radio
+      '@litte/select':
+        specifier: workspace:*
+        version: link:../litte-components/select
+      '@litte/skeleton':
+        specifier: workspace:*
+        version: link:../litte-components/skeleton
+      '@litte/slider':
+        specifier: workspace:*
+        version: link:../litte-components/slider
+      '@litte/stepper':
+        specifier: workspace:*
+        version: link:../litte-components/stepper
+      '@litte/switch':
+        specifier: workspace:*
+        version: link:../litte-components/switch
+      '@litte/table':
+        specifier: workspace:*
+        version: link:../litte-components/table
+      '@litte/tabs':
+        specifier: workspace:*
+        version: link:../litte-components/tabs
+      '@litte/text-area':
+        specifier: workspace:*
+        version: link:../litte-components/text-area
+      '@litte/text-field':
+        specifier: workspace:*
+        version: link:../litte-components/text-field
+      '@litte/timeline':
+        specifier: workspace:*
+        version: link:../litte-components/timeline
+      '@litte/toast':
+        specifier: workspace:*
+        version: link:../litte-components/toast
+      '@litte/toggle-button':
+        specifier: workspace:*
+        version: link:../litte-components/toggle-button
+      '@litte/tooltip':
+        specifier: workspace:*
+        version: link:../litte-components/tooltip
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      lit:
+        specifier: ^3.3.1
+        version: 3.3.1
+      react:
+        specifier: ^19.2.0
+        version: 19.2.0
+      react-dom:
+        specifier: ^19.2.0
+        version: 19.2.0(react@19.2.0)
+    devDependencies:
+      '@biomejs/biome':
+        specifier: ^2.2.5
+        version: 2.2.5
+      '@repo/rollup-config':
+        specifier: workspace:*
+        version: link:../../internal/rollup-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../internal/typescript-config
+      '@types/node':
+        specifier: ^24.6.2
+        version: 24.6.2
+      '@types/react':
+        specifier: 19.2.0
+        version: 19.2.0
       rollup:
         specifier: ^4.52.4
         version: 4.52.4

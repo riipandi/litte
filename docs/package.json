@@ -12,22 +12,21 @@
         "typecheck": "tsc --noEmit"
     },
     "dependencies": {
-        "@lit/react": "^1.0.8",
-        "@tailwindcss/postcss": "^4.1.14",
-        "litte": "workspace:*",
+        "@litte/react": "workspace:*",
         "next": "^15.5.4",
-        "postcss": "^8.5.6",
-        "postcss-load-config": "^6.0.1",
-        "react": "^19.2.0",
         "react-dom": "^19.2.0",
-        "tailwindcss": "^4.1.14"
+        "react": "^19.2.0"
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.5",
         "@repo/typescript-config": "workspace:*",
+        "@tailwindcss/postcss": "^4.1.14",
         "@types/node": "^24.6.2",
-        "@types/react": "19.2.0",
         "@types/react-dom": "19.2.0",
+        "@types/react": "19.2.0",
+        "postcss-load-config": "^6.0.1",
+        "postcss": "^8.5.6",
+        "tailwindcss": "^4.1.14",
         "typescript": "catalog:"
     }
 }
