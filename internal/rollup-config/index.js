@@ -16,10 +16,10 @@ const rollupOptions = {
     }),
     resolve({
       extensions: ['.ts', '.js', '.mjs'],
-      exportConditions: ['es2020', 'es2015', 'module', 'import', 'default'],
+      exportConditions: ['es2023', 'module', 'import', 'default'],
       preferBuiltins: false, // Prefer ES modules
     }),
-    minify({ target: 'es2020', format: 'esm' }),
+    minify({ target: 'es2023', format: 'esm' }),
     summary({
       showBrotliSize: true,
       showMinifiedSize: true,

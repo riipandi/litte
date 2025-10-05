@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { JetBrains_Mono, Mona_Sans } from 'next/font/google'
-import '@litte/themes/default/theme.css'
 import './globals.css'
 
 const fontSans = Mona_Sans({ variable: '--font-sans', subsets: ['latin'] })

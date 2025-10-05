@@ -4,11 +4,11 @@
     "license": "MIT",
     "type": "module",
     "scripts": {
-        "dev": "turbo run dev --filter=!docs",
         "dev:docs": "turbo run dev --filter=docs",
         "dev:storybook": "turbo run dev --filter=storybook",
-        "build:storybook": "turbo run build --filter=storybook",
+        "dev": "turbo run dev --filter=!docs --filter=storybook",
         "build:docs": "turbo run build --filter=docs",
+        "build:storybook": "turbo run build --filter=storybook",
         "build": "turbo run build --filter=@litte/* --filter=litte",
         "start": "turbo run start --filter=docs --filter=storybook",
         "cleanup": "turbo cleanup --cache=local:rw && pnpm -s cleanup:repo",

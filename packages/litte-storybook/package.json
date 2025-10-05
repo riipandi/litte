@@ -59,6 +59,7 @@
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.5",
+        "@repo/typescript-config": "workspace:*",
         "@storybook/web-components-vite": "^9.1.10",
         "storybook": "^9.1.10",
         "typescript": "catalog:",
