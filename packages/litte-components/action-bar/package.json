@@ -1,6 +1,6 @@
 {
     "name": "@litte/action-bar",
-    "version": "0.0.17",
+    "version": "0.0.18",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
