@@ -2,7 +2,7 @@
     "name": "@litte/CHANGEME_COMPONENT_ID",
     "version": "0.0.0",
     "type": "module",
-    "description": "UI components powered by Lit",
+    "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
     "license": "MIT",
     "homepage": "https://litte.dev",

@@ -7,7 +7,7 @@ const fontMono = JetBrains_Mono({ variable: '--font-mono', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Litte',
-  description: 'UI components powered by Lit',
+  description: 'UI components that you can use everywhere, designed for flexibility.',
 }
 
 export default function RootLayout({ children }: Readonly<React.PropsWithChildren>) {

@@ -1,8 +1,8 @@
 {
     "name": "@litte/table",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "type": "module",
-    "description": "UI components powered by Lit",
+    "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
     "license": "MIT",
     "homepage": "https://litte.dev",
