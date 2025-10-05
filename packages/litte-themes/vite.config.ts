@@ -1,36 +1,49 @@
-// import tailwindCSSPlugin from '@repo/vite-plugin-tailwindcss'
+// import tailwindCSSPlugin from './plugins/tailwindcss.plugin'
 import { extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import react from '@vitejs/plugin-react'
 import fg from 'fast-glob'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import pkg from './package.json' with { type: 'json' }
 
-const globFiles = await fg.glob(['src/components/**/*.{ts,tsx}'], {
-  ignore: ['src/components/**/*.d.ts'],
+const globFiles = await fg.glob(['src/**/*.{ts,tsx}'], {
+  ignore: ['src/**/*.d.ts'],
   onlyFiles: true,
 })
 
 const inputGlob = Object.fromEntries(
   globFiles.map((file) => [
-    relative('src/components', file.slice(0, file.length - extname(file).length)),
+    relative('src', file.slice(0, file.length - extname(file).length)),
     fileURLToPath(new URL(file, import.meta.url)),
   ])
 )
 
 export default defineConfig({
-  server: { port: 5173, strictPort: true, host: false },
+  server: { port: 5174, strictPort: true, host: false },
   plugins: [
-    react(),
-    dts({ include: ['src/components'] }), // DTS plugin used for generating TypeScript declaration files
+    dts({ include: ['src'] }), // DTS plugin used for generating TypeScript declaration files
     tsconfigPaths(), // tsconfigPaths plugin used for resolving TypeScript paths
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'src/themes/*/*.css',
+          dest: 'themes',
+          rename: (fileName, fileExtension, fullPath) => {
+            const parts = fullPath.replace(/\\/g, '/').split('/')
+            const themeIdx = parts.indexOf('themes')
+            const theme = themeIdx !== -1 ? parts[themeIdx + 1] : 'default'
+            return `${theme}/${fileName}.${fileExtension}`
+          },
+        },
+      ],
+    }),
     // tailwindCSSPlugin(), // Tailwind CSS plugin to compile CSS after the build
   ],
   build: {
     lib: {
-      entry: resolve('src/components/index.ts'),
+      entry: resolve('src/index.ts'),
       formats: ['es'],
     },
     emptyOutDir: true,

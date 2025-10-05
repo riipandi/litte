@@ -1,0 +1,29 @@
+{
+    "name": "@repo/vite-plugin-tailwindcss",
+    "version": "0.0.15",
+    "type": "module",
+    "license": "MIT",
+    "main": "./index.js",
+    "exports": {
+        ".": {
+            "import": "./index.js",
+            "default": "./index.js"
+        }
+    },
+    "scripts": {
+        "lint": "biome lint . --write",
+        "check": "biome check . --write",
+        "cleanup": "pnpm dlx del-cli node_modules .turbo"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.5",
+        "@tailwindcss/node": "^4.1.14",
+        "lightningcss": "^1.30.2"
+    },
+    "peerDependencies": {
+        "rollup": "^4.52.4"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

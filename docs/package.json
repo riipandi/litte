@@ -13,6 +13,7 @@
     },
     "dependencies": {
         "@litte/react": "workspace:*",
+        "@litte/themes": "workspace:*",
         "next": "^15.5.4",
         "react-dom": "^19.2.0",
         "react": "^19.2.0"

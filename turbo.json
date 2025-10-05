@@ -22,6 +22,9 @@
             "dependsOn": ["^build"],
             "persistent": true
         },
+        "cleanup": {
+            "cache": false
+        },
         "publish:dry": {},
         "publish:npm": {}
     }

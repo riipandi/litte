@@ -33,7 +33,7 @@ yarn add @litte/react
 Import the component in your JSX or TSX file:
 
 ```ts
-import { Button } '@litte/react'
+import { Button } from '@litte/react/button'
 ```
 
 For detailed usage examples, see the [Litte Documentation](https://litte.dev/docs).

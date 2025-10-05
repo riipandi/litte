@@ -5,11 +5,8 @@ import { compile } from '@tailwindcss/node'
 import { transform } from 'lightningcss'
 
 // Optimize CSS using LightningCSS
-function optimizeCss(
-  input: string,
-  { file = 'input.css', minify = false }: { file?: string; minify?: boolean } = {}
-) {
-  function optimize(code: Buffer | Uint8Array | any) {
+function optimizeCss(input, { file = 'input.css', minify = false } = {}) {
+  function optimize(code) {
     return transform({
       filename: file,
       code,
@@ -38,8 +35,7 @@ function optimizeCss(
   return optimize(optimize(Buffer.from(input))).toString()
 }
 
-async function compileTailwindCss(sourcePath: string, outputPath: string, isProduction: boolean) {
-  // Get relative paths for logging
+async function compileTailwindCss(sourcePath, outputPath, isProduction) {
   const relativeSourcePath = relative(process.cwd(), sourcePath)
   const relativeOutputPath = relative(process.cwd(), outputPath)
 
@@ -48,39 +44,31 @@ async function compileTailwindCss(sourcePath: string, outputPath: string, isProd
   )
 
   try {
-    // Read the source CSS file
     const cssContent = await fs.readFile(sourcePath, 'utf-8')
 
-    // Compile Tailwind CSS
     const compiler = await compile(cssContent, {
       base: dirname(sourcePath),
-      onDependency: (depPath: string) => {
-        // Also show relative path for dependencies
+      onDependency: (depPath) => {
         const relativePath = relative(process.cwd(), depPath)
         console.info(`Dependency detected: ${styleText('yellow', relativePath)}`)
       },
     })
 
-    // Generate CSS using the build function
     const result = compiler.build([])
 
-    // Ensure output directory exists
     await fs.mkdir(dirname(outputPath), { recursive: true })
 
     if (isProduction) {
-      // Optimize CSS in production mode
       const optimized = optimizeCss(result, {
         file: basename(outputPath),
         minify: process.env.NODE_ENV === 'production',
       })
 
-      // Write optimized CSS to output file
       await fs.writeFile(outputPath, optimized)
       console.info(
         `Successfully compiled ${styleText('cyan', relativeSourcePath)} to ${styleText('green', relativeOutputPath)} ${styleText('magenta', '(optimized)')}`
       )
     } else {
-      // Write unoptimized CSS in development mode
       await fs.writeFile(outputPath, result)
       console.info(
         `Successfully compiled ${styleText('cyan', relativeSourcePath)} to ${styleText('green', relativeOutputPath)}`
@@ -94,7 +82,6 @@ async function compileTailwindCss(sourcePath: string, outputPath: string, isProd
 
 // Custom Vite plugin for compiling Tailwind CSS files
 export default function tailwindCSSPlugin() {
-  // Define source and target file mappings
   const cssFiles = [
     {
       source: 'src/styles/global.css',
@@ -113,7 +100,6 @@ export default function tailwindCSSPlugin() {
       const isProduction = process.env.NODE_ENV === 'production'
 
       try {
-        // Compile all CSS files in parallel
         await Promise.all(
           cssFiles.map(({ source, target }) => {
             return compileTailwindCss(resolve(source), resolve(target), isProduction)

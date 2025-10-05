@@ -50,6 +50,7 @@
         "@litte/tabs": "workspace:*",
         "@litte/text-area": "workspace:*",
         "@litte/text-field": "workspace:*",
+        "@litte/themes": "workspace:*",
         "@litte/timeline": "workspace:*",
         "@litte/toast": "workspace:*",
         "@litte/toggle-button": "workspace:*",

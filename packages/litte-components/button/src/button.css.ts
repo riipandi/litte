@@ -12,10 +12,9 @@ export const buttonStyles = css`
     justify-content: center;
     gap: 0.5rem;
     border: none;
-    border-radius: 0.5rem;
-    font-family:
-      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    font-weight: 500;
+    border-radius: var(--lt-radius-medium);
+    font-family: var(--lt-font-family-body);
+    font-weight: var(--lt-font-weight-medium);
     text-decoration: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -26,65 +25,65 @@ export const buttonStyles = css`
 
   /* Variants */
   .litte-button--primary {
-    background-color: #3b82f6;
-    color: white;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--lt-color-background-primary);
+    color: var(--lt-color-white);
+    box-shadow: var(--lt-shadow-raised);
   }
 
   .litte-button--primary:hover:not(:disabled) {
-    background-color: #2563eb;
+    background-color: var(--lt-color-border-primary);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
   .litte-button--primary:active:not(:disabled) {
-    background-color: #1d4ed8;
+    background-color: var(--lt-color-border-primary-faded);
     transform: translateY(1px);
   }
 
   .litte-button--secondary {
-    background-color: #f1f5f9;
-    color: #475569;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: var(--lt-color-background-neutral);
+    color: var(--lt-color-foreground-neutral);
+    box-shadow: var(--lt-shadow-raised);
   }
 
   .litte-button--secondary:hover:not(:disabled) {
-    background-color: #e2e8f0;
-    color: #334155;
+    background-color: var(--lt-color-background-neutral-faded);
+    color: var(--lt-color-foreground-neutral-faded);
   }
 
   .litte-button--secondary:active:not(:disabled) {
-    background-color: #cbd5e1;
+    background-color: var(--lt-color-border-neutral);
     transform: translateY(1px);
   }
 
   .litte-button--outline {
     background-color: transparent;
-    color: #3b82f6;
-    border: 1px solid #3b82f6;
+    color: var(--lt-color-background-primary);
+    border: 1px solid var(--lt-color-background-primary);
   }
 
   .litte-button--outline:hover:not(:disabled) {
-    background-color: #3b82f6;
-    color: white;
+    background-color: var(--lt-color-background-primary);
+    color: var(--lt-color-white);
   }
 
   .litte-button--outline:active:not(:disabled) {
-    background-color: #2563eb;
+    background-color: var(--lt-color-border-primary);
     transform: translateY(1px);
   }
 
   .litte-button--ghost {
     background-color: transparent;
-    color: #475569;
+    color: var(--lt-color-foreground-neutral);
   }
 
   .litte-button--ghost:hover:not(:disabled) {
-    background-color: #f1f5f9;
-    color: #334155;
+    background-color: var(--lt-color-background-neutral);
+    color: var(--lt-color-foreground-neutral-faded);
   }
 
   .litte-button--ghost:active:not(:disabled) {
-    background-color: #e2e8f0;
+    background-color: var(--lt-color-background-neutral-faded);
     transform: translateY(1px);
   }
 
@@ -152,19 +151,19 @@ export const buttonStyles = css`
 
   /* Focus styles */
   .litte-button:focus-visible {
-    outline: 2px solid #3b82f6;
+    outline: 2px solid var(--lt-color-background-primary);
     outline-offset: 2px;
   }
 
   .litte-button--outline:focus-visible {
-    outline-color: #3b82f6;
+    outline-color: var(--lt-color-background-primary);
   }
 
   .litte-button--secondary:focus-visible {
-    outline-color: #475569;
+    outline-color: var(--lt-color-foreground-neutral);
   }
 
   .litte-button--ghost:focus-visible {
-    outline-color: #475569;
+    outline-color: var(--lt-color-foreground-neutral);
   }
 `
