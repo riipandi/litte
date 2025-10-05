@@ -1,6 +1,6 @@
 {
     "name": "@litte/themes",
-    "version": "0.0.0",
+    "version": "0.0.16",
     "type": "module",
     "description": "UI components powered by Lit",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -28,7 +28,7 @@
         "build": "vite build",
         "dev": "NODE_ENV=development vite build --watch",
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
-        "prepublishOnly": "turbo run build --filter=@litte/theme",
+        "prepublishOnly": "turbo run build --filter=@litte/themes",
         "publish:dry": "pnpm publish --dry-run --no-git-checks",
         "publish:npm": "pnpm publish --no-git-checks",
         "lint": "biome lint . --write",
