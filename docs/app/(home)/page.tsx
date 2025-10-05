@@ -1,3 +1,4 @@
+import { Button } from '@litte/react/button'
 import Image, { type ImageProps } from 'next/image'
 
 type ThemeImageProps = Omit<ImageProps, 'src'> & {
@@ -40,11 +41,11 @@ export default function Home() {
         </ol>
 
         <div className="mb-8 flex gap-4">
-          <a
-            className="inline-flex items-center gap-2 rounded bg-black px-4 py-2 text-white transition hover:bg-gray-800"
-            href="https://vercel.com/new/clone?demo-description=Learn+to+implement+a+monorepo+with+a+two+Next.js+sites+that+has+installed+three+local+packages.&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F4K8ZISWAzJ8X1504ca0zmC%2F0b21a1c6246add355e55816278ef54bc%2FBasic.png&demo-title=Monorepo+with+Turborepo&demo-url=https%3A%2F%2Fexamples-basic-web.vercel.sh%2F&from=templates&project-name=Monorepo+with+Turborepo&repository-name=monorepo-turborepo&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fturborepo%2Ftree%2Fmain%2Fexamples%2Fbasic&root-directory=apps%2Fdocs&skippable-integrations=1&teamSlug=vercel&utm_source=create-turbo"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Button
+          // className="inline-flex items-center gap-2 rounded bg-black px-4 py-2 text-white transition hover:bg-gray-800"
+          // href="https://vercel.com/new/clone?demo-description=Learn+to+implement+a+monorepo+with+a+two+Next.js+sites+that+has+installed+three+local+packages.&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F4K8ZISWAzJ8X1504ca0zmC%2F0b21a1c6246add355e55816278ef54bc%2FBasic.png&demo-title=Monorepo+with+Turborepo&demo-url=https%3A%2F%2Fexamples-basic-web.vercel.sh%2F&from=templates&project-name=Monorepo+with+Turborepo&repository-name=monorepo-turborepo&repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fturborepo%2Ftree%2Fmain%2Fexamples%2Fbasic&root-directory=apps%2Fdocs&skippable-integrations=1&teamSlug=vercel&utm_source=create-turbo"
+          // target="_blank"
+          // rel="noopener noreferrer"
           >
             <Image
               className="h-5 w-5"
@@ -54,7 +55,7 @@ export default function Home() {
               height={20}
             />
             Deploy now
-          </a>
+          </Button>
           <a
             href="https://turborepo.com/docs?utm_source"
             className="inline-flex items-center rounded bg-gray-200 px-4 py-2 text-gray-900 transition hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-100 dark:hover:bg-gray-700"

@@ -13,18 +13,13 @@
     "bugs": {
         "url": "https://github.com/riipandi/litte/issues"
     },
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
     "exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "import": "./dist/index.js",
-            "default": "./dist/index.js"
-        }
+        ".": "./dist/index.js",
+        "./button": "./dist/button/index.js"
     },
     "scripts": {
-        "build": "rollup --config rollup.config.js",
-        "dev": "rollup --watch --config rollup.config.js",
+        "build": "vite build",
+        "dev": "NODE_ENV=development vite build --watch",
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
         "prepublishOnly": "turbo run build --filter=@litte/react",
         "publish:dry": "pnpm publish --dry-run --no-git-checks",
@@ -82,19 +77,22 @@
         "@litte/toggle-button": "workspace:*",
         "@litte/tooltip": "workspace:*",
         "clsx": "^2.1.1",
-        "lit": "^3.3.1",
         "react": "^19.2.0",
         "react-dom": "^19.2.0"
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.5",
-        "@repo/rollup-config": "workspace:*",
         "@repo/typescript-config": "workspace:*",
+        "@tailwindcss/node": "^4.1.14",
         "@types/node": "^24.6.2",
         "@types/react": "19.2.0",
-        "rollup": "^4.52.4",
-        "tslib": "2.8.1",
-        "typescript": "catalog:"
+        "@vitejs/plugin-react": "^5.0.4",
+        "fast-glob": "^3.3.3",
+        "lightningcss": "^1.30.2",
+        "typescript": "catalog:",
+        "vite": "^7.1.9",
+        "vite-plugin-dts": "^4.5.4",
+        "vite-tsconfig-paths": "^5.1.4"
     },
     "files": [
         "dist/**/*",

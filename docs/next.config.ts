@@ -11,6 +11,10 @@ const nextConfig: NextConfig = {
   },
   eslint: { ignoreDuringBuilds: true /* disable eslint on build */ },
   devIndicators: { position: 'bottom-right' },
+  transpilePackages: ['@litte/react'],
+  experimental: {
+    optimizePackageImports: ['@litte/react'],
+  },
 }
 
 export default nextConfig
