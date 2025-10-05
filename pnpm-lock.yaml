@@ -35,6 +35,12 @@ importers:
       '@litte/themes':
         specifier: workspace:*
         version: link:../packages/litte-themes
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      iconoir-react:
+        specifier: ^7.11.0
+        version: 7.11.0(react@19.2.0)
       next:
         specifier: ^15.5.4
         version: 15.5.4(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
@@ -3376,6 +3382,11 @@ packages:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
 
+  iconoir-react@7.11.0:
+    resolution: {integrity: sha512-uvTKtnHYwbbTsmQ6HCcliYd50WK0GbjP497RwdISxKzfS01x4cK1Mn/F2mT/t2roSaJQ0I+KnHxMcyvmNMXWsQ==}
+    peerDependencies:
+      react: 18 || 19
+
   ignore@5.3.2:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
@@ -5341,6 +5352,10 @@ snapshots:
       function-bind: 1.1.2
 
   he@1.2.0: {}
+
+  iconoir-react@7.11.0(react@19.2.0):
+    dependencies:
+      react: 19.2.0
 
   ignore@5.3.2: {}
 

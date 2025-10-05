@@ -6,13 +6,23 @@
     /* @see: https://github.com/tailwindlabs/tailwindcss/discussions/13410#discussioncomment-11928917 */
     --font-sans: var(--font-sans);
     --font-mono: var(--font-mono);
+    --font-heading: var(--font-heading);
 }
 
 @layer base {
     html,
     body {
-        @apply antialiased min-h-screen scroll-smooth;
+        @apply antialiased min-h-screen scroll-smooth font-sans;
     }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-heading;
+    }
+
     pre,
     code {
         @apply font-mono;
