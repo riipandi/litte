@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 import fg from 'fast-glob'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
-// import { viteStaticCopy } from 'vite-plugin-static-copy'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import pkg from './package.json' with { type: 'json' }
 
@@ -25,20 +25,20 @@ export default defineConfig({
   plugins: [
     dts({ include: ['src'] }), // DTS plugin used for generating TypeScript declaration files
     tsconfigPaths(), // tsconfigPaths plugin used for resolving TypeScript paths
-    // viteStaticCopy({
-    //   targets: [
-    //     {
-    //       src: 'src/themes/*/*.css',
-    //       dest: 'themes',
-    //       rename: (fileName, fileExtension, fullPath) => {
-    //         const parts = fullPath.replace(/\\/g, '/').split('/')
-    //         const themeIdx = parts.indexOf('themes')
-    //         const theme = themeIdx !== -1 ? parts[themeIdx + 1] : 'default'
-    //         return `${theme}/${fileName}.${fileExtension}`
-    //       },
-    //     },
-    //   ],
-    // }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: 'src/themes/*/*.css',
+          dest: 'themes',
+          rename: (fileName, fileExtension, fullPath) => {
+            const parts = fullPath.replace(/\\/g, '/').split('/')
+            const themeIdx = parts.indexOf('themes')
+            const theme = themeIdx !== -1 ? parts[themeIdx + 1] : 'default'
+            return `${theme}/${fileName}.${fileExtension}`
+          },
+        },
+      ],
+    }),
     // tailwindCSSPlugin(), // Tailwind CSS plugin to compile CSS after the build
   ],
   build: {
