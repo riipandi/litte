@@ -34,8 +34,8 @@ const rollupOptions = {
   output: {
     dir: 'dist',
     format: 'es',
-    preserveModules: true,
     preserveModulesRoot: 'src',
+    preserveModules: false,
   },
   preserveEntrySignatures: 'strict',
 }

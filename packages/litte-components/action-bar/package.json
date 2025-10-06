@@ -1,6 +1,6 @@
 {
     "name": "@litte/action-bar",
-    "version": "0.0.20",
+    "version": "0.0.21",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -26,7 +26,7 @@
         "build": "rollup --config rollup.config.js",
         "dev": "rollup --watch --config rollup.config.js",
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
-        "prepublishOnly": "rollup --config rollup.config.js",
+        "prepublishOnly": "NODE_ENV=production rollup --config rollup.config.js",
         "publish:dry": "pnpm publish --dry-run --no-git-checks",
         "publish:npm": "pnpm publish --no-git-checks",
         "lint": "biome lint . --write",
