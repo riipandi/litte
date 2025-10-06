@@ -16,7 +16,7 @@
     </a>
     </a>
     <a href="https://github.com/riipandi/litte/graphs/contributors">
-        <img src="https://img.shields.io/badge/Contributions-welcome-gray.svg?labelColor=gray" alt="Contributions welcome" />
+        <img src="https://img.shields.io/badge/Contributions-welcome-gray.svg?labelColor=green" alt="Contributions welcome" />
     </a>
     <!-- <a href="https://github.com/riipandi/litte/releases">
         <img src="https://img.shields.io/github/v/release/riipandi/litte?logo=npm&logoColor=white" alt="Release" />
