@@ -5,57 +5,58 @@ import { create } from 'storybook/theming'
 const brand = {
   brandTitle: 'UI Components',
   brandUrl: '/',
+  brandTarget: '_self',
   fontBase: 'Inter, BlinkMacSystemFont, -apple-system, Roboto, Aptos, Helvetica, Arial, sans-serif',
   appBorderRadius: 4,
   inputBorderRadius: 4,
 }
 
-// Light theme config
+// Light theme config: soft but clearer blue palette
 export const light = create({
   base: 'light',
   ...brand,
-  colorPrimary: '#0f131a',
-  colorSecondary: '#0f131a',
-  appBg: '#ffffff',
-  appContentBg: '#ffffff',
+  colorPrimary: '#2563eb',
+  colorSecondary: '#3b82f6',
+  appBg: '#f2f9fe',
+  appContentBg: '#feffff',
   appPreviewBg: '#ffffff',
-  appBorderColor: '#e5e7eb',
-  textColor: '#0f131a',
-  textMutedColor: '#6b7280',
-  textInverseColor: '#ffffff',
-  barTextColor: '#6b7280',
-  barHoverColor: '#374151',
-  barSelectedColor: '#1fa2ff',
-  barBg: '#ffffff',
-  buttonBg: '#f3f4f6',
-  buttonBorder: '#e5e7eb',
+  appBorderColor: '#dbeafe',
+  textColor: '#1e293b',
+  textMutedColor: '#64748b',
+  textInverseColor: '#feffff',
+  barTextColor: '#23272f',
+  barHoverColor: '#2563eb',
+  barSelectedColor: '#3b82f6',
+  barBg: '#feffff',
+  buttonBg: '#dbeafe',
+  buttonBorder: '#93c5fd',
   inputBg: '#ffffff',
-  inputBorder: '#e5e7eb',
-  inputTextColor: '#0f131a',
+  inputBorder: '#93c5fd',
+  inputTextColor: '#1e293b',
 })
 
-// Dark theme config
+// Dark theme config: darker gray background, softer blue accent
 export const dark = create({
   base: 'dark',
   ...brand,
-  colorPrimary: '#ffffff',
-  colorSecondary: '#374151',
-  appBg: '#0f131a',
-  appContentBg: '#0f131a',
-  appPreviewBg: '#0f131a',
-  appBorderColor: '#374151',
-  textColor: '#ffffff',
-  textMutedColor: '#9ca3af',
-  textInverseColor: '#0f131a',
-  barTextColor: '#9ca3af',
-  barHoverColor: '#d1d5db',
-  barSelectedColor: '#1fa2ff',
-  barBg: '#0f131a',
-  buttonBg: '#1f2937',
-  buttonBorder: '#374151',
-  inputBg: '#111827',
-  inputBorder: '#374151',
-  inputTextColor: '#ffffff',
+  colorPrimary: '#3b5998',
+  colorSecondary: '#5a7abf',
+  appBg: '#181a20',
+  appContentBg: '#181a20',
+  appPreviewBg: '#ffffff',
+  appBorderColor: '#23272f',
+  textColor: '#e2e8f0',
+  textMutedColor: '#94a3b8',
+  textInverseColor: '#64748b',
+  barTextColor: '#e2e8f0',
+  barHoverColor: '#94a3b8',
+  barSelectedColor: '#3b5998',
+  barBg: '#181a20',
+  buttonBg: '#23272f',
+  buttonBorder: '#3b5998',
+  inputBg: '#23272f',
+  inputBorder: '#3b5998',
+  inputTextColor: '#e2e8f0',
 })
 
 export type ThemeVariant = 'default' | 'slate'
@@ -93,7 +94,7 @@ export function listenToColorScheme(
     }
   }
 
-  // Inisialisasi dengan global colorMode saat ini
+  // Initialize with current global colorMode
   handleGlobalsChange({ globals: window.__STORYBOOK_GLOBALS__ || { colorMode: 'system' } })
 
   eventEmitter.on(GLOBALS_UPDATED, handleGlobalsChange)
