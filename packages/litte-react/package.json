@@ -84,7 +84,7 @@
         "@biomejs/biome": "^2.2.5",
         "@repo/typescript-config": "workspace:*",
         "@repo/vite-plugin-tailwindcss": "workspace:*",
-        "@types/node": "^24.6.2",
+        "@types/node": "^24.7.0",
         "@types/react": "19.2.0",
         "@vitejs/plugin-react": "^5.0.4",
         "fast-glob": "^3.3.3",

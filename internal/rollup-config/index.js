@@ -19,7 +19,11 @@ const rollupOptions = {
       exportConditions: ['es2023', 'module', 'import', 'default'],
       preferBuiltins: false, // Prefer ES modules
     }),
-    minify({ target: 'es2023', format: 'esm' }),
+    minify({
+      format: 'esm',
+      target: 'es2023',
+      minify: process.env.NODE_ENV === 'production',
+    }),
     summary({
       showBrotliSize: true,
       showMinifiedSize: true,
