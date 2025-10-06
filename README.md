@@ -125,6 +125,8 @@ pnpm cleanup
 
 ## Acknowledgement
 
+Thanks to the open-source community for their amazing work and to these libraries for the inspiration.
+
 - https://reshaped.so
 - https://ui.shadcn.com
 
