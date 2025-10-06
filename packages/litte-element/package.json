@@ -1,6 +1,6 @@
 {
     "name": "@litte/element",
-    "version": "0.0.28",
+    "version": "0.0.29",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",

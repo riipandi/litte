@@ -1,6 +1,6 @@
 {
     "name": "@litte/react",
-    "version": "0.0.28",
+    "version": "0.0.29",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -23,219 +23,219 @@
             "default": "./dist/index.js"
         },
         "./action-bar": {
-            "types": "./dist/components/action-bar/index.d.ts",
-            "import": "./dist/components/action-bar/index.js",
-            "default": "./dist/components/action-bar/index.js"
+            "types": "./dist/components/action-bar/action-bar.d.ts",
+            "import": "./dist/components/action-bar/action-bar.js",
+            "default": "./dist/components/action-bar/action-bar.js"
         },
         "./alert": {
-            "types": "./dist/components/alert/index.d.ts",
-            "import": "./dist/components/alert/index.js",
-            "default": "./dist/components/alert/index.js"
+            "types": "./dist/components/alert/alert.d.ts",
+            "import": "./dist/components/alert/alert.js",
+            "default": "./dist/components/alert/alert.js"
         },
         "./autocomplete": {
-            "types": "./dist/components/autocomplete/index.d.ts",
-            "import": "./dist/components/autocomplete/index.js",
-            "default": "./dist/components/autocomplete/index.js"
+            "types": "./dist/components/autocomplete/autocomplete.d.ts",
+            "import": "./dist/components/autocomplete/autocomplete.js",
+            "default": "./dist/components/autocomplete/autocomplete.js"
         },
         "./avatar": {
-            "types": "./dist/components/avatar/index.d.ts",
-            "import": "./dist/components/avatar/index.js",
-            "default": "./dist/components/avatar/index.js"
+            "types": "./dist/components/avatar/avatar.d.ts",
+            "import": "./dist/components/avatar/avatar.js",
+            "default": "./dist/components/avatar/avatar.js"
         },
         "./badge": {
-            "types": "./dist/components/badge/index.d.ts",
-            "import": "./dist/components/badge/index.js",
-            "default": "./dist/components/badge/index.js"
+            "types": "./dist/components/badge/badge.d.ts",
+            "import": "./dist/components/badge/badge.js",
+            "default": "./dist/components/badge/badge.js"
         },
         "./breadcrumbs": {
-            "types": "./dist/components/breadcrumbs/index.d.ts",
-            "import": "./dist/components/breadcrumbs/index.js",
-            "default": "./dist/components/breadcrumbs/index.js"
+            "types": "./dist/components/breadcrumbs/breadcrumbs.d.ts",
+            "import": "./dist/components/breadcrumbs/breadcrumbs.js",
+            "default": "./dist/components/breadcrumbs/breadcrumbs.js"
         },
         "./button": {
-            "types": "./dist/components/button/index.d.ts",
-            "import": "./dist/components/button/index.js",
-            "default": "./dist/components/button/index.js"
+            "types": "./dist/components/button/button.d.ts",
+            "import": "./dist/components/button/button.js",
+            "default": "./dist/components/button/button.js"
         },
         "./calendar": {
-            "types": "./dist/components/calendar/index.d.ts",
-            "import": "./dist/components/calendar/index.js",
-            "default": "./dist/components/calendar/index.js"
+            "types": "./dist/components/calendar/calendar.d.ts",
+            "import": "./dist/components/calendar/calendar.js",
+            "default": "./dist/components/calendar/calendar.js"
         },
         "./card": {
-            "types": "./dist/components/card/index.d.ts",
-            "import": "./dist/components/card/index.js",
-            "default": "./dist/components/card/index.js"
+            "types": "./dist/components/card/card.d.ts",
+            "import": "./dist/components/card/card.js",
+            "default": "./dist/components/card/card.js"
         },
         "./carousel": {
-            "types": "./dist/components/carousel/index.d.ts",
-            "import": "./dist/components/carousel/index.js",
-            "default": "./dist/components/carousel/index.js"
+            "types": "./dist/components/carousel/carousel.d.ts",
+            "import": "./dist/components/carousel/carousel.js",
+            "default": "./dist/components/carousel/carousel.js"
         },
         "./checkbox": {
-            "types": "./dist/components/checkbox/index.d.ts",
-            "import": "./dist/components/checkbox/index.js",
-            "default": "./dist/components/checkbox/index.js"
+            "types": "./dist/components/checkbox/checkbox.d.ts",
+            "import": "./dist/components/checkbox/checkbox.js",
+            "default": "./dist/components/checkbox/checkbox.js"
         },
         "./context-menu": {
-            "types": "./dist/components/context-menu/index.d.ts",
-            "import": "./dist/components/context-menu/index.js",
-            "default": "./dist/components/context-menu/index.js"
+            "types": "./dist/components/context-menu/context-menu.d.ts",
+            "import": "./dist/components/context-menu/context-menu.js",
+            "default": "./dist/components/context-menu/context-menu.js"
         },
         "./divider": {
-            "types": "./dist/components/divider/index.d.ts",
-            "import": "./dist/components/divider/index.js",
-            "default": "./dist/components/divider/index.js"
+            "types": "./dist/components/divider/divider.d.ts",
+            "import": "./dist/components/divider/divider.js",
+            "default": "./dist/components/divider/divider.js"
         },
         "./dropdown-menu": {
-            "types": "./dist/components/dropdown-menu/index.d.ts",
-            "import": "./dist/components/dropdown-menu/index.js",
-            "default": "./dist/components/dropdown-menu/index.js"
+            "types": "./dist/components/dropdown-menu/dropdown-menu.d.ts",
+            "import": "./dist/components/dropdown-menu/dropdown-menu.js",
+            "default": "./dist/components/dropdown-menu/dropdown-menu.js"
         },
         "./element": {
-            "types": "./dist/components/element/index.d.ts",
-            "import": "./dist/components/element/index.js",
-            "default": "./dist/components/element/index.js"
+            "types": "./dist/components/element/element.d.ts",
+            "import": "./dist/components/element/element.js",
+            "default": "./dist/components/element/element.js"
         },
         "./file-upload": {
-            "types": "./dist/components/file-upload/index.d.ts",
-            "import": "./dist/components/file-upload/index.js",
-            "default": "./dist/components/file-upload/index.js"
+            "types": "./dist/components/file-upload/file-upload.d.ts",
+            "import": "./dist/components/file-upload/file-upload.js",
+            "default": "./dist/components/file-upload/file-upload.js"
         },
         "./hotkey": {
-            "types": "./dist/components/hotkey/index.d.ts",
-            "import": "./dist/components/hotkey/index.js",
-            "default": "./dist/components/hotkey/index.js"
+            "types": "./dist/components/hotkey/hotkey.d.ts",
+            "import": "./dist/components/hotkey/hotkey.js",
+            "default": "./dist/components/hotkey/hotkey.js"
         },
         "./link": {
-            "types": "./dist/components/link/index.d.ts",
-            "import": "./dist/components/link/index.js",
-            "default": "./dist/components/link/index.js"
+            "types": "./dist/components/link/link.d.ts",
+            "import": "./dist/components/link/link.js",
+            "default": "./dist/components/link/link.js"
         },
         "./loader": {
-            "types": "./dist/components/loader/index.d.ts",
-            "import": "./dist/components/loader/index.js",
-            "default": "./dist/components/loader/index.js"
+            "types": "./dist/components/loader/loader.d.ts",
+            "import": "./dist/components/loader/loader.js",
+            "default": "./dist/components/loader/loader.js"
         },
         "./menu-item": {
-            "types": "./dist/components/menu-item/index.d.ts",
-            "import": "./dist/components/menu-item/index.js",
-            "default": "./dist/components/menu-item/index.js"
+            "types": "./dist/components/menu-item/menu-item.d.ts",
+            "import": "./dist/components/menu-item/menu-item.js",
+            "default": "./dist/components/menu-item/menu-item.js"
         },
         "./modal-dialog": {
-            "types": "./dist/components/modal-dialog/index.d.ts",
-            "import": "./dist/components/modal-dialog/index.js",
-            "default": "./dist/components/modal-dialog/index.js"
+            "types": "./dist/components/modal-dialog/modal-dialog.d.ts",
+            "import": "./dist/components/modal-dialog/modal-dialog.js",
+            "default": "./dist/components/modal-dialog/modal-dialog.js"
         },
         "./number-field": {
-            "types": "./dist/components/number-field/index.d.ts",
-            "import": "./dist/components/number-field/index.js",
-            "default": "./dist/components/number-field/index.js"
+            "types": "./dist/components/number-field/number-field.d.ts",
+            "import": "./dist/components/number-field/number-field.js",
+            "default": "./dist/components/number-field/number-field.js"
         },
         "./overlay": {
-            "types": "./dist/components/overlay/index.d.ts",
-            "import": "./dist/components/overlay/index.js",
-            "default": "./dist/components/overlay/index.js"
+            "types": "./dist/components/overlay/overlay.d.ts",
+            "import": "./dist/components/overlay/overlay.js",
+            "default": "./dist/components/overlay/overlay.js"
         },
         "./pagination": {
-            "types": "./dist/components/pagination/index.d.ts",
-            "import": "./dist/components/pagination/index.js",
-            "default": "./dist/components/pagination/index.js"
+            "types": "./dist/components/pagination/pagination.d.ts",
+            "import": "./dist/components/pagination/pagination.js",
+            "default": "./dist/components/pagination/pagination.js"
         },
         "./pin-field": {
-            "types": "./dist/components/pin-field/index.d.ts",
-            "import": "./dist/components/pin-field/index.js",
-            "default": "./dist/components/pin-field/index.js"
+            "types": "./dist/components/pin-field/pin-field.d.ts",
+            "import": "./dist/components/pin-field/pin-field.js",
+            "default": "./dist/components/pin-field/pin-field.js"
         },
         "./popover": {
-            "types": "./dist/components/popover/index.d.ts",
-            "import": "./dist/components/popover/index.js",
-            "default": "./dist/components/popover/index.js"
+            "types": "./dist/components/popover/popover.d.ts",
+            "import": "./dist/components/popover/popover.js",
+            "default": "./dist/components/popover/popover.js"
         },
         "./progress-bar": {
-            "types": "./dist/components/progress-bar/index.d.ts",
-            "import": "./dist/components/progress-bar/index.js",
-            "default": "./dist/components/progress-bar/index.js"
+            "types": "./dist/components/progress-bar/progress-bar.d.ts",
+            "import": "./dist/components/progress-bar/progress-bar.js",
+            "default": "./dist/components/progress-bar/progress-bar.js"
         },
         "./progress-indicator": {
-            "types": "./dist/components/progress-indicator/index.d.ts",
-            "import": "./dist/components/progress-indicator/index.js",
-            "default": "./dist/components/progress-indicator/index.js"
+            "types": "./dist/components/progress-indicator/progress-indicator.d.ts",
+            "import": "./dist/components/progress-indicator/progress-indicator.js",
+            "default": "./dist/components/progress-indicator/progress-indicator.js"
         },
         "./radio": {
-            "types": "./dist/components/radio/index.d.ts",
-            "import": "./dist/components/radio/index.js",
-            "default": "./dist/components/radio/index.js"
+            "types": "./dist/components/radio/radio.d.ts",
+            "import": "./dist/components/radio/radio.js",
+            "default": "./dist/components/radio/radio.js"
         },
         "./scrim": {
-            "types": "./dist/components/scrim/index.d.ts",
-            "import": "./dist/components/scrim/index.js",
-            "default": "./dist/components/scrim/index.js"
+            "types": "./dist/components/scrim/scrim.d.ts",
+            "import": "./dist/components/scrim/scrim.js",
+            "default": "./dist/components/scrim/scrim.js"
         },
         "./select": {
-            "types": "./dist/components/select/index.d.ts",
-            "import": "./dist/components/select/index.js",
-            "default": "./dist/components/select/index.js"
+            "types": "./dist/components/select/select.d.ts",
+            "import": "./dist/components/select/select.js",
+            "default": "./dist/components/select/select.js"
         },
         "./skeleton": {
-            "types": "./dist/components/skeleton/index.d.ts",
-            "import": "./dist/components/skeleton/index.js",
-            "default": "./dist/components/skeleton/index.js"
+            "types": "./dist/components/skeleton/skeleton.d.ts",
+            "import": "./dist/components/skeleton/skeleton.js",
+            "default": "./dist/components/skeleton/skeleton.js"
         },
         "./slider": {
-            "types": "./dist/components/slider/index.d.ts",
-            "import": "./dist/components/slider/index.js",
-            "default": "./dist/components/slider/index.js"
+            "types": "./dist/components/slider/slider.d.ts",
+            "import": "./dist/components/slider/slider.js",
+            "default": "./dist/components/slider/slider.js"
         },
         "./stepper": {
-            "types": "./dist/components/stepper/index.d.ts",
-            "import": "./dist/components/stepper/index.js",
-            "default": "./dist/components/stepper/index.js"
+            "types": "./dist/components/stepper/stepper.d.ts",
+            "import": "./dist/components/stepper/stepper.js",
+            "default": "./dist/components/stepper/stepper.js"
         },
         "./switch": {
-            "types": "./dist/components/switch/index.d.ts",
-            "import": "./dist/components/switch/index.js",
-            "default": "./dist/components/switch/index.js"
+            "types": "./dist/components/switch/switch.d.ts",
+            "import": "./dist/components/switch/switch.js",
+            "default": "./dist/components/switch/switch.js"
         },
         "./table": {
-            "types": "./dist/components/table/index.d.ts",
-            "import": "./dist/components/table/index.js",
-            "default": "./dist/components/table/index.js"
+            "types": "./dist/components/table/table.d.ts",
+            "import": "./dist/components/table/table.js",
+            "default": "./dist/components/table/table.js"
         },
         "./tabs": {
-            "types": "./dist/components/tabs/index.d.ts",
-            "import": "./dist/components/tabs/index.js",
-            "default": "./dist/components/tabs/index.js"
+            "types": "./dist/components/tabs/tabs.d.ts",
+            "import": "./dist/components/tabs/tabs.js",
+            "default": "./dist/components/tabs/tabs.js"
         },
         "./text-area": {
-            "types": "./dist/components/text-area/index.d.ts",
-            "import": "./dist/components/text-area/index.js",
-            "default": "./dist/components/text-area/index.js"
+            "types": "./dist/components/text-area/text-area.d.ts",
+            "import": "./dist/components/text-area/text-area.js",
+            "default": "./dist/components/text-area/text-area.js"
         },
         "./text-field": {
-            "types": "./dist/components/text-field/index.d.ts",
-            "import": "./dist/components/text-field/index.js",
-            "default": "./dist/components/text-field/index.js"
+            "types": "./dist/components/text-field/text-field.d.ts",
+            "import": "./dist/components/text-field/text-field.js",
+            "default": "./dist/components/text-field/text-field.js"
         },
         "./timeline": {
-            "types": "./dist/components/timeline/index.d.ts",
-            "import": "./dist/components/timeline/index.js",
-            "default": "./dist/components/timeline/index.js"
+            "types": "./dist/components/timeline/timeline.d.ts",
+            "import": "./dist/components/timeline/timeline.js",
+            "default": "./dist/components/timeline/timeline.js"
         },
         "./toast": {
-            "types": "./dist/components/toast/index.d.ts",
-            "import": "./dist/components/toast/index.js",
-            "default": "./dist/components/toast/index.js"
+            "types": "./dist/components/toast/toast.d.ts",
+            "import": "./dist/components/toast/toast.js",
+            "default": "./dist/components/toast/toast.js"
         },
         "./toggle-button": {
-            "types": "./dist/components/toggle-button/index.d.ts",
-            "import": "./dist/components/toggle-button/index.js",
-            "default": "./dist/components/toggle-button/index.js"
+            "types": "./dist/components/toggle-button/toggle-button.d.ts",
+            "import": "./dist/components/toggle-button/toggle-button.js",
+            "default": "./dist/components/toggle-button/toggle-button.js"
         },
         "./tooltip": {
-            "types": "./dist/components/tooltip/index.d.ts",
-            "import": "./dist/components/tooltip/index.js",
-            "default": "./dist/components/tooltip/index.js"
+            "types": "./dist/components/tooltip/tooltip.d.ts",
+            "import": "./dist/components/tooltip/tooltip.js",
+            "default": "./dist/components/tooltip/tooltip.js"
         }
     },
     "scripts": {
