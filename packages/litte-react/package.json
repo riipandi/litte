@@ -1,6 +1,6 @@
 {
     "name": "@litte/react",
-    "version": "0.0.21",
+    "version": "0.0.22",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -23,7 +23,7 @@
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
         "publish:dry": "pnpm publish --dry-run --no-git-checks",
         "publish:npm": "pnpm publish --no-git-checks",
-        "prepublishOnly": "vite build",
+        "prepublishOnly": "NODE_ENV=production vite build",
         "lint": "biome lint . --write",
         "check": "biome check . --write",
         "typecheck": "tsc --noEmit"
