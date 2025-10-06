@@ -12,7 +12,7 @@
     <a href="https://github.com/riipandi/litte/graphs/contributors">
         <img src="https://img.shields.io/github/license/riipandi/litte?color=green" alt="License" />
     <a href="https://www.npmjs.com/~litte">
-        <img src="https://img.shields.io/npm/dm/@litte/element" alt="npm downloads" />
+        <img src="https://img.shields.io/npm/dm/@litte/element?color=orange" alt="npm downloads" />
     </a>
     </a>
     <a href="https://github.com/riipandi/litte/graphs/contributors">
