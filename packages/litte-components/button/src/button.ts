@@ -2,42 +2,58 @@ import { LitteElement } from '@litte/element'
 import { clsx } from 'clsx'
 import { html, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
+import { ifDefined } from 'lit/directives/if-defined.js'
 import { styleMap } from 'lit/directives/style-map.js'
 import { buttonStyles } from './button.css'
-import type { ButtonSize, ButtonVariant } from './button.types'
+import type { ButtonProps } from './button.types'
 
 @customElement('litte-button')
-export class LitteButton extends LitteElement {
+export class LitteButton extends LitteElement implements ButtonProps {
   static styles = buttonStyles
 
-  @property({ type: String })
-  type: HTMLButtonElement['type'] = 'button'
+  /** Button type attribute */
+  @property({ type: String, reflect: true })
+  type: ButtonProps['type']
 
-  @property({ type: String })
-  variant: ButtonVariant = 'primary'
+  /** Button variant style */
+  @property({ type: String, reflect: true })
+  variant: ButtonProps['variant']
 
-  @property({ type: String })
-  size: ButtonSize = 'md'
+  /** Button size */
+  @property({ type: String, reflect: true })
+  size: ButtonProps['size']
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  disabled: ButtonProps['disabled']
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  loading: ButtonProps['loading']
 
-  @property({ type: String })
-  color?: string
+  /** Custom text color */
+  @property({ type: String, reflect: true })
+  color: ButtonProps['color']
 
-  @property({ type: String })
-  backgroundColor?: string
+  /** Custom background color */
+  @property({ type: String, reflect: true })
+  backgroundColor: ButtonProps['backgroundColor']
+
+  constructor() {
+    super()
+    this.type = 'button'
+    this.variant = 'primary'
+    this.size = 'md'
+    this.disabled = false
+    this.loading = false
+    this.color = ''
+    this.backgroundColor = ''
+  }
 
   private _handleClick(e: Event) {
-    // Let the native click event bubble up naturally
-    // No need to dispatch custom event, just let it pass through
     if (this.disabled || this.loading) {
       e.preventDefault()
       e.stopPropagation()
-      return
     }
   }
 
@@ -53,35 +69,30 @@ export class LitteButton extends LitteElement {
     )
 
     const customStyles = styleMap({
-      ...(this.backgroundColor && { backgroundColor: this.backgroundColor }),
-      ...(this.color && { color: this.color }),
+      ...(this.backgroundColor ? { backgroundColor: this.backgroundColor } : {}),
+      ...(this.color ? { color: this.color } : {}),
     })
-
-    const loadingSpinner = this.loading
-      ? html`<span class="litte-button__spinner"></span>`
-      : nothing
 
     return html`
       <button
-        type=${this.type}
+        type=${ifDefined(this.type)}
         class=${classes}
         style=${customStyles}
         ?disabled=${this.disabled || this.loading}
+        aria-disabled=${this.disabled ? 'true' : 'false'}
+        aria-busy=${this.loading ? 'true' : 'false'}
         @click=${this._handleClick}
       >
-        ${loadingSpinner}
+        ${
+          this.loading
+            ? html`<span class="litte-button__spinner" aria-hidden="true"></span>`
+            : nothing
+        }
         <slot></slot>
       </button>
     `
   }
 }
-
-// Example usage:
-// <litte-button @click=${() => console.log('clicked')}>Default Button</litte-button>
-// <litte-button variant="secondary" size="lg" @click=${handleClick}>Large Secondary</litte-button>
-// <litte-button variant="outline" disabled>Disabled Button</litte-button>
-// <litte-button variant="ghost" loading>Loading...</litte-button>
-// <litte-button backgroundColor="#ff4444" color="white" @click=${handleClick}>Custom Colors</litte-button>
 
 declare global {
   interface HTMLElementTagNameMap {

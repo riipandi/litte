@@ -2,6 +2,9 @@ import type { Preview } from '@storybook/web-components-vite'
 import { withThemeProvider } from './decorators'
 import { customTheme } from './themes'
 
+// Load the application CSS
+import '@litte/themes/default/theme.css'
+
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
