@@ -1,4 +1,10 @@
-import Link from 'next/link'
+'use client'
+
+// import Link from 'next/link'
+import dynamic from 'next/dynamic'
+
+// Use dynamic import to prevent `ReferenceError: HTMLElement is not defined` issue
+const Button = dynamic(() => import('@litte/react').then((mod) => mod.Button), { ssr: false })
 
 export default function SectionAbout() {
   return (
@@ -19,12 +25,15 @@ export default function SectionAbout() {
                 your own components, Litte offers a solid foundation for building modern web
                 interfaces.
               </p>
-              <Link
+              <Button variant="outline" size="xl" color="white">
+                Read more
+              </Button>
+              {/* <Link
                 href="/docs"
                 className="inline-flex items-center justify-center rounded-full border border-white px-5 py-2.5 font-medium text-lg text-white transition duration-200 hover:bg-white hover:text-black"
               >
                 Read more
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
