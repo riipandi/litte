@@ -13,42 +13,31 @@ export class LitteButton extends LitteElement implements ButtonProps {
 
   /** Button type attribute */
   @property({ type: String, reflect: true })
-  type: ButtonProps['type']
+  accessor type: ButtonProps['type'] = 'button'
 
   /** Button variant style */
   @property({ type: String, reflect: true })
-  variant: ButtonProps['variant']
+  accessor variant: ButtonProps['variant'] = 'primary'
 
   /** Button size */
   @property({ type: String, reflect: true })
-  size: ButtonProps['size']
+  accessor size: ButtonProps['size'] = 'md'
 
   /** Disable the button */
   @property({ type: Boolean, reflect: true })
-  disabled: ButtonProps['disabled']
+  accessor disabled: ButtonProps['disabled'] = false
 
   /** Show loading state */
   @property({ type: Boolean, reflect: true })
-  loading: ButtonProps['loading']
+  accessor loading: ButtonProps['loading'] = false
 
   /** Custom text color */
   @property({ type: String, reflect: true })
-  color: ButtonProps['color']
+  accessor color: ButtonProps['color'] = ''
 
   /** Custom background color */
   @property({ type: String, reflect: true })
-  backgroundColor: ButtonProps['backgroundColor']
-
-  constructor() {
-    super()
-    this.type = 'button'
-    this.variant = 'primary'
-    this.size = 'md'
-    this.disabled = false
-    this.loading = false
-    this.color = ''
-    this.backgroundColor = ''
-  }
+  accessor backgroundColor: ButtonProps['backgroundColor'] = ''
 
   private _handleClick(e: Event) {
     if (this.disabled || this.loading) {
@@ -75,6 +64,7 @@ export class LitteButton extends LitteElement implements ButtonProps {
 
     return html`
       <button
+        part="button"
         type=${ifDefined(this.type)}
         class=${classes}
         style=${customStyles}
@@ -85,7 +75,7 @@ export class LitteButton extends LitteElement implements ButtonProps {
       >
         ${
           this.loading
-            ? html`<span class="litte-button__spinner" aria-hidden="true"></span>`
+            ? html`<span class="litte-button__spinner" part="spinner" aria-hidden="true"></span>`
             : nothing
         }
         <slot></slot>

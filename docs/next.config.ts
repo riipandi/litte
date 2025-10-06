@@ -12,9 +12,6 @@ const nextConfig: NextConfig = {
   eslint: { ignoreDuringBuilds: true /* disable eslint on build */ },
   devIndicators: { position: 'bottom-right' },
   transpilePackages: ['@litte/react'],
-  experimental: {
-    optimizePackageImports: ['@litte/react'],
-  },
   // Fix for issue: `[webpack.cache.PackFileCacheStrategy] Serializing big strings`
   webpack: (config: { cache: { type: string } }) => {
     config.cache = { type: 'memory' }

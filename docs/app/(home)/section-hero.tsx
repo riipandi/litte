@@ -1,6 +1,12 @@
+'use client'
+
+import dynamic from 'next/dynamic'
 import Image from 'next/image'
 import Link from 'next/link'
 import Navigation from '../navigation'
+
+// Use dynamic import to prevent `ReferenceError: HTMLElement is not defined` issue
+const Button = dynamic(() => import('@litte/react').then((mod) => mod.Button), { ssr: false })
 
 export default function SectionHero() {
   return (
@@ -76,6 +82,7 @@ export default function SectionHero() {
               easy integration in any web project.
             </p>
             <div className="flex flex-col justify-center sm:flex-row">
+              <Button variant="primary">Getting Started</Button>
               <Link
                 href="/docs"
                 className="mb-3 inline-flex items-center justify-center rounded-full border border-teal-900 bg-teal-900 px-5 py-2.5 font-medium text-lg text-white transition duration-200 hover:border-lime-500 hover:bg-lime-500 hover:text-teal-900 sm:mr-4 sm:mb-0"

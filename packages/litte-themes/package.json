@@ -1,6 +1,6 @@
 {
     "name": "@litte/themes",
-    "version": "0.0.24",
+    "version": "0.0.25",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -24,8 +24,7 @@
         "./default/*": "./dist/themes/default/*"
     },
     "scripts": {
-        "buildx": "vite build",
-        "build": "postcss src/themes/default/theme.css -o dist/themes/default/theme.min.css",
+        "build": "vite build",
         "dev": "vite build --watch",
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
         "publish:dry": "NODE_ENV=production pnpm publish --dry-run --no-git-checks",
