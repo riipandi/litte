@@ -1,13 +1,33 @@
-# 🔥 Litte
+<p align="center">
+    <img src="./docs/public/brand/text-mark-light.svg" width="192" height="96" alt="🔥 Litte"/>
+</p>
 
-[![Lit](https://img.shields.io/badge/Lit-v3-blue.svg?logo=lit)](https://lit.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-v5.9-blue.svg?logo=TypeScript&logoColor=blue)](https://www.typescriptlang.org)
-[![License](https://img.shields.io/github/license/riipandi/litte?color=green)](https://github.com/riipandi/litte/graphs/contributors)
-[![Contribution](https://img.shields.io/badge/Contributions-welcome-gray.svg?labelColor=gray)](https://github.com/riipandi/litte/graphs/contributors)
-<!-- [![Release](https://img.shields.io/github/v/release/riipandi/litte?logo=npm&logoColor=white)](https://github.com/riipandi/litte/releases) -->
-<!-- [![CI Test](https://github.com/riipandi/litte/actions/workflows/ci-test.yml/badge.svg)](https://github.com/riipandi/litte/actions/workflows/ci-test.yml) -->
-<!-- [![CI Build](https://github.com/riipandi/litte/actions/workflows/ci-build.yml/badge.svg)](https://github.com/riipandi/litte/actions/workflows/ci-build.yml) -->
-<!-- [![CI Release](https://github.com/riipandi/litte/actions/workflows/release.yml/badge.svg)](https://github.com/riipandi/litte/actions/workflows/release.yml) -->
+<p align="center">
+    <a href="https://lit.dev">
+        <img src="https://img.shields.io/badge/Lit-v3-blue.svg?logo=lit" alt="Lit v3" />
+    </a>
+    <a href="https://www.typescriptlang.org">
+        <img src="https://img.shields.io/badge/TypeScript-v5.9-blue.svg?logo=TypeScript&logoColor=blue" alt="TypeScript v5.9" />
+    </a>
+    <a href="https://github.com/riipandi/litte/graphs/contributors">
+        <img src="https://img.shields.io/github/license/riipandi/litte?color=green" alt="License" />
+    </a>
+    <a href="https://github.com/riipandi/litte/graphs/contributors">
+        <img src="https://img.shields.io/badge/Contributions-welcome-gray.svg?labelColor=gray" alt="Contributions welcome" />
+    </a>
+    <!-- <a href="https://github.com/riipandi/litte/releases">
+        <img src="https://img.shields.io/github/v/release/riipandi/litte?logo=npm&logoColor=white" alt="Release" />
+    </a>
+    <a href="https://github.com/riipandi/litte/actions/workflows/ci-test.yml">
+        <img src="https://github.com/riipandi/litte/actions/workflows/ci-test.yml/badge.svg" alt="CI Test" />
+    </a>
+    <a href="https://github.com/riipandi/litte/actions/workflows/ci-build.yml">
+        <img src="https://github.com/riipandi/litte/actions/workflows/ci-build.yml/badge.svg" alt="CI Build" />
+    </a>
+    <a href="https://github.com/riipandi/litte/actions/workflows/release.yml">
+        <img src="https://github.com/riipandi/litte/actions/workflows/release.yml/badge.svg" alt="CI Release" />
+    </a> -->
+</p>
 
 ---
 
