@@ -1,6 +1,6 @@
 {
     "name": "@litte/themes",
-    "version": "0.0.18",
+    "version": "0.0.19",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -22,15 +22,16 @@
             "default": "./dist/index.js"
         },
         "./default/tailwind.css": "./dist/themes/default/tailwind.css",
-        "./default/theme.css": "./dist/themes/default/theme.css"
+        "./default/theme.css": "./dist/themes/default/theme.min.css"
     },
     "scripts": {
-        "build": "vite build",
-        "dev": "NODE_ENV=development vite build --watch",
+        "buildx": "vite build",
+        "build": "postcss src/themes/default/theme.css -o dist/themes/default/theme.min.css",
+        "dev": "vite build --watch",
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
-        "prepublishOnly": "turbo run build --filter=@litte/themes",
         "publish:dry": "pnpm publish --dry-run --no-git-checks",
         "publish:npm": "pnpm publish --no-git-checks",
+        "prepublishOnly": "vite build",
         "lint": "biome lint . --write",
         "check": "biome check . --write",
         "typecheck": "tsc --noEmit"
@@ -45,7 +46,11 @@
         "@biomejs/biome": "^2.2.5",
         "@repo/typescript-config": "workspace:*",
         "@types/node": "^24.6.2",
+        "cssnano": "^7.1.1",
         "fast-glob": "^3.3.3",
+        "postcss": "^8.5.6",
+        "postcss-cli": "^11.0.1",
+        "postcss-load-config": "^6.0.1",
         "typescript": "catalog:",
         "vite": "^7.1.9",
         "vite-plugin-dts": "^4.5.4",

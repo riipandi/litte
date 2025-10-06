@@ -14,8 +14,8 @@
             "dependsOn": ["^build"]
         },
         "dev": {
-            "cache": false,
-            "persistent": true
+            "persistent": true,
+            "cache": false
         },
         "start": {
             "cache": false,
@@ -25,7 +25,16 @@
         "cleanup": {
             "cache": false
         },
-        "publish:dry": {},
-        "publish:npm": {}
+        "prepublishOnly": {
+            "cache": true
+        },
+        "publish:dry": {
+            "dependsOn": ["^build"],
+            "cache": true
+        },
+        "publish:npm": {
+            "dependsOn": ["^build"],
+            "cache": true
+        }
     }
 }
