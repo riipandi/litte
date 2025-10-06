@@ -152,6 +152,8 @@ Thanks to the open-source community for their amazing work and to these librarie
 
 - https://reshaped.so
 - https://ui.shadcn.com
+- https://icon.kitchen
+- https://iconoir.com
 
 ## License
 

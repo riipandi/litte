@@ -1,0 +1,38 @@
+{
+    "name": "Litte",
+    "short_name": "litte",
+    "description": "UI components that you can use everywhere, designed for flexibility",
+    "start_url": "/?source=pwa",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/favicons/favicon.ico",
+            "type": "image/x-icon",
+            "sizes": "16x16 32x32"
+        },
+        {
+            "src": "/favicons/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/favicons/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/favicons/icon-192-maskable.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/favicons/icon-512-maskable.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        }
+    ],
+    "background_color": "#ffffff",
+    "theme_color": "#0D614D"
+}
