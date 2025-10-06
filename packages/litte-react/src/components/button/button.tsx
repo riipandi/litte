@@ -8,8 +8,6 @@ export const Button = createComponent({
   elementClass: LitteButton,
   tagName: 'litte-button',
   react: React,
-  events: {
-    onclick: 'click',
-  },
+  events: {},
   displayName: 'Button',
 })

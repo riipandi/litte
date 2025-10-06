@@ -1,6 +1,6 @@
 {
     "name": "@litte/react",
-    "version": "0.0.26",
+    "version": "0.0.27",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -63,6 +63,7 @@
         "@litte/progress-bar": "workspace:*",
         "@litte/progress-indicator": "workspace:*",
         "@litte/radio": "workspace:*",
+        "@litte/scrim": "workspace:*",
         "@litte/select": "workspace:*",
         "@litte/skeleton": "workspace:*",
         "@litte/slider": "workspace:*",

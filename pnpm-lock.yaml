@@ -1845,6 +1845,9 @@ importers:
       '@litte/radio':
         specifier: workspace:*
         version: link:../litte-components/radio
+      '@litte/scrim':
+        specifier: workspace:*
+        version: link:../litte-components/scrim
       '@litte/select':
         specifier: workspace:*
         version: link:../litte-components/select

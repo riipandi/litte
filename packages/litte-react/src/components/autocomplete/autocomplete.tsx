@@ -1,0 +1,13 @@
+'use client'
+
+import { createComponent } from '@lit/react'
+import { LitteAutocomplete } from '@litte/autocomplete'
+import * as React from 'react'
+
+export const Autocomplete = createComponent({
+  elementClass: LitteAutocomplete,
+  tagName: 'litte-autocomplete',
+  react: React,
+  events: {},
+  displayName: 'Autocomplete',
+})
