@@ -21,8 +21,7 @@
             "import": "./dist/index.js",
             "default": "./dist/index.js"
         },
-        "./default/tailwind.css": "./dist/themes/default/tailwind.css",
-        "./default/theme.css": "./dist/themes/default/theme.min.css"
+        "./default/*": "./dist/themes/default/*"
     },
     "scripts": {
         "buildx": "vite build",
