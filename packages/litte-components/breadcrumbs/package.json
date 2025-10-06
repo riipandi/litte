@@ -1,6 +1,6 @@
 {
     "name": "@litte/breadcrumbs",
-    "version": "0.0.27",
+    "version": "0.0.28",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",

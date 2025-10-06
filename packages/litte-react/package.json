@@ -1,6 +1,6 @@
 {
     "name": "@litte/react",
-    "version": "0.0.27",
+    "version": "0.0.28",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -13,9 +13,230 @@
     "bugs": {
         "url": "https://github.com/riipandi/litte/issues"
     },
+    "sideEffects": false,
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "exports": {
-        ".": "./dist/index.js",
-        "./button": "./dist/button/index.js"
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        },
+        "./action-bar": {
+            "types": "./dist/components/action-bar/index.d.ts",
+            "import": "./dist/components/action-bar/index.js",
+            "default": "./dist/components/action-bar/index.js"
+        },
+        "./alert": {
+            "types": "./dist/components/alert/index.d.ts",
+            "import": "./dist/components/alert/index.js",
+            "default": "./dist/components/alert/index.js"
+        },
+        "./autocomplete": {
+            "types": "./dist/components/autocomplete/index.d.ts",
+            "import": "./dist/components/autocomplete/index.js",
+            "default": "./dist/components/autocomplete/index.js"
+        },
+        "./avatar": {
+            "types": "./dist/components/avatar/index.d.ts",
+            "import": "./dist/components/avatar/index.js",
+            "default": "./dist/components/avatar/index.js"
+        },
+        "./badge": {
+            "types": "./dist/components/badge/index.d.ts",
+            "import": "./dist/components/badge/index.js",
+            "default": "./dist/components/badge/index.js"
+        },
+        "./breadcrumbs": {
+            "types": "./dist/components/breadcrumbs/index.d.ts",
+            "import": "./dist/components/breadcrumbs/index.js",
+            "default": "./dist/components/breadcrumbs/index.js"
+        },
+        "./button": {
+            "types": "./dist/components/button/index.d.ts",
+            "import": "./dist/components/button/index.js",
+            "default": "./dist/components/button/index.js"
+        },
+        "./calendar": {
+            "types": "./dist/components/calendar/index.d.ts",
+            "import": "./dist/components/calendar/index.js",
+            "default": "./dist/components/calendar/index.js"
+        },
+        "./card": {
+            "types": "./dist/components/card/index.d.ts",
+            "import": "./dist/components/card/index.js",
+            "default": "./dist/components/card/index.js"
+        },
+        "./carousel": {
+            "types": "./dist/components/carousel/index.d.ts",
+            "import": "./dist/components/carousel/index.js",
+            "default": "./dist/components/carousel/index.js"
+        },
+        "./checkbox": {
+            "types": "./dist/components/checkbox/index.d.ts",
+            "import": "./dist/components/checkbox/index.js",
+            "default": "./dist/components/checkbox/index.js"
+        },
+        "./context-menu": {
+            "types": "./dist/components/context-menu/index.d.ts",
+            "import": "./dist/components/context-menu/index.js",
+            "default": "./dist/components/context-menu/index.js"
+        },
+        "./divider": {
+            "types": "./dist/components/divider/index.d.ts",
+            "import": "./dist/components/divider/index.js",
+            "default": "./dist/components/divider/index.js"
+        },
+        "./dropdown-menu": {
+            "types": "./dist/components/dropdown-menu/index.d.ts",
+            "import": "./dist/components/dropdown-menu/index.js",
+            "default": "./dist/components/dropdown-menu/index.js"
+        },
+        "./element": {
+            "types": "./dist/components/element/index.d.ts",
+            "import": "./dist/components/element/index.js",
+            "default": "./dist/components/element/index.js"
+        },
+        "./file-upload": {
+            "types": "./dist/components/file-upload/index.d.ts",
+            "import": "./dist/components/file-upload/index.js",
+            "default": "./dist/components/file-upload/index.js"
+        },
+        "./hotkey": {
+            "types": "./dist/components/hotkey/index.d.ts",
+            "import": "./dist/components/hotkey/index.js",
+            "default": "./dist/components/hotkey/index.js"
+        },
+        "./link": {
+            "types": "./dist/components/link/index.d.ts",
+            "import": "./dist/components/link/index.js",
+            "default": "./dist/components/link/index.js"
+        },
+        "./loader": {
+            "types": "./dist/components/loader/index.d.ts",
+            "import": "./dist/components/loader/index.js",
+            "default": "./dist/components/loader/index.js"
+        },
+        "./menu-item": {
+            "types": "./dist/components/menu-item/index.d.ts",
+            "import": "./dist/components/menu-item/index.js",
+            "default": "./dist/components/menu-item/index.js"
+        },
+        "./modal-dialog": {
+            "types": "./dist/components/modal-dialog/index.d.ts",
+            "import": "./dist/components/modal-dialog/index.js",
+            "default": "./dist/components/modal-dialog/index.js"
+        },
+        "./number-field": {
+            "types": "./dist/components/number-field/index.d.ts",
+            "import": "./dist/components/number-field/index.js",
+            "default": "./dist/components/number-field/index.js"
+        },
+        "./overlay": {
+            "types": "./dist/components/overlay/index.d.ts",
+            "import": "./dist/components/overlay/index.js",
+            "default": "./dist/components/overlay/index.js"
+        },
+        "./pagination": {
+            "types": "./dist/components/pagination/index.d.ts",
+            "import": "./dist/components/pagination/index.js",
+            "default": "./dist/components/pagination/index.js"
+        },
+        "./pin-field": {
+            "types": "./dist/components/pin-field/index.d.ts",
+            "import": "./dist/components/pin-field/index.js",
+            "default": "./dist/components/pin-field/index.js"
+        },
+        "./popover": {
+            "types": "./dist/components/popover/index.d.ts",
+            "import": "./dist/components/popover/index.js",
+            "default": "./dist/components/popover/index.js"
+        },
+        "./progress-bar": {
+            "types": "./dist/components/progress-bar/index.d.ts",
+            "import": "./dist/components/progress-bar/index.js",
+            "default": "./dist/components/progress-bar/index.js"
+        },
+        "./progress-indicator": {
+            "types": "./dist/components/progress-indicator/index.d.ts",
+            "import": "./dist/components/progress-indicator/index.js",
+            "default": "./dist/components/progress-indicator/index.js"
+        },
+        "./radio": {
+            "types": "./dist/components/radio/index.d.ts",
+            "import": "./dist/components/radio/index.js",
+            "default": "./dist/components/radio/index.js"
+        },
+        "./scrim": {
+            "types": "./dist/components/scrim/index.d.ts",
+            "import": "./dist/components/scrim/index.js",
+            "default": "./dist/components/scrim/index.js"
+        },
+        "./select": {
+            "types": "./dist/components/select/index.d.ts",
+            "import": "./dist/components/select/index.js",
+            "default": "./dist/components/select/index.js"
+        },
+        "./skeleton": {
+            "types": "./dist/components/skeleton/index.d.ts",
+            "import": "./dist/components/skeleton/index.js",
+            "default": "./dist/components/skeleton/index.js"
+        },
+        "./slider": {
+            "types": "./dist/components/slider/index.d.ts",
+            "import": "./dist/components/slider/index.js",
+            "default": "./dist/components/slider/index.js"
+        },
+        "./stepper": {
+            "types": "./dist/components/stepper/index.d.ts",
+            "import": "./dist/components/stepper/index.js",
+            "default": "./dist/components/stepper/index.js"
+        },
+        "./switch": {
+            "types": "./dist/components/switch/index.d.ts",
+            "import": "./dist/components/switch/index.js",
+            "default": "./dist/components/switch/index.js"
+        },
+        "./table": {
+            "types": "./dist/components/table/index.d.ts",
+            "import": "./dist/components/table/index.js",
+            "default": "./dist/components/table/index.js"
+        },
+        "./tabs": {
+            "types": "./dist/components/tabs/index.d.ts",
+            "import": "./dist/components/tabs/index.js",
+            "default": "./dist/components/tabs/index.js"
+        },
+        "./text-area": {
+            "types": "./dist/components/text-area/index.d.ts",
+            "import": "./dist/components/text-area/index.js",
+            "default": "./dist/components/text-area/index.js"
+        },
+        "./text-field": {
+            "types": "./dist/components/text-field/index.d.ts",
+            "import": "./dist/components/text-field/index.js",
+            "default": "./dist/components/text-field/index.js"
+        },
+        "./timeline": {
+            "types": "./dist/components/timeline/index.d.ts",
+            "import": "./dist/components/timeline/index.js",
+            "default": "./dist/components/timeline/index.js"
+        },
+        "./toast": {
+            "types": "./dist/components/toast/index.d.ts",
+            "import": "./dist/components/toast/index.js",
+            "default": "./dist/components/toast/index.js"
+        },
+        "./toggle-button": {
+            "types": "./dist/components/toggle-button/index.d.ts",
+            "import": "./dist/components/toggle-button/index.js",
+            "default": "./dist/components/toggle-button/index.js"
+        },
+        "./tooltip": {
+            "types": "./dist/components/tooltip/index.d.ts",
+            "import": "./dist/components/tooltip/index.js",
+            "default": "./dist/components/tooltip/index.js"
+        }
     },
     "scripts": {
         "build": "vite build",
