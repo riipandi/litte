@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { overlayStyles } from './overlay.css'
 
 @customElement('litte-overlay')
 export class Overlay extends LitteElement {
-  static styles = overlayStyles
+  static styles: CSSResult = overlayStyles
 
   @property({ type: Boolean })
   disabled = false

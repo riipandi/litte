@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { pinFieldStyles } from './pin-field.css'
 
 @customElement('litte-pin-field')
 export class PinField extends LitteElement {
-  static styles = pinFieldStyles
+  static styles: CSSResult = pinFieldStyles
 
   @property({ type: Boolean })
   disabled = false

@@ -1,6 +1,6 @@
 import { LitteElement } from '@litte/element'
 import { clsx } from 'clsx'
-import { html, nothing } from 'lit'
+import { type CSSResult, html, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'
 import { styleMap } from 'lit/directives/style-map.js'
@@ -9,7 +9,7 @@ import type { ButtonProps } from './button.types'
 
 @customElement('litte-button')
 export class LitteButton extends LitteElement implements ButtonProps {
-  static styles = buttonStyles
+  static styles: CSSResult = buttonStyles
 
   /** Button type attribute */
   @property({ type: String, reflect: true })

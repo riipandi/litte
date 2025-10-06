@@ -1,0 +1,29 @@
+{
+    "name": "@repo/rolldown-config",
+    "version": "0.0.25",
+    "type": "module",
+    "license": "MIT",
+    "main": "./index.js",
+    "exports": {
+        ".": {
+            "import": "./index.js",
+            "default": "./index.js"
+        }
+    },
+    "scripts": {
+        "lint": "biome lint . --write",
+        "check": "biome check . --write",
+        "cleanup": "pnpm dlx del-cli node_modules .turbo"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.5",
+        "rolldown": "1.0.0-beta.41",
+        "rolldown-plugin-dts": "^0.16.11"
+    },
+    "peerDependencies": {
+        "rolldown": "1.0.0-beta.41"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { modalDialogStyles } from './modal-dialog.css'
 
 @customElement('litte-modal-dialog')
 export class ModalDialog extends LitteElement {
-  static styles = modalDialogStyles
+  static styles: CSSResult = modalDialogStyles
 
   @property({ type: Boolean })
   disabled = false

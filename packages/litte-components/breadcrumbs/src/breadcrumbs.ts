@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { breadcrumbsStyles } from './breadcrumbs.css'
 
 @customElement('litte-breadcrumbs')
 export class Breadcrumbs extends LitteElement {
-  static styles = breadcrumbsStyles
+  static styles: CSSResult = breadcrumbsStyles
 
   @property({ type: Boolean })
   disabled = false

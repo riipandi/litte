@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { contextMenuStyles } from './context-menu.css'
 
 @customElement('litte-context-menu')
 export class ContextMenu extends LitteElement {
-  static styles = contextMenuStyles
+  static styles: CSSResult = contextMenuStyles
 
   @property({ type: Boolean })
   disabled = false

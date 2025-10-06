@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { tableStyles } from './table.css'
 
 @customElement('litte-table')
 export class Table extends LitteElement {
-  static styles = tableStyles
+  static styles: CSSResult = tableStyles
 
   @property({ type: Boolean })
   disabled = false

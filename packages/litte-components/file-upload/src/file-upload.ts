@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { fileUploadStyles } from './file-upload.css'
 
 @customElement('litte-file-upload')
 export class FileUpload extends LitteElement {
-  static styles = fileUploadStyles
+  static styles: CSSResult = fileUploadStyles
 
   @property({ type: Boolean })
   disabled = false

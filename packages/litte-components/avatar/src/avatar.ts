@@ -1,12 +1,12 @@
 import { LitteElement } from '@litte/element'
-import { html, nothing } from 'lit'
+import { type CSSResult, html, nothing, type TemplateResult } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { avatarStyles } from './avatar.css'
 import type { AvatarProps } from './avatar.types'
 
 @customElement('litte-avatar')
 export class Avatar extends LitteElement implements AvatarProps {
-  static styles = avatarStyles
+  static styles: CSSResult = avatarStyles
 
   @property({ type: String }) src?: string
   @property({ type: String }) alt?: string
@@ -19,7 +19,7 @@ export class Avatar extends LitteElement implements AvatarProps {
   @property({ type: Number }) size = 36
   @property({ type: String }) class?: string
 
-  render() {
+  render(): TemplateResult {
     const classes = [
       'root',
       this.squared ? '--squared' : '',

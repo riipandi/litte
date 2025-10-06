@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { dividerStyles } from './divider.css'
 
 @customElement('litte-divider')
 export class Divider extends LitteElement {
-  static styles = dividerStyles
+  static styles: CSSResult = dividerStyles
 
   @property({ type: Boolean })
   disabled = false

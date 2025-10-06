@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { progressIndicatorStyles } from './progress-indicator.css'
 
 @customElement('litte-progress-indicator')
 export class ProgressIndicator extends LitteElement {
-  static styles = progressIndicatorStyles
+  static styles: CSSResult = progressIndicatorStyles
 
   @property({ type: Boolean })
   disabled = false

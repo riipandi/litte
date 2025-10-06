@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { toastStyles } from './toast.css'
 
 @customElement('litte-toast')
 export class Toast extends LitteElement {
-  static styles = toastStyles
+  static styles: CSSResult = toastStyles
 
   @property({ type: Boolean })
   disabled = false

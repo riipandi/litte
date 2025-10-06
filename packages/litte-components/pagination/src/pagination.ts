@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { paginationStyles } from './pagination.css'
 
 @customElement('litte-pagination')
 export class Pagination extends LitteElement {
-  static styles = paginationStyles
+  static styles: CSSResult = paginationStyles
 
   @property({ type: Boolean })
   disabled = false

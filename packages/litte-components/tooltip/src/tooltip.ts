@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { tooltipStyles } from './tooltip.css'
 
 @customElement('litte-tooltip')
 export class Tooltip extends LitteElement {
-  static styles = tooltipStyles
+  static styles: CSSResult = tooltipStyles
 
   @property({ type: Boolean })
   disabled = false

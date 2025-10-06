@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { selectStyles } from './select.css'
 
 @customElement('litte-select')
 export class Select extends LitteElement {
-  static styles = selectStyles
+  static styles: CSSResult = selectStyles
 
   @property({ type: Boolean })
   disabled = false

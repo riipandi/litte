@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { autocompleteStyles } from './autocomplete.css'
 
 @customElement('litte-autocomplete')
 export class Autocomplete extends LitteElement {
-  static styles = autocompleteStyles
+  static styles: CSSResult = autocompleteStyles
 
   @property({ type: Boolean })
   disabled = false

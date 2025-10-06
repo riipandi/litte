@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { skeletonStyles } from './skeleton.css'
 
 @customElement('litte-skeleton')
 export class Skeleton extends LitteElement {
-  static styles = skeletonStyles
+  static styles: CSSResult = skeletonStyles
 
   @property({ type: Boolean })
   disabled = false

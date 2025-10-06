@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { switchStyles } from './switch.css'
 
 @customElement('litte-switch')
 export class Switch extends LitteElement {
-  static styles = switchStyles
+  static styles: CSSResult = switchStyles
 
   @property({ type: Boolean })
   disabled = false

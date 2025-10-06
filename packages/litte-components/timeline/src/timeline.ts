@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { timelineStyles } from './timeline.css'
 
 @customElement('litte-timeline')
 export class Timeline extends LitteElement {
-  static styles = timelineStyles
+  static styles: CSSResult = timelineStyles
 
   @property({ type: Boolean })
   disabled = false

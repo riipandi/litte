@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { popoverStyles } from './popover.css'
 
 @customElement('litte-popover')
 export class Popover extends LitteElement {
-  static styles = popoverStyles
+  static styles: CSSResult = popoverStyles
 
   @property({ type: Boolean })
   disabled = false

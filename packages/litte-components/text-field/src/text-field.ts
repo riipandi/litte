@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { textFieldStyles } from './text-field.css'
 
 @customElement('litte-text-field')
 export class TextField extends LitteElement {
-  static styles = textFieldStyles
+  static styles: CSSResult = textFieldStyles
 
   @property({ type: Boolean })
   disabled = false

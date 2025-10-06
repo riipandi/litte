@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { calendarStyles } from './calendar.css'
 
 @customElement('litte-calendar')
 export class Calendar extends LitteElement {
-  static styles = calendarStyles
+  static styles: CSSResult = calendarStyles
 
   @property({ type: Boolean })
   disabled = false

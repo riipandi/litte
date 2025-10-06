@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { toggleButtonStyles } from './toggle-button.css'
 
 @customElement('litte-toggle-button')
 export class ToggleButton extends LitteElement {
-  static styles = toggleButtonStyles
+  static styles: CSSResult = toggleButtonStyles
 
   @property({ type: Boolean })
   disabled = false

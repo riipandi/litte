@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { radioStyles } from './radio.css'
 
 @customElement('litte-radio')
 export class Radio extends LitteElement {
-  static styles = radioStyles
+  static styles: CSSResult = radioStyles
 
   @property({ type: Boolean })
   disabled = false

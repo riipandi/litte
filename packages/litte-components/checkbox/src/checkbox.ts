@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { checkboxStyles } from './checkbox.css'
 
 @customElement('litte-checkbox')
 export class Checkbox extends LitteElement {
-  static styles = checkboxStyles
+  static styles: CSSResult = checkboxStyles
 
   @property({ type: Boolean })
   disabled = false

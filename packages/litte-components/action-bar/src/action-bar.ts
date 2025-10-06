@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { actionBarStyles } from './action-bar.css'
 
 @customElement('litte-action-bar')
 export class ActionBar extends LitteElement {
-  static styles = actionBarStyles
+  static styles: CSSResult = actionBarStyles
 
   @property({ type: Boolean })
   disabled = false

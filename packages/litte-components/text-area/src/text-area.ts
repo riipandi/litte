@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { textAreaStyles } from './text-area.css'
 
 @customElement('litte-text-area')
 export class TextArea extends LitteElement {
-  static styles = textAreaStyles
+  static styles: CSSResult = textAreaStyles
 
   @property({ type: Boolean })
   disabled = false

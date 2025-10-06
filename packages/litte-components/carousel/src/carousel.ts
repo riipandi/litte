@@ -1,11 +1,11 @@
 import { LitteElement } from '@litte/element'
-import { html /*nothing*/ } from 'lit'
+import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { carouselStyles } from './carousel.css'
 
 @customElement('litte-carousel')
 export class Carousel extends LitteElement {
-  static styles = carouselStyles
+  static styles: CSSResult = carouselStyles
 
   @property({ type: Boolean })
   disabled = false
