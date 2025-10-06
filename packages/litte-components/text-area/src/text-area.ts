@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { textAreaStyles } from './text-area.css'
+import type { TextAreaProps } from './text-area.types'
 
 @customElement('litte-text-area')
-export class TextArea extends LitteElement {
+export class LitteTextArea extends LitteElement implements TextAreaProps {
   static styles: CSSResult = textAreaStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: TextAreaProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: TextAreaProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class TextArea extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-text-area': TextArea
+    'litte-text-area': LitteTextArea
   }
 }

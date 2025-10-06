@@ -3,12 +3,14 @@ set -euo pipefail
 
 ROOT_DIR=$(dirname "$0")
 
-# Check for --skip-install flag
+# Check for --skip-install and --force flags
 SKIP_INSTALL=0
+FORCE_OVERWRITE=0
 for arg in "$@"; do
     if [[ "$arg" == "--skip-install" ]]; then
         SKIP_INSTALL=1
-        break
+    elif [[ "$arg" == "--force" ]]; then
+        FORCE_OVERWRITE=1
     fi
 done
 
@@ -78,12 +80,16 @@ TARGET_DIR="$ROOT_DIR/packages/litte-components/$CHANGEME_COMPONENT_ID"
 
 # Check if target directory exists
 if [[ -d "$TARGET_DIR" ]]; then
-    read -rp "Target directory for $CHANGEME_COMPONENT_ID already exists. Overwrite? (y/N): " confirm
-    if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
-        echo "Aborted."
-        exit 1
+    if [[ $FORCE_OVERWRITE -eq 1 ]]; then
+        rm -rf "$TARGET_DIR"
+    else
+        read -rp "Target directory for $CHANGEME_COMPONENT_ID already exists. Overwrite? (y/N): " confirm
+        if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
+            echo "Aborted."
+            exit 1
+        fi
+        rm -rf "$TARGET_DIR"
     fi
-    rm -rf "$TARGET_DIR"
 fi
 
 # Copy stub to target
@@ -110,11 +116,15 @@ mkdir -p "$(dirname "$STORYBOOK_DEST")"
 rm -f "$TARGET_DIR/component.stories.ts"
 
 if [[ -f "$STORYBOOK_DEST" ]]; then
-    read -rp "Storybook file for $CHANGEME_COMPONENT_ID already exists. Overwrite? (y/N): " story_confirm
-    if [[ ! "$story_confirm" =~ ^[Yy]$ ]]; then
-        echo "Skipped storybook file creation."
-    else
+    if [[ $FORCE_OVERWRITE -eq 1 ]]; then
         cp "$STORYBOOK_SRC" "$STORYBOOK_DEST"
+    else
+        read -rp "Storybook file for $CHANGEME_COMPONENT_ID already exists. Overwrite? (y/N): " story_confirm
+        if [[ ! "$story_confirm" =~ ^[Yy]$ ]]; then
+            echo "Skipped storybook file creation."
+        else
+            cp "$STORYBOOK_SRC" "$STORYBOOK_DEST"
+        fi
     fi
 else
     cp "$STORYBOOK_SRC" "$STORYBOOK_DEST"

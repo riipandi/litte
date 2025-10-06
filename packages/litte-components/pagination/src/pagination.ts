@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { paginationStyles } from './pagination.css'
+import type { PaginationProps } from './pagination.types'
 
 @customElement('litte-pagination')
-export class Pagination extends LitteElement {
+export class LittePagination extends LitteElement implements PaginationProps {
   static styles: CSSResult = paginationStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: PaginationProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: PaginationProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Pagination extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-pagination': Pagination
+    'litte-pagination': LittePagination
   }
 }

@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { tabsStyles } from './tabs.css'
+import type { TabsProps } from './tabs.types'
 
 @customElement('litte-tabs')
-export class Tabs extends LitteElement {
+export class LitteTabs extends LitteElement implements TabsProps {
   static styles: CSSResult = tabsStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: TabsProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: TabsProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Tabs extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-tabs': Tabs
+    'litte-tabs': LitteTabs
   }
 }

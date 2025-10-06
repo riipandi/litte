@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { calendarStyles } from './calendar.css'
+import type { CalendarProps } from './calendar.types'
 
 @customElement('litte-calendar')
-export class Calendar extends LitteElement {
+export class LitteCalendar extends LitteElement implements CalendarProps {
   static styles: CSSResult = calendarStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: CalendarProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: CalendarProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Calendar extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-calendar': Calendar
+    'litte-calendar': LitteCalendar
   }
 }

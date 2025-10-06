@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { tableStyles } from './table.css'
+import type { TableProps } from './table.types'
 
 @customElement('litte-table')
-export class Table extends LitteElement {
+export class LitteTable extends LitteElement implements TableProps {
   static styles: CSSResult = tableStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: TableProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: TableProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Table extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-table': Table
+    'litte-table': LitteTable
   }
 }

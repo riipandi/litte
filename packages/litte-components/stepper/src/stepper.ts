@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { stepperStyles } from './stepper.css'
+import type { StepperProps } from './stepper.types'
 
 @customElement('litte-stepper')
-export class Stepper extends LitteElement {
+export class LitteStepper extends LitteElement implements StepperProps {
   static styles: CSSResult = stepperStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: StepperProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: StepperProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Stepper extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-stepper': Stepper
+    'litte-stepper': LitteStepper
   }
 }

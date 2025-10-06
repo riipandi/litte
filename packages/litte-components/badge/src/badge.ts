@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { badgeStyles } from './badge.css'
+import type { BadgeProps } from './badge.types'
 
 @customElement('litte-badge')
-export class Badge extends LitteElement {
+export class LitteBadge extends LitteElement implements BadgeProps {
   static styles: CSSResult = badgeStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: BadgeProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: BadgeProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Badge extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-badge': Badge
+    'litte-badge': LitteBadge
   }
 }

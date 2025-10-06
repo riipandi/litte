@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { progressBarStyles } from './progress-bar.css'
+import type { ProgressBarProps } from './progress-bar.types'
 
 @customElement('litte-progress-bar')
-export class ProgressBar extends LitteElement {
+export class LitteProgressBar extends LitteElement implements ProgressBarProps {
   static styles: CSSResult = progressBarStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: ProgressBarProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: ProgressBarProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class ProgressBar extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-progress-bar': ProgressBar
+    'litte-progress-bar': LitteProgressBar
   }
 }

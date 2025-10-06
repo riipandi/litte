@@ -2,7 +2,7 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { CHANGEME_COMPONENT_STYLES } from './CHANGEME_COMPONENT_ID.css'
-import { CHANGEME_COMPONENT_NAMEProps } from './CHANGEME_COMPONENT_ID.types'
+import type { CHANGEME_COMPONENT_NAMEProps } from './CHANGEME_COMPONENT_ID.types'
 
 @customElement('litte-CHANGEME_COMPONENT_ID')
 export class LitteCHANGEME_COMPONENT_NAME

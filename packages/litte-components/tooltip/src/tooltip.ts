@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { tooltipStyles } from './tooltip.css'
+import type { TooltipProps } from './tooltip.types'
 
 @customElement('litte-tooltip')
-export class Tooltip extends LitteElement {
+export class LitteTooltip extends LitteElement implements TooltipProps {
   static styles: CSSResult = tooltipStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: TooltipProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: TooltipProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Tooltip extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-tooltip': Tooltip
+    'litte-tooltip': LitteTooltip
   }
 }

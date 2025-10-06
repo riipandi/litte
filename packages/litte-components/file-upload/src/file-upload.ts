@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { fileUploadStyles } from './file-upload.css'
+import type { FileUploadProps } from './file-upload.types'
 
 @customElement('litte-file-upload')
-export class FileUpload extends LitteElement {
+export class LitteFileUpload extends LitteElement implements FileUploadProps {
   static styles: CSSResult = fileUploadStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: FileUploadProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: FileUploadProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class FileUpload extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-file-upload': FileUpload
+    'litte-file-upload': LitteFileUpload
   }
 }

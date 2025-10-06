@@ -1,6 +1,6 @@
 {
     "name": "storybook",
-    "version": "0.0.25",
+    "version": "0.0.26",
     "type": "module",
     "private": true,
     "scripts": {
@@ -41,6 +41,7 @@
         "@litte/progress-bar": "workspace:*",
         "@litte/progress-indicator": "workspace:*",
         "@litte/radio": "workspace:*",
+        "@litte/scrim": "workspace:*",
         "@litte/select": "workspace:*",
         "@litte/skeleton": "workspace:*",
         "@litte/slider": "workspace:*",

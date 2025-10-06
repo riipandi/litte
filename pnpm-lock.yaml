@@ -223,6 +223,9 @@ importers:
       '@litte/radio':
         specifier: workspace:*
         version: link:../litte-components/radio
+      '@litte/scrim':
+        specifier: workspace:*
+        version: link:../litte-components/scrim
       '@litte/select':
         specifier: workspace:*
         version: link:../litte-components/select
@@ -1243,6 +1246,40 @@ importers:
         specifier: 'catalog:'
         version: 5.9.3
 
+  packages/litte-components/scrim:
+    dependencies:
+      '@litte/element':
+        specifier: workspace:*
+        version: link:../../litte-element
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
+      lit:
+        specifier: ^3.3.1
+        version: 3.3.1
+    devDependencies:
+      '@biomejs/biome':
+        specifier: ^2.2.5
+        version: 2.2.5
+      '@repo/rollup-config':
+        specifier: workspace:*
+        version: link:../../../internal/rollup-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../../internal/typescript-config
+      '@types/node':
+        specifier: ^24.7.0
+        version: 24.7.0
+      rollup:
+        specifier: ^4.52.4
+        version: 4.52.4
+      tslib:
+        specifier: 2.8.1
+        version: 2.8.1
+      typescript:
+        specifier: 'catalog:'
+        version: 5.9.3
+
   packages/litte-components/select:
     dependencies:
       '@litte/element':
@@ -1977,6 +2014,9 @@ importers:
       '@litte/radio':
         specifier: workspace:*
         version: link:../litte-components/radio
+      '@litte/scrim':
+        specifier: workspace:*
+        version: link:../litte-components/scrim
       '@litte/select':
         specifier: workspace:*
         version: link:../litte-components/select

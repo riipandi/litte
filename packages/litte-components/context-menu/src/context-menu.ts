@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { contextMenuStyles } from './context-menu.css'
+import type { ContextMenuProps } from './context-menu.types'
 
 @customElement('litte-context-menu')
-export class ContextMenu extends LitteElement {
+export class LitteContextMenu extends LitteElement implements ContextMenuProps {
   static styles: CSSResult = contextMenuStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: ContextMenuProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: ContextMenuProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class ContextMenu extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-context-menu': ContextMenu
+    'litte-context-menu': LitteContextMenu
   }
 }

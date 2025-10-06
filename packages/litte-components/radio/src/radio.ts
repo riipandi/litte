@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { radioStyles } from './radio.css'
+import type { RadioProps } from './radio.types'
 
 @customElement('litte-radio')
-export class Radio extends LitteElement {
+export class LitteRadio extends LitteElement implements RadioProps {
   static styles: CSSResult = radioStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: RadioProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: RadioProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Radio extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-radio': Radio
+    'litte-radio': LitteRadio
   }
 }

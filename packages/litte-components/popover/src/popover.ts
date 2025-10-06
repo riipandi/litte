@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { popoverStyles } from './popover.css'
+import type { PopoverProps } from './popover.types'
 
 @customElement('litte-popover')
-export class Popover extends LitteElement {
+export class LittePopover extends LitteElement implements PopoverProps {
   static styles: CSSResult = popoverStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: PopoverProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: PopoverProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Popover extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-popover': Popover
+    'litte-popover': LittePopover
   }
 }

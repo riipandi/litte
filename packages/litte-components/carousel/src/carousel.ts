@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { carouselStyles } from './carousel.css'
+import type { CarouselProps } from './carousel.types'
 
 @customElement('litte-carousel')
-export class Carousel extends LitteElement {
+export class LitteCarousel extends LitteElement implements CarouselProps {
   static styles: CSSResult = carouselStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: CarouselProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: CarouselProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Carousel extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-carousel': Carousel
+    'litte-carousel': LitteCarousel
   }
 }

@@ -5,7 +5,7 @@ import { avatarStyles } from './avatar.css'
 import type { AvatarProps } from './avatar.types'
 
 @customElement('litte-avatar')
-export class Avatar extends LitteElement implements AvatarProps {
+export class LitteAvatar extends LitteElement implements AvatarProps {
   static styles: CSSResult = avatarStyles
 
   @property({ type: String }) src?: string
@@ -54,6 +54,6 @@ export class Avatar extends LitteElement implements AvatarProps {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-avatar': Avatar
+    'litte-avatar': LitteAvatar
   }
 }

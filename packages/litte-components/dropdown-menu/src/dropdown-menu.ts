@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { dropdownMenuStyles } from './dropdown-menu.css'
+import type { DropdownMenuProps } from './dropdown-menu.types'
 
 @customElement('litte-dropdown-menu')
-export class DropdownMenu extends LitteElement {
+export class LitteDropdownMenu extends LitteElement implements DropdownMenuProps {
   static styles: CSSResult = dropdownMenuStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: DropdownMenuProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: DropdownMenuProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class DropdownMenu extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-dropdown-menu': DropdownMenu
+    'litte-dropdown-menu': LitteDropdownMenu
   }
 }

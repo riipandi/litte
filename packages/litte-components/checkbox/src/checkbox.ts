@@ -2,16 +2,19 @@ import { LitteElement } from '@litte/element'
 import { type CSSResult, html /*nothing*/ } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { checkboxStyles } from './checkbox.css'
+import type { CheckboxProps } from './checkbox.types'
 
 @customElement('litte-checkbox')
-export class Checkbox extends LitteElement {
+export class LitteCheckbox extends LitteElement implements CheckboxProps {
   static styles: CSSResult = checkboxStyles
 
-  @property({ type: Boolean })
-  disabled = false
+  /** Disable the button */
+  @property({ type: Boolean, reflect: true })
+  accessor disabled: CheckboxProps['disabled'] = false
 
-  @property({ type: Boolean })
-  loading = false
+  /** Show loading state */
+  @property({ type: Boolean, reflect: true })
+  accessor loading: CheckboxProps['loading'] = false
 
   render() {
     return html`/* Add html element implementation here*/`
@@ -20,6 +23,6 @@ export class Checkbox extends LitteElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'litte-checkbox': Checkbox
+    'litte-checkbox': LitteCheckbox
   }
 }

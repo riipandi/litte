@@ -5,3 +5,8 @@ packages:
 
 catalog:
   typescript: ^5.9.3
+
+autoInstallPeers: true
+dedupePeerDependents: true
+dlxCacheMaxAge: 60
+updateNotifier: true
