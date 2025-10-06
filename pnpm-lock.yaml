@@ -1838,9 +1838,6 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
-      litte:
-        specifier: workspace:*
-        version: link:../litte-all-in-one
       react:
         specifier: ^19.2.0
         version: 19.2.0
