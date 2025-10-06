@@ -1,8 +1,6 @@
 import type { Preview } from '@storybook/web-components-vite'
 import { withThemeProvider } from './decorators'
-import { light } from './themes'
-
-const customComponents = {}
+import { customTheme } from './themes'
 
 const preview: Preview = {
   parameters: {
@@ -66,8 +64,7 @@ const preview: Preview = {
       },
     },
     docs: {
-      theme: light, // default, will be updated by decorator
-      components: customComponents,
+      theme: customTheme,
       defaultName: 'Documentation',
       toc: {
         headingSelector: 'h2, h3',
@@ -94,15 +91,16 @@ const preview: Preview = {
         items: [
           { title: 'Default', value: 'default', icon: 'circlehollow' },
           { title: 'Slate', value: 'slate', icon: 'circle' },
+          // Add more themes here when available...
         ],
       },
     },
-    colorMode: {
-      name: 'Color Mode',
-      description: 'Color mode (dark or light)',
+    colorScheme: {
+      name: 'Color Scheme',
+      description: 'Color scheme (dark or light)',
       defaultValue: 'system',
       toolbar: {
-        title: 'Color Mode',
+        title: 'Color Scheme',
         icon: 'paintbrush',
         dynamicTitle: false,
         showName: false,
