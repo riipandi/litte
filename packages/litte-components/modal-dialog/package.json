@@ -1,6 +1,6 @@
 {
     "name": "@litte/modal-dialog",
-    "version": "0.0.19",
+    "version": "0.0.20",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
