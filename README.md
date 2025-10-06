@@ -35,9 +35,9 @@
 ---
 
 > [!WARNING]
-> This project is under active development, so you may encounter bugs.
-> Please review the release notes thoroughly before updating, as breaking
-> changes can occur, use at your own risk!
+> This project is actively under development and not yet ready for production, so you may encounter bugs.
+> Please read the release notes carefully before updating, as breaking changes can occur.
+> Use at your own risk!
 
 ---
 
