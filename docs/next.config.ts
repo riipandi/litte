@@ -15,6 +15,11 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['@litte/react'],
   },
+  // Fix for issue: `[webpack.cache.PackFileCacheStrategy] Serializing big strings`
+  webpack: (config: { cache: { type: string } }) => {
+    config.cache = { type: 'memory' }
+    return config
+  },
 }
 
 export default nextConfig
