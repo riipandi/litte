@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./docs/public/brand/text-mark-light.svg" width="192" height="96" alt="🔥 Litte"/>
+    <img src="./docs/public/brand/text-mark-light.svg" width="240" height="120" alt="🔥 Litte"/>
 </p>
 
 <p align="center">
