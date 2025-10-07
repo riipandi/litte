@@ -1,6 +1,6 @@
 {
     "name": "litte-ui",
-    "version": "0.0.37",
+    "version": "0.0.38",
     "license": "MIT",
     "type": "module",
     "scripts": {
@@ -16,6 +16,8 @@
         "update-deps": "npm-check-updates --configFileName .ncurc.json",
         "publish:dry": "turbo publish:dry --filter=@litte/* --filter=litte",
         "publish:npm": "turbo publish:npm --filter=@litte/* --filter=litte",
+        "prepare:demo": "cat packages/litte-all-in-one/dist/umd/index.js > demo/litte.js",
+        "demo": "pnpm -s prepare:demo && serve -p 80 -d demo --no-clipboard --cors",
         "filter": "pnpm --silent --filter",
         "format": "biome format . --write",
         "lint": "turbo lint --cache=local:rw,remote:r",
@@ -25,6 +27,7 @@
     "devDependencies": {
         "@biomejs/biome": "^2.2.5",
         "npm-check-updates": "^19.0.0",
+        "serve": "^14.2.5",
         "turbo": "^2.5.8",
         "typescript": "catalog:"
     },

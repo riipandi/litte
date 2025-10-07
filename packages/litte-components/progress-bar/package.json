@@ -1,6 +1,6 @@
 {
     "name": "@litte/progress-bar",
-    "version": "0.0.37",
+    "version": "0.0.38",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",

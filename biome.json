@@ -8,7 +8,7 @@
     },
     "files": {
         "ignoreUnknown": true,
-        "includes": ["**", "!stub/*"]
+        "includes": ["**", "!stub/*", "!demo/*"]
     },
     "formatter": {
         "enabled": true,

@@ -1,0 +1,10 @@
+body {
+    background: var(--lt-color-background-page);
+    color: var(--lt-color-foreground-neutral);
+    padding: var(--lt-unit-x4);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
