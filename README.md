@@ -87,6 +87,7 @@ This monorepo contains everything you need to build, share, and maintain modern 
 - ⏳ [`@litte/progress-bar`](https://npm.im/@litte/progress-bar): Litte Progress Bar component
 - ⏳ [`@litte/progress-indicator`](https://npm.im/@litte/progress-indicator): Litte Progress Indicator component
 - ⏳ [`@litte/radio`](https://npm.im/@litte/radio): Litte Radio component
+- ⏳ [`@litte/scrim`](https://npm.im/@litte/scrim): Litte Scrim component
 - ⏳ [`@litte/select`](https://npm.im/@litte/select): Litte Select component
 - ⏳ [`@litte/skeleton`](https://npm.im/@litte/skeleton): Litte Skeleton component
 - ⏳ [`@litte/slider`](https://npm.im/@litte/slider): Litte Slider component
