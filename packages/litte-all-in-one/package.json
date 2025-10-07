@@ -1,6 +1,6 @@
 {
     "name": "litte",
-    "version": "0.0.35",
+    "version": "0.0.36",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -13,20 +13,22 @@
     "bugs": {
         "url": "https://github.com/riipandi/litte/issues"
     },
-    "main": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "main": "./dist/esm/index.js",
+    "types": "./dist/esm/index.d.ts",
     "exports": {
         ".": {
-            "types": "./dist/index.d.ts",
-            "import": "./dist/index.js",
-            "default": "./dist/index.js"
+            "types": "./dist/esm/index.d.ts",
+            "import": "./dist/esm/index.js",
+            "default": "./dist/esm/index.js"
         }
     },
     "scripts": {
-        "build": "rollup --config rollup.config.js",
+        "build:types": "tsc --project tsconfig.json",
+        "build:js": "rollup --config rollup.config.js",
+        "build": "pnpm -s build:types && pnpm -s build:js",
         "dev": "rollup --watch --config rollup.config.js",
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
-        "prepublishOnly": "NODE_ENV=production rollup --config rollup.config.js",
+        "prepublishOnly": "pnpm -s build:types && pnpm -s build:js",
         "publish:dry": "NODE_ENV=production pnpm publish --dry-run --no-git-checks",
         "publish:npm": "NODE_ENV=production pnpm publish --no-git-checks",
         "lint": "biome lint . --write",
@@ -84,9 +86,12 @@
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.5",
-        "@repo/rollup-config": "workspace:*",
         "@repo/typescript-config": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.2",
+        "@rollup/plugin-typescript": "^12.1.4",
         "@types/node": "^24.7.0",
+        "rollup-plugin-esbuild": "^6.2.1",
+        "rollup-plugin-summary": "^3.0.1",
         "rollup": "^4.52.4",
         "tslib": "2.8.1",
         "typescript": "catalog:"

@@ -3,7 +3,10 @@
     "extends": "@repo/typescript-config/base.json",
     "compilerOptions": {
         "composite": false,
-        "outDir": "dist",
+        "declaration": true,
+        "declarationDir": "dist/esm",
+        "emitDeclarationOnly": true,
+        "outDir": "dist/esm",
         "rootDir": "src"
     },
     "include": ["src"],

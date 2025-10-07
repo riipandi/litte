@@ -16,9 +16,13 @@ foundation for building modern web interfaces.
 
 Visit the [homepage][litte-homepage] for more detailed information.
 
-**Compatibility**: ESM-only.
+**Compatibility**: ESM and UMD.
 
-## Installation
+## Usage
+
+### ESM (Using Bundler)
+
+Install via npm, pnpm, or yarn:
 
 ```sh
 # Install with npm
@@ -31,12 +35,25 @@ pnpm add litte
 yarn add litte
 ```
 
-## Usage
-
 Import the component in your JavaScript or TypeScript file:
 
 ```ts
 import 'litte'
+```
+
+### UMD (Browser via CDN)
+
+Add to your `<head>`:
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@litte/themes@PKG_VERSION/dist/bundle.min.css">
+<script src="https://unpkg.com/litte@PKG_VERSION/dist/umd/index.js"></script>
+```
+
+Use in your HTML:
+
+```html
+<litte-button variant="primary">Click Me</litte-button>
 ```
 
 For detailed usage examples, see the [Litte Documentation](https://litte.dev/docs).
