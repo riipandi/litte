@@ -5,31 +5,36 @@ import { minify } from 'rollup-plugin-esbuild'
 import summary from 'rollup-plugin-summary'
 import pkg from './package.json' with { type: 'json' }
 
-// Get peer dependencies from package.json
 const peerDeps = Object.keys(pkg.peerDependencies || {})
+const externalDeps = [...peerDeps, 'lit', 'lit/decorators.js', 'lit/directives/style-map.js']
 const isProduction = process.env.NODE_ENV === 'production'
 
-export default defineConfig({
-  plugins: [
-    typescript({
-      tsconfig: './tsconfig.json',
-      declaration: false,
-      declarationDir: undefined,
-      declarationMap: false,
-      emitDeclarationOnly: false,
-      outDir: undefined,
-    }),
-    resolve({
-      extensions: ['.ts', '.js', '.mjs'],
-      exportConditions: ['es2023', 'module', 'import', 'default'],
-      preferBuiltins: false,
-    }),
-    minify({ format: 'esm', target: 'es2023', minify: isProduction }),
-    summary({ showBrotliSize: true, showMinifiedSize: true, showGzippedSize: true }),
-  ],
-  input: ['./src/index.ts'],
-  output: [
-    {
+const commonPlugins = [
+  typescript({
+    tsconfig: './tsconfig.json',
+    declaration: false,
+    declarationDir: undefined,
+    declarationMap: false,
+    emitDeclarationOnly: false,
+    outDir: undefined,
+  }),
+  resolve({
+    extensions: ['.ts', '.js', '.mjs'],
+    exportConditions: ['es2023', 'module', 'import', 'default'],
+    preferBuiltins: false,
+  }),
+  summary({
+    showBrotliSize: true,
+    showMinifiedSize: true,
+    showGzippedSize: true,
+  }),
+]
+
+export default defineConfig([
+  // ESM build (exclude peer deps)
+  {
+    input: ['./src/index.ts'],
+    output: {
       format: 'es',
       dir: 'dist/esm',
       preserveModules: true,
@@ -37,19 +42,30 @@ export default defineConfig({
       entryFileNames: '[name].js',
       sourcemap: true,
     },
-    {
+    preserveEntrySignatures: 'strict',
+    external: externalDeps,
+    plugins: [
+      ...commonPlugins,
+      minify({
+        format: 'esm',
+        target: 'es2023',
+        minify: isProduction,
+      }),
+    ],
+  },
+  // UMD build (bundle all)
+  {
+    input: ['./src/index.ts'],
+    output: {
+      name: 'litte',
       format: 'umd',
       file: 'dist/umd/index.js',
-      name: 'litte',
-      globals: {
-        lit: 'lit',
-        'lit/decorators.js': 'litDecorators',
-        'lit/directives/style-map.js': 'styleMap',
-      },
-      sourcemap: true,
+      minifyInternalExports: true,
+      sourcemap: false,
+      compact: true,
     },
-  ],
-  preserveEntrySignatures: 'strict',
-  // External dependencies that shouldn't be bundled because it will increase bundle size
-  external: [...peerDeps, 'lit', 'lit/decorators.js', 'lit/directives/style-map.js'],
-})
+    preserveEntrySignatures: 'strict',
+    external: [], // bundle everything
+    plugins: [...commonPlugins],
+  },
+])
