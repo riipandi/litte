@@ -165,6 +165,16 @@ Thanks to the open-source community for their amazing work and to these librarie
 - https://icon.kitchen
 - https://iconoir.com
 
+## Thanks
+
+<p align="left" style="margin-top: 20px;">
+  <a href="https://www.netlify.com/?utm_source=litte&utm_medium=npmjs&utm_campaign=README" style="margin-right: 12px;">
+    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Netlify" height="36px" />
+  </a>
+</p>
+
+Thanks to [Netlify](https://www.netlify.com/) for providing hosting for the website and Storybook of this project.
+
 ## License
 
 This project is released under the [MIT License][license-mit]. For a quick summary of the MIT License terms,

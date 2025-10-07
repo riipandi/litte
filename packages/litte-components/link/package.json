@@ -1,6 +1,6 @@
 {
     "name": "@litte/link",
-    "version": "0.0.31",
+    "version": "0.0.32",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",

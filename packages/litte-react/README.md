@@ -38,6 +38,16 @@ import { Button } from '@litte/react/button'
 
 For detailed usage examples, see the [Litte Documentation](https://litte.dev/docs).
 
+## Thanks
+
+<p align="left" style="margin-top: 20px;">
+  <a href="https://www.netlify.com/?utm_source=litte&utm_medium=npmjs&utm_campaign=README" style="margin-right: 12px;">
+    <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Netlify" height="36px" />
+  </a>
+</p>
+
+Thanks to [Netlify](https://www.netlify.com/) for providing hosting for the website and Storybook of this project.
+
 ## License
 
 Licensed under the [MIT license][license-mit].
