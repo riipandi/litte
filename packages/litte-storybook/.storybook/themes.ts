@@ -5,8 +5,10 @@ export const customTheme = create({
   base: 'dark',
   brandTitle: 'UI Components',
   brandUrl: '/',
+  brandImage: `https://raw.githubusercontent.com/riipandi/litte/main/docs/public/brand/text-mark-dark.png`,
   brandTarget: '_self',
-  fontBase: 'Inter, BlinkMacSystemFont, -apple-system, Roboto, Aptos, Helvetica, Arial, sans-serif',
+  fontBase: `"Mona Sans Variable", BlinkMacSystemFont, -apple-system, Roboto, Aptos, Helvetica, Arial, sans-serif`,
+  fontCode: `"Maple Mono", SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace`,
   appBorderRadius: 4,
   inputBorderRadius: 4,
   // Color palette for Storybook UI

@@ -139,7 +139,7 @@ const themeNeoBrutalist: ThemeConfig = {
       },
       backgroundPrimaryFaded: {
         light: '#dbeafe', // blue-100
-        dark: '#0c1330', // custom deep blue
+        dark: '#312e81', // blue-900,
       },
       borderPrimary: {
         light: '#181818',
@@ -279,7 +279,7 @@ const themeNeoBrutalist: ThemeConfig = {
       },
       rgbBackgroundPrimaryFaded: {
         light: '219, 234, 254',
-        dark: '12, 19, 48',
+        dark: '49, 46, 129', // rgb dari #312e81
       },
       rgbBackgroundCritical: {
         light: '239, 68, 68',

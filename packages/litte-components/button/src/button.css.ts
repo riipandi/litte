@@ -31,7 +31,9 @@ export const buttonStyles = css`
   }
 
   .litte-button--primary:hover:not(:disabled) {
-    background-color: var(--lt-color-border-primary);
+    background-color: var(--lt-color-background-primary);
+    color: var(--lt-color-white);
+    opacity: 0.9;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
 
