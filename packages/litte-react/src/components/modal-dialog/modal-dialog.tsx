@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteModalDialog } from '@litte/modal-dialog'
 import * as React from 'react'

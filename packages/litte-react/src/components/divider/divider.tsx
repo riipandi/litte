@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteDivider } from '@litte/divider'
 import * as React from 'react'

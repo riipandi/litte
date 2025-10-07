@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteCheckbox } from '@litte/checkbox'
 import * as React from 'react'

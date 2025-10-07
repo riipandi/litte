@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteTextField } from '@litte/text-field'
 import * as React from 'react'

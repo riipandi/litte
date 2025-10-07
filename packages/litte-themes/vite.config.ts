@@ -21,7 +21,6 @@ const inputGlob = Object.fromEntries(
 )
 
 export default defineConfig({
-  server: { port: 5174, strictPort: true, host: false },
   plugins: [
     dts({ include: ['src'] }), // DTS plugin used for generating TypeScript declaration files
     tsconfigPaths(), // tsconfigPaths plugin used for resolving TypeScript paths
@@ -60,7 +59,6 @@ export default defineConfig({
         chunkFileNames: '_chunks/[name].js',
         assetFileNames: 'assets/[name].[ext]',
         reexportProtoFromExternal: false,
-        banner: "'use client';",
       },
     },
   },

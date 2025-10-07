@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteAutocomplete } from '@litte/autocomplete'
 import * as React from 'react'

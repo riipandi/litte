@@ -21,7 +21,6 @@ const inputGlob = Object.fromEntries(
 )
 
 export default defineConfig({
-  server: { port: 5173, strictPort: true, host: false },
   plugins: [
     react(),
     dts({ include: ['src'] }),

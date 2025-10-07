@@ -1,8 +1,9 @@
 {
     "$schema": "https://turborepo.com/schema.json",
-    "ui": "stream",
+    "noUpdateNotifier": true,
     "concurrency": "24",
-    "globalEnv": ["NODE_ENV"],
+    "globalEnv": ["NODE_ENV", "TZ", "CI"],
+    "ui": "stream",
     "tasks": {
         "build": {
             "dependsOn": ["^build"],

@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteHotkey } from '@litte/hotkey'
 import * as React from 'react'

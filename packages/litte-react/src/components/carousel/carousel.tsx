@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteCarousel } from '@litte/carousel'
 import * as React from 'react'

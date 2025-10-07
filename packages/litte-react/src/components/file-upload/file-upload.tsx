@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteFileUpload } from '@litte/file-upload'
 import * as React from 'react'

@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteTextArea } from '@litte/text-area'
 import * as React from 'react'

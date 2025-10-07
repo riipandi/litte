@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteDropdownMenu } from '@litte/dropdown-menu'
 import * as React from 'react'

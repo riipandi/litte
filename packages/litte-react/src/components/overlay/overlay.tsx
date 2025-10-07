@@ -1,5 +1,3 @@
-'use client'
-
 import { createComponent } from '@lit/react'
 import { LitteOverlay } from '@litte/overlay'
 import * as React from 'react'
