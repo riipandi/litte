@@ -1,11 +1,23 @@
+import { LitteThemes } from '@litte/themes'
 import type { Preview } from '@storybook/web-components-vite'
 import { withThemeProvider } from './decorators'
 import { customTheme } from './themes'
 
 // Load the application stylesheets and themes
-import '@litte/themes/default/bundle.css'
-import '@litte/themes/fresh/bundle.css'
-import '@litte/themes/indigo/bundle.css'
+import '@litte/themes/default/theme.css'
+import '@litte/themes/fresh/theme.css'
+import '@litte/themes/indigo/theme.css'
+
+const themeItems = LitteThemes.map((theme) => ({
+  title: theme.name,
+  value: theme.id,
+  icon: 'circle',
+}))
+
+// Set a specific icon for the default theme
+if (themeItems.length > 0) {
+  themeItems[0].icon = 'circlehollow'
+}
 
 const preview: Preview = {
   parameters: {
@@ -93,12 +105,7 @@ const preview: Preview = {
         icon: 'component',
         dynamicTitle: false,
         showName: false,
-        items: [
-          { title: 'Default', value: 'default', icon: 'circlehollow' },
-          { title: 'Indigo', value: 'indigo', icon: 'circle' },
-          { title: 'Fresh', value: 'fresh', icon: 'circle' },
-          // Add more themes here when available...
-        ],
+        items: themeItems,
       },
     },
     colorScheme: {

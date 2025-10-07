@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { Bree_Serif, JetBrains_Mono, Mona_Sans } from 'next/font/google'
 
 // Load the application stylesheets and themes
-import '@litte/themes/fresh/bundle.min.css'
+import '@litte/themes/fresh/theme.min.css'
 
 import './globals.css'
 

@@ -21,9 +21,24 @@
             "import": "./dist/index.js",
             "default": "./dist/index.js"
         },
-        "./default/*": "./dist/themes/default/*",
-        "./fresh/*": "./dist/themes/fresh/*",
-        "./indigo/*": "./dist/themes/indigo/*"
+        "./default": {
+            "types": "./dist/themes/default.d.ts",
+            "import": "./dist/themes/default.js",
+            "default": "./dist/themes/default.js"
+        },
+        "./fresh": {
+            "types": "./dist/themes/fresh.d.ts",
+            "import": "./dist/themes/fresh.js",
+            "default": "./dist/themes/fresh.js"
+        },
+        "./indigo": {
+            "types": "./dist/themes/indigo.d.ts",
+            "import": "./dist/themes/indigo.js",
+            "default": "./dist/themes/indigo.js"
+        },
+        "./default/*": "./dist/default/*",
+        "./fresh/*": "./dist/fresh/*",
+        "./indigo/*": "./dist/indigo/*"
     },
     "scripts": {
         "build": "vite build",
