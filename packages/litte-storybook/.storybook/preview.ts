@@ -4,9 +4,7 @@ import { withThemeProvider } from './decorators'
 import { customTheme } from './themes'
 
 // Load the application stylesheets and themes
-import '@litte/themes/default/theme.css'
-import '@litte/themes/fresh/theme.css'
-import '@litte/themes/indigo/theme.css'
+import '@litte/themes/bundle.css'
 
 const themeItems = LitteThemes.map((theme) => ({
   title: theme.name,

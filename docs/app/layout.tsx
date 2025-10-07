@@ -3,8 +3,7 @@ import type { Metadata } from 'next'
 import { Bree_Serif, JetBrains_Mono, Mona_Sans } from 'next/font/google'
 
 // Load the application stylesheets and themes
-import '@litte/themes/fresh/theme.min.css'
-
+import '@litte/themes/bundle.css'
 import './globals.css'
 
 const fontSans = Mona_Sans({ variable: '--font-sans', subsets: ['latin'] })

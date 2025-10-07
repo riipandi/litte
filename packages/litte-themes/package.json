@@ -36,6 +36,8 @@
             "import": "./dist/themes/indigo.js",
             "default": "./dist/themes/indigo.js"
         },
+        "./bundle.css": "./dist/bundle.css",
+        "./bundle.min.css": "./dist/bundle.min.css",
         "./default/*": "./dist/default/*",
         "./fresh/*": "./dist/fresh/*",
         "./indigo/*": "./dist/indigo/*"
