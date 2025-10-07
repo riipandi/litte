@@ -116,8 +116,8 @@
     --lt-z-index-fixed: 200;
 }
 
-[data-lt-theme="default"][data-lt-color-mode="light"],
-[data-lt-theme*=" default "][data-lt-color-mode="light"] {
+[data-lt-theme="default"][data-lt-scheme="light"],
+[data-lt-theme*=" default "][data-lt-scheme="light"] {
     --lt-color-background-primary: #5a58f2;
     --lt-color-background-primary-faded: #ecebfe;
     --lt-color-border-primary: #3b38ed;
@@ -173,8 +173,8 @@
     --lt-color-rgb-background-page-faded: 249.00750000000002, 249.00750000000002, 250.9965;
 }
 
-[data-lt-theme="default"][data-lt-color-mode="dark"],
-[data-lt-theme*=" default "][data-lt-color-mode="dark"] {
+[data-lt-theme="default"][data-lt-scheme="dark"],
+[data-lt-theme*=" default "][data-lt-scheme="dark"] {
     --lt-color-background-primary: #524fea;
     --lt-color-background-primary-faded: #252544;
     --lt-color-border-primary: #8c8bf3;

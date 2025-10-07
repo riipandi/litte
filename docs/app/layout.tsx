@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<React.PropsWithChildren>) {
   return (
-    <html lang="en" data-lt-theme="default" data-lt-color-mode="light" suppressHydrationWarning>
+    <html lang="en" data-lt-theme="default" data-lt-scheme="light" suppressHydrationWarning>
       <head>
         <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
         <link rel="icon" type="image/png" href="/favicons/icon-512.png" sizes="512x512" />

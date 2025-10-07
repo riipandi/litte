@@ -8,7 +8,7 @@ export function getSystemColorScheme(): 'light' | 'dark' {
 // Set theme attributes for preview HTML
 function setThemeAttrs(theme: string, colorScheme: string) {
   if (theme) document.documentElement.setAttribute('data-lt-theme', theme)
-  if (colorScheme) document.documentElement.setAttribute('data-lt-color-mode', colorScheme)
+  if (colorScheme) document.documentElement.setAttribute('data-lt-scheme', colorScheme)
 }
 
 // Listen for system color scheme changes
