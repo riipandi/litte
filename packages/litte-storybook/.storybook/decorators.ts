@@ -1,3 +1,4 @@
+import { AvailableThemes } from '@litte/themes'
 import type { Decorator, StoryContext } from '@storybook/web-components-vite'
 
 // Utility: get color scheme from system
@@ -26,10 +27,8 @@ export const withThemeProvider: Decorator = (Story, context: StoryContext) => {
   const theme = context.globals.theme || context.parameters.theme || 'default'
   const colorScheme = context.globals.colorScheme || context.parameters.colorScheme || 'system'
 
-  const validThemes = ['default', 'slate']
   const validColorSchemes = ['light', 'dark', 'system']
-
-  const selectedTheme = validThemes.includes(theme) ? theme : 'default'
+  const selectedTheme = AvailableThemes.includes(theme) ? theme : 'default'
   let selectedColorScheme = validColorSchemes.includes(colorScheme) ? colorScheme : 'system'
 
   // If colorScheme is system, listen for OS changes

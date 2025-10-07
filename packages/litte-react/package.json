@@ -1,6 +1,6 @@
 {
     "name": "@litte/react",
-    "version": "0.0.30",
+    "version": "0.0.31",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -306,7 +306,7 @@
         "@repo/typescript-config": "workspace:*",
         "@repo/vite-plugin-tailwindcss": "workspace:*",
         "@types/node": "^24.7.0",
-        "@types/react": "19.2.0",
+        "@types/react": "19.2.2",
         "@vitejs/plugin-react": "^5.0.4",
         "fast-glob": "^3.3.3",
         "typescript": "catalog:",

@@ -2,8 +2,10 @@ import type { Preview } from '@storybook/web-components-vite'
 import { withThemeProvider } from './decorators'
 import { customTheme } from './themes'
 
-// Load the application CSS
-import '@litte/themes/default/theme.css'
+// Load the application stylesheets and themes
+import '@litte/themes/default/bundle.css'
+import '@litte/themes/fresh/bundle.css'
+import '@litte/themes/indigo/bundle.css'
 
 const preview: Preview = {
   parameters: {
@@ -93,7 +95,8 @@ const preview: Preview = {
         showName: false,
         items: [
           { title: 'Default', value: 'default', icon: 'circlehollow' },
-          { title: 'Slate', value: 'slate', icon: 'circle' },
+          { title: 'Indigo', value: 'indigo', icon: 'circle' },
+          { title: 'Fresh', value: 'fresh', icon: 'circle' },
           // Add more themes here when available...
         ],
       },

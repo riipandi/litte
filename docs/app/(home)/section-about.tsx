@@ -25,7 +25,7 @@ export default function SectionAbout() {
                 your own components, Litte offers a solid foundation for building modern web
                 interfaces.
               </p>
-              <Button variant="outline" size="xl" color="white">
+              <Button variant="primary" size="xl" color="white">
                 Read more
               </Button>
               {/* <Link
