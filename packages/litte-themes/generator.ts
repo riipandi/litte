@@ -187,6 +187,13 @@ function buildTailwindCss(theme: ThemeConfig): string {
 }
 
 /**
+ * Builds a combined CSS string from all themes.
+ */
+function buildBundleCss(themes: ThemeConfig[]): string {
+  return themes.map(buildThemeCss).join('\n\n')
+}
+
+/**
  * Minifies a CSS string using cssnano.
  */
 async function minifyCss(css: string, from?: string) {
@@ -195,9 +202,7 @@ async function minifyCss(css: string, from?: string) {
 
 /**
  * Main function to generate theme CSS files in the specified output directory.
- * Accepts a single theme or an array of themes.
- * Generates both regular and minified CSS if requested.
- * Also generates media.css, media.min.css, tailwind.css, and tailwind.min.css using theme values.
+ * Now also generates bundle.css and bundle.min.css containing all themes.
  */
 async function generateThemeCss(options: GenerateThemeCssOptions) {
   const { theme, outputDir, minify = false } = options
@@ -233,6 +238,17 @@ async function generateThemeCss(options: GenerateThemeCssOptions) {
       }
     })
   )
+
+  // Generate bundle.css and bundle.min.css in outputDir
+  if (themes.length > 1) {
+    const bundleCss = buildBundleCss(themes)
+    const bundleCssPath = path.join(outputDir, 'bundle.css')
+    await fs.writeFile(bundleCssPath, bundleCss)
+    if (minify) {
+      const minifiedBundle = await minifyCss(bundleCss, bundleCssPath)
+      await fs.writeFile(path.join(outputDir, 'bundle.min.css'), minifiedBundle)
+    }
+  }
 }
 
 /**

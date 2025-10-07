@@ -12,7 +12,7 @@ import { LitteThemes } from './src'
 
 // Find all TypeScript source files except type declarations
 const globFiles = await fg.glob(['src/**/*.{ts,tsx}'], {
-  ignore: ['src/**/*.d.ts'],
+  ignore: ['src/**/*.d.ts', 'src/types.ts'],
   onlyFiles: true,
 })
 
