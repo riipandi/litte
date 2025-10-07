@@ -1,0 +1,181 @@
+/*
+ * Litte default theme (light mode only)
+ * Author: Aris Ripandi <aris@duck.com>
+ * License: MIT <https://opensource.org/license/mit>
+ *
+ * This file provides the default light theme for the Litte Design System.
+ * It defines CSS variables for typography, spacing, color, and layout.
+ * To use a different theme, import from the `@litte/themes` package or
+ * create your own custom theme. Read the documentation for more details.
+ */
+
+:root {
+    --lt-font-family-title:
+        "Mona Sans", BlinkMacSystemFont, -apple-system, Roboto, Aptos, Helvetica, Arial, sans-serif;
+    --lt-font-family-body:
+        "Mona Sans", BlinkMacSystemFont, -apple-system, Roboto, Aptos, Helvetica, Arial, sans-serif;
+    --lt-font-family-monospace:
+        "Monaspace Argon", SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace;
+    --lt-font-weight-regular: 400;
+    --lt-font-weight-medium: 500;
+    --lt-font-weight-semibold: 600;
+    --lt-font-weight-bold: 700;
+    --lt-font-weight-extrabold: 800;
+    --lt-font-weight-black: 900;
+    --lt-font-size-title1: 6rem;
+    --lt-line-height-title1: 6.25rem;
+    --lt-font-family-title1: var(--lt-font-family-title);
+    --lt-font-weight-title1: var(--lt-font-weight-extrabold);
+    --lt-letter-spacing-title1: normal;
+    --lt-font-size-title2: 5rem;
+    --lt-line-height-title2: 5.25rem;
+    --lt-font-family-title2: var(--lt-font-family-title);
+    --lt-font-weight-title2: var(--lt-font-weight-extrabold);
+    --lt-letter-spacing-title2: normal;
+    --lt-font-size-title3: 4rem;
+    --lt-line-height-title3: 4.25rem;
+    --lt-font-family-title3: var(--lt-font-family-title);
+    --lt-font-weight-title3: var(--lt-font-weight-extrabold);
+    --lt-letter-spacing-title3: normal;
+    --lt-font-size-title4: 3.5rem;
+    --lt-line-height-title4: 3.75rem;
+    --lt-font-family-title4: var(--lt-font-family-title);
+    --lt-font-weight-title4: var(--lt-font-weight-bold);
+    --lt-letter-spacing-title4: normal;
+    --lt-font-size-title5: 3rem;
+    --lt-line-height-title5: 3.25rem;
+    --lt-font-family-title5: var(--lt-font-family-title);
+    --lt-font-weight-title5: var(--lt-font-weight-bold);
+    --lt-letter-spacing-title5: normal;
+    --lt-font-size-title6: 2.25rem;
+    --lt-line-height-title6: 2.5rem;
+    --lt-font-family-title6: var(--lt-font-family-title);
+    --lt-font-weight-title6: var(--lt-font-weight-bold);
+    --lt-letter-spacing-title6: normal;
+    --lt-font-size-featured1: 2rem;
+    --lt-line-height-featured1: 2.5rem;
+    --lt-font-family-featured1: var(--lt-font-family-body);
+    --lt-letter-spacing-featured1: normal;
+    --lt-font-size-featured2: 1.5rem;
+    --lt-line-height-featured2: 2rem;
+    --lt-font-family-featured2: var(--lt-font-family-body);
+    --lt-letter-spacing-featured2: normal;
+    --lt-font-size-featured3: 1.25rem;
+    --lt-line-height-featured3: 1.75rem;
+    --lt-font-family-featured3: var(--lt-font-family-body);
+    --lt-letter-spacing-featured3: normal;
+    --lt-font-size-body1: 1.125rem;
+    --lt-line-height-body1: 1.75rem;
+    --lt-font-family-body1: var(--lt-font-family-body);
+    --lt-letter-spacing-body1: normal;
+    --lt-font-size-body2: 1rem;
+    --lt-line-height-body2: 1.5rem;
+    --lt-font-family-body2: var(--lt-font-family-body);
+    --lt-letter-spacing-body2: normal;
+    --lt-font-size-body3: 0.875rem;
+    --lt-line-height-body3: 1.25rem;
+    --lt-font-family-body3: var(--lt-font-family-body);
+    --lt-letter-spacing-body3: normal;
+    --lt-font-size-caption1: 0.75rem;
+    --lt-line-height-caption1: 1rem;
+    --lt-font-family-caption1: var(--lt-font-family-body);
+    --lt-letter-spacing-caption1: normal;
+    --lt-font-size-caption2: 0.625rem;
+    --lt-line-height-caption2: 0.75rem;
+    --lt-font-family-caption2: var(--lt-font-family-body);
+    --lt-letter-spacing-caption2: normal;
+    --lt-unit-base: 4px;
+    --lt-unit-x1: 4px;
+    --lt-unit-x2: 8px;
+    --lt-unit-x3: 12px;
+    --lt-unit-x4: 16px;
+    --lt-unit-x5: 20px;
+    --lt-unit-x6: 24px;
+    --lt-unit-x7: 28px;
+    --lt-unit-x8: 32px;
+    --lt-unit-x9: 36px;
+    --lt-unit-x10: 40px;
+    --lt-radius-small: 4px;
+    --lt-radius-medium: 8px;
+    --lt-radius-large: 12px;
+    --lt-shadow-raised: 0px 1px 5px -4px rgba(0, 0, 0, 0.5), 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+    --lt-shadow-overlay:
+        0px 5px 10px 0px rgba(0, 0, 0, 0.05), 0px 15px 25px 0px rgba(0, 0, 0, 0.07);
+    --lt-viewport-m-min: 660;
+    --lt-viewport-l-min: 900;
+    --lt-viewport-xl-min: 1280;
+    --lt-duration-rapid: 100ms;
+    --lt-duration-fast: 200ms;
+    --lt-duration-medium: 300ms;
+    --lt-duration-slow: 400ms;
+    --lt-easing-standard: cubic-bezier(0.4, 0, 0.2, 1);
+    --lt-easing-accelerate: cubic-bezier(0.4, 0, 1, 1);
+    --lt-easing-decelerate: cubic-bezier(0, 0, 0.2, 1);
+    --lt-z-index-relative: 10;
+    --lt-z-index-absolute: 100;
+    --lt-z-index-fixed: 200;
+    --lt-color-brand: oklch(0.55 0.24 262.67);
+    --lt-color-brand-hover: oklch(0.5 0.24 262.67);
+    --lt-color-brand-active: oklch(0.45 0.24 262.67);
+    --lt-color-brand-contrast: oklch(1 0 0);
+    --lt-color-white: oklch(1 0 0);
+    --lt-color-black: oklch(0 0 0);
+    --lt-color-gray-100: oklch(0.98 0 262.67);
+    --lt-color-gray-200: oklch(0.95 0 262.67);
+    --lt-color-gray-300: oklch(0.92 0 262.67);
+    --lt-color-gray-400: oklch(0.84 0 262.67);
+    --lt-color-gray-500: oklch(0.7 0 262.67);
+    --lt-color-gray-600: oklch(0.5 0 262.67);
+    --lt-color-gray-700: oklch(0.35 0 262.67);
+    --lt-color-gray-800: oklch(0.2 0 262.67);
+    --lt-color-gray-900: oklch(0.1 0 262.67);
+    --lt-color-text-primary: oklch(0.2 0.01 262.67);
+    --lt-color-text-secondary: oklch(0.45 0.01 262.67);
+    --lt-color-text-inverse: oklch(1 0 0);
+    --lt-color-text-disabled: oklch(0.84 0 262.67);
+    --lt-color-background-primary: oklch(0.55 0.24 262.67);
+    --lt-color-background-primary-faded: oklch(0.97 0.02 262.67);
+    --lt-color-background-secondary: oklch(1 0 262.67);
+    --lt-color-background-tertiary: oklch(0.92 0.01 262.67);
+    --lt-color-background-critical: oklch(0.59 0.22 26.97);
+    --lt-color-background-critical-faded: oklch(0.97 0.02 26.97);
+    --lt-color-background-warning: oklch(0.83 0.2 80);
+    --lt-color-background-warning-faded: oklch(0.97 0.04 80);
+    --lt-color-background-positive: oklch(0.53 0.13 153.78);
+    --lt-color-background-positive-faded: oklch(0.97 0.02 153.78);
+    --lt-color-background-neutral: oklch(0.92 0.01 262.67);
+    --lt-color-background-neutral-faded: oklch(0.97 0.005 262.67);
+    --lt-color-background-disabled: oklch(0.95 0 262.67);
+    --lt-color-background-disabled-faded: oklch(0.98 0 262.67);
+    --lt-color-background-elevation-base: oklch(1 0 262.67);
+    --lt-color-background-elevation-raised: oklch(1 0 262.67);
+    --lt-color-background-elevation-overlay: oklch(1 0 262.67);
+    --lt-color-background-page: oklch(1 0 262.67);
+    --lt-color-background-page-faded: oklch(0.97 0 262.67);
+    --lt-color-border-primary: oklch(0.47 0.24 262.67);
+    --lt-color-border-primary-faded: oklch(0.92 0.03 262.67);
+    --lt-color-border-critical: oklch(0.51 0.22 26.97);
+    --lt-color-border-critical-faded: oklch(0.92 0.03 26.97);
+    --lt-color-border-warning: oklch(0.75 0.2 80);
+    --lt-color-border-warning-faded: oklch(0.92 0.05 80);
+    --lt-color-border-positive: oklch(0.45 0.13 153.78);
+    --lt-color-border-positive-faded: oklch(0.92 0.03 153.78);
+    --lt-color-border-neutral: oklch(0 0.01 262.67 / 0.12);
+    --lt-color-border-neutral-faded: oklch(0 0.005 262.67 / 0.08);
+    --lt-color-border-disabled: oklch(0 0.01 262.67 / 0.06);
+    --lt-color-foreground-primary: oklch(0.5 0.24 262.67);
+    --lt-color-foreground-critical: oklch(0.5 0.22 26.97);
+    --lt-color-foreground-warning: oklch(0.5 0.2 80);
+    --lt-color-foreground-positive: oklch(0.5 0.13 153.78);
+    --lt-color-foreground-neutral: oklch(0.2 0.01 262.67);
+    --lt-color-foreground-neutral-faded: oklch(0.45 0.01 262.67);
+    --lt-color-foreground-disabled: oklch(0.84 0 262.67);
+    --lt-color-on-background-primary: oklch(1 0 0);
+    --lt-color-on-background-critical: oklch(1 0 0);
+    --lt-color-on-background-warning: oklch(0 0 0);
+    --lt-color-on-background-positive: oklch(1 0 0);
+    --lt-color-on-brand: oklch(1 0 0);
+    --lt-color-rgb-white: 255, 255, 255;
+    --lt-color-rgb-black: 0, 0, 0;
+    color-scheme: light;
+}

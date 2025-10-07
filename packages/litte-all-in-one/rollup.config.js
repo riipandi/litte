@@ -1,6 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
 import { defineConfig } from 'rollup'
+import copy from 'rollup-plugin-copy'
 import { minify } from 'rollup-plugin-esbuild'
 import summary from 'rollup-plugin-summary'
 import pkg from './package.json' with { type: 'json' }
@@ -66,6 +67,12 @@ export default defineConfig([
     },
     preserveEntrySignatures: 'strict',
     external: [], // bundle everything
-    plugins: [...commonPlugins],
+    plugins: [
+      ...commonPlugins,
+      copy({
+        targets: [{ src: 'src/styles.css', dest: 'dist' }],
+        hook: 'writeBundle',
+      }),
+    ],
   },
 ])

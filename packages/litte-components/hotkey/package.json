@@ -1,6 +1,6 @@
 {
     "name": "@litte/hotkey",
-    "version": "0.0.38",
+    "version": "0.0.39",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
