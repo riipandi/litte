@@ -10,12 +10,9 @@
  */
 
 :root {
-    --lt-font-family-title:
-        "Mona Sans", BlinkMacSystemFont, -apple-system, Roboto, Aptos, Helvetica, Arial, sans-serif;
-    --lt-font-family-body:
-        "Mona Sans", BlinkMacSystemFont, -apple-system, Roboto, Aptos, Helvetica, Arial, sans-serif;
-    --lt-font-family-monospace:
-        "Monaspace Argon", SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace;
+    --lt-font-family-title: -apple-system, Roboto, Aptos, Helvetica, Arial, sans-serif;
+    --lt-font-family-body: -apple-system, Roboto, Aptos, Helvetica, Arial, sans-serif;
+    --lt-font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace;
     --lt-font-weight-regular: 400;
     --lt-font-weight-medium: 500;
     --lt-font-weight-semibold: 600;

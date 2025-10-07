@@ -10,15 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Example Litte</title>
 
-    <!-- Use remote CDN (for real test) -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/@litte/themes@0.0.38/dist/bundle.min.css" /> -->
-    <!-- <link rel="stylesheet" href="https://unpkg.com/litte@0.0.38/dist/styles.css" /> -->
-    <!-- <script src="https://unpkg.com/litte@0.0.38/dist/umd/index.js"></script> -->
+    <!-- Use remote CDN (for real test, support theme switching) -->
+    <link rel="stylesheet" href="https://unpkg.com/@litte/themes@0.0.40/dist/bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/litte@0.0.40/dist/styles.css" />
+    <script src="https://unpkg.com/litte@0.0.40/dist/umd/index.js"></script>
 
     <!-- Use local files (for development) -->
-    <link rel="stylesheet" href="theme.css" />
+    <!-- <link rel="stylesheet" href="theme.css" /> -->
+    <!-- <script src="litte.js"></script> -->
+
+    <!-- Local styles for demo purpose -->
     <link rel="stylesheet" href="demo.css" />
-    <script src="litte.js"></script>
   </head>
   <body>
     <litte-button variant="primary" size="lg" onclick="console.log('Button clicked!')">
