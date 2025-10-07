@@ -134,10 +134,19 @@ pnpm dev
 If you want develop a single component alongside Storybook concurrently, run the following command:
 
 ```bash
-pnpm turbo run dev --filter=storybook --filter=@litte/COMPONENT_NAME
+pnpm dev --filter=@litte/COMPONENT_NAME
 ```
 
-Replace `COMPONENT_NAME` with the name of the component you want to work on (e.g., `@litte/button`, etc.).
+Replace `COMPONENT_NAME` with the name of the component you want to work on (for example, `button`, `card`, etc).
+This command will start both Storybook and the development server for the specified component concurrently.
+
+You can also run development servers for multiple components at once by specifying multiple `--filter` flags.
+
+For example:
+
+```bash
+pnpm dev --filter=@litte/button --filter=@litte/card
+```
 
 ### Clean
 
