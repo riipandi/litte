@@ -39,3 +39,6 @@ tmp/
 # Storybook
 *storybook.log
 storybook-static
+
+# Miscellaneous
+demo/litte.js
