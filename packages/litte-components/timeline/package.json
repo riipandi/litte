@@ -1,6 +1,6 @@
 {
     "name": "@litte/timeline",
-    "version": "0.0.32",
+    "version": "0.0.33",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",

@@ -1959,13 +1959,6 @@ importers:
         version: 7.1.9(@types/node@24.7.0)(jiti@2.6.1)(lightningcss@1.30.2)(terser@5.44.0)(yaml@2.8.1)
 
   packages/litte-themes:
-    dependencies:
-      '@litte/element':
-        specifier: workspace:*
-        version: link:../litte-element
-      lit:
-        specifier: ^3.3.1
-        version: 3.3.1
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.2.5

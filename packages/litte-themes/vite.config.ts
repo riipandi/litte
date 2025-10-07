@@ -45,7 +45,7 @@ export default defineConfig({
     cssMinify: process.env.NODE_ENV === 'production',
     outDir: resolve('dist'),
     rollupOptions: {
-      external: [...Object.keys(pkg.peerDependencies || {})],
+      external: [...Object.keys((pkg as any).peerDependencies || {})],
       input: inputGlob,
       output: {
         exports: 'named',

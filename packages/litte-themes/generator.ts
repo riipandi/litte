@@ -99,6 +99,94 @@ function buildThemeCss(theme: ThemeConfig): string {
 }
 
 /**
+ * Builds the media.css content using viewport values from the theme.
+ */
+function buildMediaCss(theme: ThemeConfig): string {
+  const v = theme.theme.viewport
+  return [
+    `@custom-media --lt-viewport-s (max-width: ${Number(v.mMin) - 1}px);`,
+    `@custom-media --lt-viewport-m (min-width: ${v.mMin}px);`,
+    `@custom-media --lt-viewport-l (min-width: ${v.lMin}px);`,
+    `@custom-media --lt-viewport-xl (min-width: ${v.xlMin}px);`,
+    '',
+  ].join('\n')
+}
+
+/**
+ * Builds the tailwind.css content using theme variables.
+ * The output maps design tokens to Tailwind-friendly custom properties.
+ */
+function buildTailwindCss(theme: ThemeConfig): string {
+  const v = theme.theme.viewport
+  const tailwindStr = `@theme inline {
+\t--background-color-primary: var(--lt-color-background-primary);
+\t--background-color-primary-faded: var(--lt-color-background-primary-faded);
+\t--border-color-primary: var(--lt-color-border-primary);
+\t--border-color-primary-faded: var(--lt-color-border-primary-faded);
+\t--text-color-primary: var(--lt-color-foreground-primary);
+\t--background-color-critical: var(--lt-color-background-critical);
+\t--background-color-critical-faded: var(--lt-color-background-critical-faded);
+\t--border-color-critical: var(--lt-color-border-critical);
+\t--border-color-critical-faded: var(--lt-color-border-critical-faded);
+\t--text-color-critical: var(--lt-color-foreground-critical);
+\t--background-color-warning: var(--lt-color-background-warning);
+\t--background-color-warning-faded: var(--lt-color-background-warning-faded);
+\t--border-color-warning: var(--lt-color-border-warning);
+\t--border-color-warning-faded: var(--lt-color-border-warning-faded);
+\t--text-color-warning: var(--lt-color-foreground-warning);
+\t--background-color-positive: var(--lt-color-background-positive);
+\t--background-color-positive-faded: var(--lt-color-background-positive-faded);
+\t--border-color-positive: var(--lt-color-border-positive);
+\t--border-color-positive-faded: var(--lt-color-border-positive-faded);
+\t--text-color-positive: var(--lt-color-foreground-positive);
+\t--background-color-neutral: var(--lt-color-background-neutral);
+\t--background-color-neutral-faded: var(--lt-color-background-neutral-faded);
+\t--border-color-neutral: var(--lt-color-border-neutral);
+\t--border-color-neutral-faded: var(--lt-color-border-neutral-faded);
+\t--text-color-neutral: var(--lt-color-foreground-neutral);
+\t--text-color-neutral-faded: var(--lt-color-foreground-neutral-faded);
+\t--background-color-disabled: var(--lt-color-background-disabled);
+\t--background-color-disabled-faded: var(--lt-color-background-disabled-faded);
+\t--border-color-disabled: var(--lt-color-border-disabled);
+\t--text-color-disabled: var(--lt-color-foreground-disabled);
+\t--background-color-elevation-base: var(--lt-color-background-elevation-base);
+\t--background-color-elevation-raised: var(--lt-color-background-elevation-raised);
+\t--background-color-elevation-overlay: var(--lt-color-background-elevation-overlay);
+\t--background-color-page: var(--lt-color-background-page);
+\t--background-color-page-faded: var(--lt-color-background-page-faded);
+\t--color-brand: var(--lt-color-brand);
+\t--color-white: var(--lt-color-white);
+\t--color-black: var(--lt-color-black);
+\t--text-color-on-primary: var(--lt-color-on-background-primary);
+\t--text-color-on-critical: var(--lt-color-on-background-critical);
+\t--text-color-on-warning: var(--lt-color-on-background-warning);
+\t--text-color-on-positive: var(--lt-color-on-background-positive);
+\t--text-color-on-neutral: var(--lt-color-on-background-neutral);
+\t--text-color-on-brand: var(--lt-color-on-brand);
+\t--radius-small: var(--lt-radius-small);
+\t--radius-medium: var(--lt-radius-medium);
+\t--radius-large: var(--lt-radius-large);
+\t--spacing-0: 0px;
+\t--spacing-x1: var(--lt-unit-x1);
+\t--spacing-x2: var(--lt-unit-x2);
+\t--spacing-x3: var(--lt-unit-x3);
+\t--spacing-x4: var(--lt-unit-x4);
+\t--spacing-x5: var(--lt-unit-x5);
+\t--spacing-x6: var(--lt-unit-x6);
+\t--spacing-x7: var(--lt-unit-x7);
+\t--spacing-x8: var(--lt-unit-x8);
+\t--spacing-x9: var(--lt-unit-x9);
+\t--spacing-x10: var(--lt-unit-x10);
+\t--shadow-raised: var(--lt-shadow-raised);
+\t--shadow-overlay: var(--lt-shadow-overlay);
+\t--breakpoint-m: ${v.mMin}px;
+\t--breakpoint-l: ${v.lMin}px;
+\t--breakpoint-xl: ${v.xlMin}px;
+}`
+  return `${tailwindStr.trim()}\n`
+}
+
+/**
  * Minifies a CSS string using cssnano.
  */
 async function minifyCss(css: string, from?: string) {
@@ -109,6 +197,7 @@ async function minifyCss(css: string, from?: string) {
  * Main function to generate theme CSS files in the specified output directory.
  * Accepts a single theme or an array of themes.
  * Generates both regular and minified CSS if requested.
+ * Also generates media.css, media.min.css, tailwind.css, and tailwind.min.css using theme values.
  */
 async function generateThemeCss(options: GenerateThemeCssOptions) {
   const { theme, outputDir, minify = false } = options
@@ -123,6 +212,24 @@ async function generateThemeCss(options: GenerateThemeCssOptions) {
       if (minify) {
         const minified = await minifyCss(css, cssPath)
         await fs.writeFile(path.join(themeDir, 'theme.min.css'), minified)
+      }
+
+      // Generate media.css
+      const mediaCss = buildMediaCss(t)
+      const mediaCssPath = path.join(themeDir, 'media.css')
+      await fs.writeFile(mediaCssPath, mediaCss)
+      if (minify) {
+        const minifiedMedia = await minifyCss(mediaCss, mediaCssPath)
+        await fs.writeFile(path.join(themeDir, 'media.min.css'), minifiedMedia)
+      }
+
+      // Generate tailwind.css
+      const tailwindCss = buildTailwindCss(t)
+      const tailwindCssPath = path.join(themeDir, 'tailwind.css')
+      await fs.writeFile(tailwindCssPath, tailwindCss)
+      if (minify) {
+        const minifiedTailwind = await minifyCss(tailwindCss, tailwindCssPath)
+        await fs.writeFile(path.join(themeDir, 'tailwind.min.css'), minifiedTailwind)
       }
     })
   )
