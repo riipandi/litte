@@ -1,4 +1,4 @@
-import { clsx } from 'clsx'
+import { clsx } from '@litte/element/utils'
 import type { Metadata } from 'next'
 import { Bree_Serif, JetBrains_Mono, Mona_Sans } from 'next/font/google'
 

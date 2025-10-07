@@ -1,5 +1,5 @@
 import { LitteElement } from '@litte/element'
-import { clsx } from 'clsx'
+import { clsx } from '@litte/element/utils'
 import { type CSSResult, html, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'

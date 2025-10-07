@@ -29,15 +29,15 @@ importers:
 
   docs:
     dependencies:
+      '@litte/element':
+        specifier: workspace:*
+        version: link:../packages/litte-element
       '@litte/react':
         specifier: workspace:*
         version: link:../packages/litte-react
       '@litte/themes':
         specifier: workspace:*
         version: link:../packages/litte-themes
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       iconoir-react:
         specifier: ^7.11.0
         version: 7.11.0(react@19.2.0)
@@ -265,9 +265,6 @@ importers:
       '@litte/tooltip':
         specifier: workspace:*
         version: link:../litte-components/tooltip
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -299,9 +296,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -333,9 +327,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -367,9 +358,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -401,9 +389,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -435,9 +420,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -469,9 +451,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -503,9 +482,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -537,9 +513,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -571,9 +544,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -605,9 +575,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -639,9 +606,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -673,9 +637,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -707,9 +668,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -741,9 +699,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -775,9 +730,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -809,9 +761,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -843,9 +792,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -877,9 +823,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -911,9 +854,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -945,9 +885,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -979,9 +916,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1013,9 +947,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1047,9 +978,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1081,9 +1009,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1115,9 +1040,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1149,9 +1071,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1183,9 +1102,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1217,9 +1133,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1251,9 +1164,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1285,9 +1195,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1319,9 +1226,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1353,9 +1257,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1387,9 +1288,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1421,9 +1319,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1455,9 +1350,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1489,9 +1381,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1523,9 +1412,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1557,9 +1443,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1591,9 +1474,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1625,9 +1505,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1659,9 +1536,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1693,9 +1567,6 @@ importers:
       '@litte/element':
         specifier: workspace:*
         version: link:../../litte-element
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       lit:
         specifier: ^3.3.1
         version: 3.3.1
@@ -1723,13 +1594,6 @@ importers:
         version: 5.9.3
 
   packages/litte-element:
-    dependencies:
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
-      lit:
-        specifier: ^3.3.1
-        version: 3.3.1
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.2.5
@@ -1743,6 +1607,9 @@ importers:
       '@types/node':
         specifier: ^24.7.0
         version: 24.7.0
+      lit:
+        specifier: ^3.3.1
+        version: 3.3.1
       rollup:
         specifier: ^4.52.4
         version: 4.52.4
@@ -1887,9 +1754,6 @@ importers:
       '@litte/tooltip':
         specifier: workspace:*
         version: link:../litte-components/tooltip
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
       react:
         specifier: ^19.2.0
         version: 19.2.0
@@ -2096,9 +1960,9 @@ importers:
 
   packages/litte-themes:
     dependencies:
-      clsx:
-        specifier: ^2.1.1
-        version: 2.1.1
+      '@litte/element':
+        specifier: workspace:*
+        version: link:../litte-element
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.2.5
@@ -3422,10 +3286,6 @@ packages:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
     engines: {node: '>=12'}
 
-  clsx@2.1.1:
-    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
-    engines: {node: '>=6'}
-
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
     engines: {node: '>=7.0.0'}
@@ -3582,8 +3442,8 @@ packages:
   duplexer@0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
 
-  electron-to-chromium@1.5.231:
-    resolution: {integrity: sha512-cyl6vqZGkEBnz/PmvFHn/u9G/hbo+FF2CNAOXriG87QOeLsUdifCZ9UbHNscE9wGdrC8XstNMli0CbQnZQ+fkA==}
+  electron-to-chromium@1.5.232:
+    resolution: {integrity: sha512-ENirSe7wf8WzyPCibqKUG1Cg43cPaxH4wRR7AJsX7MCABCHBIOFqvaYODSLKUuZdraxUTHRE/0A2Aq8BYKEHOg==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3685,8 +3545,8 @@ packages:
     resolution: {integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==}
     engines: {node: 6.* || 8.* || >= 10.*}
 
-  get-tsconfig@4.10.1:
-    resolution: {integrity: sha512-auHyJ4AgMz7vgS8Hp3N6HXSmlMdUyhSUrfBF16w153rxtLIEOE+HGqaBppczZvnHLqQJfiHotCYpNhl0lUROFQ==}
+  get-tsconfig@4.11.0:
+    resolution: {integrity: sha512-sNsqf7XKQ38IawiVGPOoAlqZo1DMrO7TU+ZcZwi7yLl7/7S0JwmoBMKz/IkUPhSoXM0Ng3vT0yB1iCe5XavDeQ==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -5902,7 +5762,7 @@ snapshots:
     dependencies:
       baseline-browser-mapping: 2.8.12
       caniuse-lite: 1.0.30001748
-      electron-to-chromium: 1.5.231
+      electron-to-chromium: 1.5.232
       node-releases: 2.0.23
       update-browserslist-db: 1.1.3(browserslist@4.26.3)
 
@@ -5956,8 +5816,6 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 7.0.0
-
-  clsx@2.1.1: {}
 
   color-convert@2.0.1:
     dependencies:
@@ -6105,7 +5963,7 @@ snapshots:
 
   duplexer@0.1.2: {}
 
-  electron-to-chromium@1.5.231: {}
+  electron-to-chromium@1.5.232: {}
 
   emoji-regex@8.0.0: {}
 
@@ -6215,7 +6073,7 @@ snapshots:
 
   get-caller-file@2.0.5: {}
 
-  get-tsconfig@4.10.1:
+  get-tsconfig@4.11.0:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
@@ -6846,7 +6704,7 @@ snapshots:
       birpc: 2.6.1
       debug: 4.4.3
       dts-resolver: 2.1.2
-      get-tsconfig: 4.10.1
+      get-tsconfig: 4.11.0
       magic-string: 0.30.19
       rolldown: 1.0.0-beta.41
     optionalDependencies:
@@ -6881,7 +6739,7 @@ snapshots:
       debug: 4.4.3
       es-module-lexer: 1.7.0
       esbuild: 0.25.10
-      get-tsconfig: 4.10.1
+      get-tsconfig: 4.11.0
       rollup: 4.52.4
       unplugin-utils: 0.2.5
     transitivePeerDependencies:

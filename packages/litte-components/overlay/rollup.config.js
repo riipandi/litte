@@ -8,5 +8,5 @@ const peerDeps = Object.keys(pkg.peerDependencies || {})
 export default defineConfig({
   ...rollupOptions,
   // External dependencies that shouldn't be bundled because it will increase bundle size
-  external: [...peerDeps, 'lit', 'lit/decorators.js', 'lit/directives/style-map.js', 'clsx'],
+  external: [...peerDeps, 'lit', 'lit/decorators.js', 'lit/directives/style-map.js'],
 })

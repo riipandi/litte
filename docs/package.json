@@ -13,8 +13,9 @@
     },
     "dependencies": {
         "@litte/react": "workspace:*",
+        "@litte/element": "workspace:*",
         "@litte/themes": "workspace:*",
-        "clsx": "^2.1.1",
+
         "iconoir-react": "^7.11.0",
         "next": "^15.5.4",
         "react": "^19.2.0",

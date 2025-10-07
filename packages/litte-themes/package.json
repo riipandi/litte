@@ -1,6 +1,6 @@
 {
     "name": "@litte/themes",
-    "version": "0.0.29",
+    "version": "0.0.30",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -34,11 +34,8 @@
         "check": "biome check . --write",
         "typecheck": "tsc --noEmit"
     },
-    "peerDependencies": {
-        "clsx": "^2.1.1"
-    },
     "dependencies": {
-        "clsx": "^2.1.1"
+        "@litte/element": "workspace:*"
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.5",

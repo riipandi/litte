@@ -1,6 +1,6 @@
 {
     "name": "@litte/element",
-    "version": "0.0.29",
+    "version": "0.0.30",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -20,6 +20,11 @@
             "types": "./dist/index.d.ts",
             "import": "./dist/index.js",
             "default": "./dist/index.js"
+        },
+        "./utils": {
+            "types": "./dist/utils/index.d.ts",
+            "import": "./dist/utils/index.js",
+            "default": "./dist/utils/index.js"
         }
     },
     "scripts": {
@@ -34,11 +39,6 @@
         "typecheck": "tsc --noEmit"
     },
     "peerDependencies": {
-        "clsx": "^2.1.1",
-        "lit": "^3.3.1"
-    },
-    "dependencies": {
-        "clsx": "^2.1.1",
         "lit": "^3.3.1"
     },
     "devDependencies": {
@@ -46,6 +46,7 @@
         "@repo/rollup-config": "workspace:*",
         "@repo/typescript-config": "workspace:*",
         "@types/node": "^24.7.0",
+        "lit": "^3.3.1",
         "rollup": "^4.52.4",
         "tslib": "2.8.1",
         "typescript": "catalog:"
