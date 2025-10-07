@@ -36,11 +36,23 @@
             "import": "./dist/themes/indigo.js",
             "default": "./dist/themes/indigo.js"
         },
+        "./macos": {
+            "types": "./dist/themes/macos.d.ts",
+            "import": "./dist/themes/macos.js",
+            "default": "./dist/themes/macos.js"
+        },
+        "./neobrutalist": {
+            "types": "./dist/themes/neobrutalist.d.ts",
+            "import": "./dist/themes/neobrutalist.js",
+            "default": "./dist/themes/neobrutalist.js"
+        },
         "./bundle.css": "./dist/bundle.css",
         "./bundle.min.css": "./dist/bundle.min.css",
         "./default/*": "./dist/default/*",
         "./fresh/*": "./dist/fresh/*",
-        "./indigo/*": "./dist/indigo/*"
+        "./indigo/*": "./dist/indigo/*",
+        "./macos/*": "./dist/macos/*",
+        "./neobrutalist/*": "./dist/neobrutalist/*"
     },
     "scripts": {
         "build": "vite build",
