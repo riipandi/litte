@@ -1,17 +1,18 @@
 // import tailwindCSSPlugin from '@repo/vite-plugin-tailwindcss'
+
+import fs from 'node:fs/promises'
 import { extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import react from '@vitejs/plugin-react'
-import fg from 'fast-glob'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import pkg from './package.json' with { type: 'json' }
 
-const globFiles = await fg.glob(['src/**/*.{ts,tsx}'], {
-  ignore: ['src/**/*.d.ts'],
-  onlyFiles: true,
-})
+const globFiles: string[] = []
+for await (const file of fs.glob('src/**/*.{ts,tsx}')) {
+  if (!file.endsWith('.d.ts')) globFiles.push(file)
+}
 
 const inputGlob = Object.fromEntries(
   globFiles.map((file) => [

@@ -1,8 +1,8 @@
 // import tailwindCSSPlugin from './plugins/tailwindcss.plugin'
 
+import fs from 'node:fs/promises'
 import { extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import fg from 'fast-glob'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import tsconfigPaths from 'vite-tsconfig-paths'
@@ -11,10 +11,10 @@ import pkg from './package.json' with { type: 'json' }
 import { LitteThemes } from './src'
 
 // Find all TypeScript source files except type declarations
-const globFiles = await fg.glob(['src/**/*.{ts,tsx}'], {
-  ignore: ['src/**/*.d.ts', 'src/types.ts'],
-  onlyFiles: true,
-})
+const globFiles: string[] = []
+for await (const file of fs.glob('src/**/*.{ts,tsx}')) {
+  if (!file.endsWith('.d.ts') && !file.endsWith('types.ts')) globFiles.push(file)
+}
 
 // Prepare input entries for Vite's library mode
 const inputGlob = Object.fromEntries(
