@@ -1,5 +1,7 @@
 # Litte Switch
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/switch/score)](https://jsr.io/@litte/switch) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/switch)](https://jsr.io/@litte/switch) -->
 [![npm version](https://img.shields.io/npm/v/@litte/switch)](https://www.npmjs.com/package/@litte/switch)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/switch)](https://www.npmjs.com/package/@litte/switch)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

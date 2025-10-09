@@ -1,5 +1,7 @@
 # Litte Pin Field
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/pin-field/score)](https://jsr.io/@litte/pin-field) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/pin-field)](https://jsr.io/@litte/pin-field) -->
 [![npm version](https://img.shields.io/npm/v/@litte/pin-field)](https://www.npmjs.com/package/@litte/pin-field)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/pin-field)](https://www.npmjs.com/package/@litte/pin-field)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

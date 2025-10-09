@@ -1,5 +1,7 @@
 # Litte Toggle Button
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/toggle-button/score)](https://jsr.io/@litte/toggle-button) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/toggle-button)](https://jsr.io/@litte/toggle-button) -->
 [![npm version](https://img.shields.io/npm/v/@litte/toggle-button)](https://www.npmjs.com/package/@litte/toggle-button)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/toggle-button)](https://www.npmjs.com/package/@litte/toggle-button)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

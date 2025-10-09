@@ -1,6 +1,6 @@
 {
     "name": "@litte/themes",
-    "version": "0.0.40",
+    "version": "0.0.41",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -58,9 +58,11 @@
         "build": "vite build",
         "dev": "vite build --watch",
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
-        "publish:dry": "NODE_ENV=production pnpm publish --dry-run --no-git-checks",
-        "publish:npm": "NODE_ENV=production pnpm publish --no-git-checks",
         "prepublishOnly": "NODE_ENV=production vite build",
+        "publish:npm": "NODE_ENV=production pnpm publish --no-git-checks",
+        "publish:npm-dry": "NODE_ENV=production pnpm publish --no-git-checks --dry-run",
+        "publish:jsr": "pnpm dlx jsr publish --allow-dirty",
+        "publish:jsr-dry": "pnpm dlx jsr publish --allow-dirty --dry-run",
         "lint": "biome lint . --write",
         "check": "biome check . --write",
         "typecheck": "tsc --noEmit"

@@ -1,5 +1,7 @@
 # Litte Stepper
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/stepper/score)](https://jsr.io/@litte/stepper) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/stepper)](https://jsr.io/@litte/stepper) -->
 [![npm version](https://img.shields.io/npm/v/@litte/stepper)](https://www.npmjs.com/package/@litte/stepper)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/stepper)](https://www.npmjs.com/package/@litte/stepper)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

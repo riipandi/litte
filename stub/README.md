@@ -1,5 +1,7 @@
 # CHANGEME_COMPONENT_TITLE
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/CHANGEME_COMPONENT_ID/score)](https://jsr.io/@litte/CHANGEME_COMPONENT_ID) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/CHANGEME_COMPONENT_ID)](https://jsr.io/@litte/CHANGEME_COMPONENT_ID) -->
 [![npm version](https://img.shields.io/npm/v/@litte/CHANGEME_COMPONENT_ID)](https://www.npmjs.com/package/@litte/CHANGEME_COMPONENT_ID)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/CHANGEME_COMPONENT_ID)](https://www.npmjs.com/package/@litte/CHANGEME_COMPONENT_ID)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

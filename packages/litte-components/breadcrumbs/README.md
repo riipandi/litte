@@ -1,5 +1,7 @@
 # Litte Breadcrumbs
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/breadcrumbs/score)](https://jsr.io/@litte/breadcrumbs) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/breadcrumbs)](https://jsr.io/@litte/breadcrumbs) -->
 [![npm version](https://img.shields.io/npm/v/@litte/breadcrumbs)](https://www.npmjs.com/package/@litte/breadcrumbs)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/breadcrumbs)](https://www.npmjs.com/package/@litte/breadcrumbs)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

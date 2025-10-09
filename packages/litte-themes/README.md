@@ -1,5 +1,7 @@
 # Litte Themes
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/themes/score)](https://jsr.io/@litte/themes) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/themes)](https://jsr.io/@litte/themes) -->
 [![npm version](https://img.shields.io/npm/v/@litte/themes)](https://www.npmjs.com/package/@litte/themes)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/themes)](https://www.npmjs.com/package/@litte/themes)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

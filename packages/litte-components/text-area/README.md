@@ -1,5 +1,7 @@
 # Litte Text Area
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/text-area/score)](https://jsr.io/@litte/text-area) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/text-area)](https://jsr.io/@litte/text-area) -->
 [![npm version](https://img.shields.io/npm/v/@litte/text-area)](https://www.npmjs.com/package/@litte/text-area)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/text-area)](https://www.npmjs.com/package/@litte/text-area)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

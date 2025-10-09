@@ -1,5 +1,7 @@
 # Litte Text Field
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/text-field/score)](https://jsr.io/@litte/text-field) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/text-field)](https://jsr.io/@litte/text-field) -->
 [![npm version](https://img.shields.io/npm/v/@litte/text-field)](https://www.npmjs.com/package/@litte/text-field)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/text-field)](https://www.npmjs.com/package/@litte/text-field)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

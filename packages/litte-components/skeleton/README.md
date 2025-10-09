@@ -1,5 +1,7 @@
 # Litte Skeleton
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/skeleton/score)](https://jsr.io/@litte/skeleton) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/skeleton)](https://jsr.io/@litte/skeleton) -->
 [![npm version](https://img.shields.io/npm/v/@litte/skeleton)](https://www.npmjs.com/package/@litte/skeleton)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/skeleton)](https://www.npmjs.com/package/@litte/skeleton)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

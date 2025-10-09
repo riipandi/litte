@@ -1,5 +1,7 @@
 # Litte Divider
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/divider/score)](https://jsr.io/@litte/divider) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/divider)](https://jsr.io/@litte/divider) -->
 [![npm version](https://img.shields.io/npm/v/@litte/divider)](https://www.npmjs.com/package/@litte/divider)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/divider)](https://www.npmjs.com/package/@litte/divider)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

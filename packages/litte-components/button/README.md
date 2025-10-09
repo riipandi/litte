@@ -1,5 +1,7 @@
 # Litte Button
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/button/score)](https://jsr.io/@litte/button) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/button)](https://jsr.io/@litte/button) -->
 [![npm version](https://img.shields.io/npm/v/@litte/button)](https://www.npmjs.com/package/@litte/button)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/button)](https://www.npmjs.com/package/@litte/button)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

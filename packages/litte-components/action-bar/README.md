@@ -1,5 +1,7 @@
 # Litte Action Bar
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/action-bar/score)](https://jsr.io/@litte/action-bar) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/action-bar)](https://jsr.io/@litte/action-bar) -->
 [![npm version](https://img.shields.io/npm/v/@litte/action-bar)](https://www.npmjs.com/package/@litte/action-bar)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/action-bar)](https://www.npmjs.com/package/@litte/action-bar)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

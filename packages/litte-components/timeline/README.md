@@ -1,5 +1,7 @@
 # Litte Timeline
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/timeline/score)](https://jsr.io/@litte/timeline) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/timeline)](https://jsr.io/@litte/timeline) -->
 [![npm version](https://img.shields.io/npm/v/@litte/timeline)](https://www.npmjs.com/package/@litte/timeline)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/timeline)](https://www.npmjs.com/package/@litte/timeline)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

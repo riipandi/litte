@@ -1,5 +1,7 @@
 # Litte Toast
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/toast/score)](https://jsr.io/@litte/toast) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/toast)](https://jsr.io/@litte/toast) -->
 [![npm version](https://img.shields.io/npm/v/@litte/toast)](https://www.npmjs.com/package/@litte/toast)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/toast)](https://www.npmjs.com/package/@litte/toast)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

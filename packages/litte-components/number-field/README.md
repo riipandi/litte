@@ -1,5 +1,7 @@
 # Litte Number Field
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/number-field/score)](https://jsr.io/@litte/number-field) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/number-field)](https://jsr.io/@litte/number-field) -->
 [![npm version](https://img.shields.io/npm/v/@litte/number-field)](https://www.npmjs.com/package/@litte/number-field)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/number-field)](https://www.npmjs.com/package/@litte/number-field)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

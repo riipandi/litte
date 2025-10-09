@@ -1,5 +1,7 @@
 # Litte Card
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/card/score)](https://jsr.io/@litte/card) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/card)](https://jsr.io/@litte/card) -->
 [![npm version](https://img.shields.io/npm/v/@litte/card)](https://www.npmjs.com/package/@litte/card)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/card)](https://www.npmjs.com/package/@litte/card)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

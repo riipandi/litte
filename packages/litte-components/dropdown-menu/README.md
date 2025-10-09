@@ -1,5 +1,7 @@
 # Litte Dropdown Menu
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/dropdown-menu/score)](https://jsr.io/@litte/dropdown-menu) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/dropdown-menu)](https://jsr.io/@litte/dropdown-menu) -->
 [![npm version](https://img.shields.io/npm/v/@litte/dropdown-menu)](https://www.npmjs.com/package/@litte/dropdown-menu)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/dropdown-menu)](https://www.npmjs.com/package/@litte/dropdown-menu)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

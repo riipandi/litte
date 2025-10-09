@@ -1,5 +1,7 @@
 # Litte Checkbox
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/checkbox/score)](https://jsr.io/@litte/checkbox) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/checkbox)](https://jsr.io/@litte/checkbox) -->
 [![npm version](https://img.shields.io/npm/v/@litte/checkbox)](https://www.npmjs.com/package/@litte/checkbox)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/checkbox)](https://www.npmjs.com/package/@litte/checkbox)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

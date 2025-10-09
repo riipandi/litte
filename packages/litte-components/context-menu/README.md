@@ -1,5 +1,7 @@
 # Litte Context Menu
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/context-menu/score)](https://jsr.io/@litte/context-menu) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/context-menu)](https://jsr.io/@litte/context-menu) -->
 [![npm version](https://img.shields.io/npm/v/@litte/context-menu)](https://www.npmjs.com/package/@litte/context-menu)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/context-menu)](https://www.npmjs.com/package/@litte/context-menu)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

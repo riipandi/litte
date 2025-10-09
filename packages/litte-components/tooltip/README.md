@@ -1,5 +1,7 @@
 # Litte Tooltip
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/tooltip/score)](https://jsr.io/@litte/tooltip) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/tooltip)](https://jsr.io/@litte/tooltip) -->
 [![npm version](https://img.shields.io/npm/v/@litte/tooltip)](https://www.npmjs.com/package/@litte/tooltip)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/tooltip)](https://www.npmjs.com/package/@litte/tooltip)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

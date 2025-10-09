@@ -1,5 +1,7 @@
 # Litte Progress Indicator
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/progress-indicator/score)](https://jsr.io/@litte/progress-indicator) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/progress-indicator)](https://jsr.io/@litte/progress-indicator) -->
 [![npm version](https://img.shields.io/npm/v/@litte/progress-indicator)](https://www.npmjs.com/package/@litte/progress-indicator)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/progress-indicator)](https://www.npmjs.com/package/@litte/progress-indicator)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

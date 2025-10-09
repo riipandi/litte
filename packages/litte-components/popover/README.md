@@ -1,5 +1,7 @@
 # Litte Popover
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/popover/score)](https://jsr.io/@litte/popover) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/popover)](https://jsr.io/@litte/popover) -->
 [![npm version](https://img.shields.io/npm/v/@litte/popover)](https://www.npmjs.com/package/@litte/popover)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/popover)](https://www.npmjs.com/package/@litte/popover)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

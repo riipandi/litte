@@ -27,6 +27,12 @@ find "$ROOT_DIR/packages" "$ROOT_DIR/internal" -type f -name package.json | whil
     mv "$pkg.tmp" "$pkg"
 done
 
+# Update version in all jsr.jsonc in packages/**/** and internal/**/**
+find "$ROOT_DIR/packages" "$ROOT_DIR/internal" -type f -name jsr.jsonc | while read -r jsrc; do
+    jq --arg v "$NEW_VERSION" '.version = $v' "$jsrc" > "$jsrc.tmp"
+    mv "$jsrc.tmp" "$jsrc"
+done
+
 # Running code formatting after version update
 if command -v pnpm >/dev/null 2>&1; then
     pnpm run --silent format
@@ -34,4 +40,4 @@ else
     echo "pnpm is not installed. Please run code formatting manually."
 fi
 
-echo "Version updated from $CURRENT_VERSION to $NEW_VERSION in all package.json files."
+echo "Version updated from $CURRENT_VERSION to $NEW_VERSION in all package.json and jsr.jsonc files."

@@ -1,5 +1,7 @@
 # Litte Select
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/select/score)](https://jsr.io/@litte/select) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/select)](https://jsr.io/@litte/select) -->
 [![npm version](https://img.shields.io/npm/v/@litte/select)](https://www.npmjs.com/package/@litte/select)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/select)](https://www.npmjs.com/package/@litte/select)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

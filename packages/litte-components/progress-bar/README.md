@@ -1,5 +1,7 @@
 # Litte Progress Bar
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/progress-bar/score)](https://jsr.io/@litte/progress-bar) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/progress-bar)](https://jsr.io/@litte/progress-bar) -->
 [![npm version](https://img.shields.io/npm/v/@litte/progress-bar)](https://www.npmjs.com/package/@litte/progress-bar)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/progress-bar)](https://www.npmjs.com/package/@litte/progress-bar)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

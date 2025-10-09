@@ -1,5 +1,7 @@
 # Litte Radio
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/radio/score)](https://jsr.io/@litte/radio) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/radio)](https://jsr.io/@litte/radio) -->
 [![npm version](https://img.shields.io/npm/v/@litte/radio)](https://www.npmjs.com/package/@litte/radio)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/radio)](https://www.npmjs.com/package/@litte/radio)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

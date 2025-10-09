@@ -1,5 +1,7 @@
 # Litte Calendar
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/calendar/score)](https://jsr.io/@litte/calendar) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/calendar)](https://jsr.io/@litte/calendar) -->
 [![npm version](https://img.shields.io/npm/v/@litte/calendar)](https://www.npmjs.com/package/@litte/calendar)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/calendar)](https://www.npmjs.com/package/@litte/calendar)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

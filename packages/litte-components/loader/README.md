@@ -1,5 +1,7 @@
 # Litte Loader
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/loader/score)](https://jsr.io/@litte/loader) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/loader)](https://jsr.io/@litte/loader) -->
 [![npm version](https://img.shields.io/npm/v/@litte/loader)](https://www.npmjs.com/package/@litte/loader)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/loader)](https://www.npmjs.com/package/@litte/loader)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

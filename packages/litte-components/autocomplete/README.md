@@ -1,5 +1,7 @@
 # Litte Autocomplete
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/autocomplete/score)](https://jsr.io/@litte/autocomplete) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/autocomplete)](https://jsr.io/@litte/autocomplete) -->
 [![npm version](https://img.shields.io/npm/v/@litte/autocomplete)](https://www.npmjs.com/package/@litte/autocomplete)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/autocomplete)](https://www.npmjs.com/package/@litte/autocomplete)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

@@ -1,5 +1,7 @@
 # Litte Hotkey
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/hotkey/score)](https://jsr.io/@litte/hotkey) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/hotkey)](https://jsr.io/@litte/hotkey) -->
 [![npm version](https://img.shields.io/npm/v/@litte/hotkey)](https://www.npmjs.com/package/@litte/hotkey)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/hotkey)](https://www.npmjs.com/package/@litte/hotkey)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

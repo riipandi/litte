@@ -1,5 +1,7 @@
 # Litte Scrim
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/scrim/score)](https://jsr.io/@litte/scrim) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/scrim)](https://jsr.io/@litte/scrim) -->
 [![npm version](https://img.shields.io/npm/v/@litte/scrim)](https://www.npmjs.com/package/@litte/scrim)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/scrim)](https://www.npmjs.com/package/@litte/scrim)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

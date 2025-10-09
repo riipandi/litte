@@ -1,5 +1,7 @@
 # Litte Pagination
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/pagination/score)](https://jsr.io/@litte/pagination) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/pagination)](https://jsr.io/@litte/pagination) -->
 [![npm version](https://img.shields.io/npm/v/@litte/pagination)](https://www.npmjs.com/package/@litte/pagination)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/pagination)](https://www.npmjs.com/package/@litte/pagination)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

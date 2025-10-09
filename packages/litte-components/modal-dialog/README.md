@@ -1,5 +1,7 @@
 # Litte Modal Dialog
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/modal-dialog/score)](https://jsr.io/@litte/modal-dialog) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/modal-dialog)](https://jsr.io/@litte/modal-dialog) -->
 [![npm version](https://img.shields.io/npm/v/@litte/modal-dialog)](https://www.npmjs.com/package/@litte/modal-dialog)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/modal-dialog)](https://www.npmjs.com/package/@litte/modal-dialog)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

@@ -1,5 +1,7 @@
 # Litte File Upload
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/file-upload/score)](https://jsr.io/@litte/file-upload) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/file-upload)](https://jsr.io/@litte/file-upload) -->
 [![npm version](https://img.shields.io/npm/v/@litte/file-upload)](https://www.npmjs.com/package/@litte/file-upload)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/file-upload)](https://www.npmjs.com/package/@litte/file-upload)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

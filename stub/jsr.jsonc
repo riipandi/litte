@@ -1,0 +1,17 @@
+{
+    "$schema": "https://jsr.io/schema/config-file.v1.json",
+    "name": "@litte/CHANGEME_COMPONENT_ID",
+    "version": "0.0.0",
+    "license": "MIT",
+    "exports": {
+        ".": "./src/index.ts",
+        "./package.json": "./package.json"
+        // Unfortunately, we cannot use CSS files in exports yet
+        // "bundle.min.css": "./dist/bundle.min.css",
+        // "bundle.css": "./dist/bundle.css"
+    },
+    "publish": {
+        "include": ["src", "package.json", "jsr.json", "LICENSE", "README.md"],
+        "exclude": ["**/tests/**", "!dist"]
+    }
+}

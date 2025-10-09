@@ -1,5 +1,7 @@
 # Litte Alert
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/alert/score)](https://jsr.io/@litte/alert) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/alert)](https://jsr.io/@litte/alert) -->
 [![npm version](https://img.shields.io/npm/v/@litte/alert)](https://www.npmjs.com/package/@litte/alert)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/alert)](https://www.npmjs.com/package/@litte/alert)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

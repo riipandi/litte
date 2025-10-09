@@ -31,11 +31,19 @@
         "prepublishOnly": {
             "cache": true
         },
-        "publish:dry": {
+        "publish:npm-dry": {
             "dependsOn": ["^build"],
             "cache": true
         },
         "publish:npm": {
+            "dependsOn": ["^build"],
+            "cache": true
+        },
+        "publish:jsr-dry": {
+            "dependsOn": ["^build"],
+            "cache": true
+        },
+        "publish:jsr": {
             "dependsOn": ["^build"],
             "cache": true
         }

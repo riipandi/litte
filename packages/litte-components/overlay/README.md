@@ -1,5 +1,7 @@
 # Litte Overlay
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/overlay/score)](https://jsr.io/@litte/overlay) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/overlay)](https://jsr.io/@litte/overlay) -->
 [![npm version](https://img.shields.io/npm/v/@litte/overlay)](https://www.npmjs.com/package/@litte/overlay)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/overlay)](https://www.npmjs.com/package/@litte/overlay)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

@@ -1,5 +1,7 @@
 # Litte Slider
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/slider/score)](https://jsr.io/@litte/slider) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/slider)](https://jsr.io/@litte/slider) -->
 [![npm version](https://img.shields.io/npm/v/@litte/slider)](https://www.npmjs.com/package/@litte/slider)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/slider)](https://www.npmjs.com/package/@litte/slider)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

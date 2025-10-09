@@ -1,5 +1,7 @@
 # Litte Avatar
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/avatar/score)](https://jsr.io/@litte/avatar) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/avatar)](https://jsr.io/@litte/avatar) -->
 [![npm version](https://img.shields.io/npm/v/@litte/avatar)](https://www.npmjs.com/package/@litte/avatar)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/avatar)](https://www.npmjs.com/package/@litte/avatar)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]

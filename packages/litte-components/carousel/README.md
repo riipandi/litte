@@ -1,5 +1,7 @@
 # Litte Carousel
 
+<!-- [![jsr score](https://jsr.io/badges/@litte/carousel/score)](https://jsr.io/@litte/carousel) -->
+<!-- [![jsr version](https://jsr.io/badges/@litte/carousel)](https://jsr.io/@litte/carousel) -->
 [![npm version](https://img.shields.io/npm/v/@litte/carousel)](https://www.npmjs.com/package/@litte/carousel)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/carousel)](https://www.npmjs.com/package/@litte/carousel)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]
