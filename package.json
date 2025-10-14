@@ -1,12 +1,12 @@
 {
     "name": "litte-ui",
-    "version": "0.0.41",
+    "version": "0.0.42",
     "license": "MIT",
     "type": "module",
     "scripts": {
         "dev:docs": "turbo run dev --filter=docs",
         "dev:storybook": "turbo run dev --filter=storybook",
-        "dev": "turbo run dev --filter={!docs,storybook,@litte/themes}",
+        "dev": "turbo run dev --filter={!docs,storybook,@litte/themes,!@litte/cli}",
         "build:docs": "turbo run build --filter=docs",
         "build:storybook": "turbo run build --filter=storybook",
         "build": "turbo run build --filter=@litte/* --filter=litte",
@@ -20,6 +20,7 @@
         "publish:jsr-dry": "turbo publish:jsr-dry --filter=@litte/* --filter=litte",
         "prepare:demo": "cat packages/litte-all-in-one/dist/umd/index.js > demo/litte.js",
         "demo": "pnpm -s prepare:demo && serve -p 80 -d demo --no-clipboard --cors",
+        "litte": "turbo run dev --filter=@litte/cli --log-prefix=none --no-daemon",
         "filter": "pnpm --silent --filter",
         "format": "biome format . --write",
         "lint": "turbo lint --cache=local:rw,remote:r",
@@ -27,13 +28,13 @@
         "typecheck": "turbo typecheck --cache=local:rw,remote:r"
     },
     "devDependencies": {
-        "@biomejs/biome": "^2.2.5",
-        "npm-check-updates": "^19.0.0",
+        "@biomejs/biome": "^2.2.6",
+        "npm-check-updates": "^19.1.0",
         "serve": "^14.2.5",
         "turbo": "^2.5.8",
         "typescript": "catalog:"
     },
-    "packageManager": "pnpm@10.18.1",
+    "packageManager": "pnpm@10.18.3",
     "engines": {
         "node": ">=22"
     }

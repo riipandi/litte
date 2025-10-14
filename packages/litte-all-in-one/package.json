@@ -1,6 +1,6 @@
 {
     "name": "litte",
-    "version": "0.0.41",
+    "version": "0.0.42",
     "type": "module",
     "description": "UI components that you can use everywhere, designed for flexibility.",
     "author": "Aris Ripandi <aris@duck.com>",
@@ -87,11 +87,11 @@
         "lit": "^3.3.1"
     },
     "devDependencies": {
-        "@biomejs/biome": "^2.2.5",
+        "@biomejs/biome": "^2.2.6",
         "@repo/typescript-config": "workspace:*",
-        "@rollup/plugin-node-resolve": "^16.0.2",
+        "@rollup/plugin-node-resolve": "^16.0.3",
         "@rollup/plugin-typescript": "^12.1.4",
-        "@types/node": "^24.7.0",
+        "@types/node": "^24.7.2",
         "rollup-plugin-copy": "^3.5.0",
         "rollup-plugin-esbuild": "^6.2.1",
         "rollup-plugin-summary": "^3.0.1",

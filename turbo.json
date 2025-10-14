@@ -46,6 +46,12 @@
         "publish:jsr": {
             "dependsOn": ["^build"],
             "cache": true
+        },
+        "litte": {
+            "cache": false,
+            "dependsOn": ["^build"],
+            "outputLogs": "full",
+            "persistent": true
         }
     }
 }
