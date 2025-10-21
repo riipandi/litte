@@ -20,7 +20,6 @@
         "publish:jsr-dry": "turbo publish:jsr-dry --filter=@litte/* --filter=litte",
         "prepare:demo": "cat packages/litte-all-in-one/dist/umd/index.js > demo/litte.js",
         "demo": "pnpm -s prepare:demo && serve -p 3000 -d demo --no-clipboard --cors",
-        "litte": "turbo run dev --filter=@litte/cli --log-prefix=none --no-daemon",
         "filter": "pnpm --silent --filter",
         "format": "biome format . --write",
         "lint": "turbo lint --cache=local:rw,remote:r",
