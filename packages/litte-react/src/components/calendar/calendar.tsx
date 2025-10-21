@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteCalendar } from '@litte/calendar'
+import { LitteCalendar } from 'litte'
 import * as React from 'react'
 
 export const Calendar = createComponent({

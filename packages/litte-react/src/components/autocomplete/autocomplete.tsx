@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteAutocomplete } from '@litte/autocomplete'
+import { LitteAutocomplete } from 'litte'
 import * as React from 'react'
 
 export const Autocomplete = createComponent({

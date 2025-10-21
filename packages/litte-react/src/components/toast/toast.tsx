@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteToast } from '@litte/toast'
+import { LitteToast } from 'litte'
 import * as React from 'react'
 
 export const Toast = createComponent({

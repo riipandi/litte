@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteDivider } from '@litte/divider'
+import { LitteDivider } from 'litte'
 import * as React from 'react'
 
 export const Divider = createComponent({

@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteFileUpload } from '@litte/file-upload'
+import { LitteFileUpload } from 'litte'
 import * as React from 'react'
 
 export const FileUpload = createComponent({

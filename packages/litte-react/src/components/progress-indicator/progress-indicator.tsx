@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteProgressIndicator } from '@litte/progress-indicator'
+import { LitteProgressIndicator } from 'litte'
 import * as React from 'react'
 
 export const ProgressIndicator = createComponent({

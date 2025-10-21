@@ -1,7 +1,7 @@
-import type { AlertProps } from '@litte/alert'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/alert'
+import type { AlertProps } from 'litte/alert'
+import 'litte'
 
 type AlertStoryProps = AlertProps & { content: string }
 

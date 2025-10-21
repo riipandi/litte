@@ -1,6 +1,6 @@
 {
     "name": "@repo/rolldown-config",
-    "version": "0.0.42",
+    "version": "0.0.0",
     "type": "module",
     "license": "MIT",
     "main": "./index.js",
@@ -17,8 +17,8 @@
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.6",
-        "rolldown": "1.0.0-beta.43",
-        "rolldown-plugin-dts": "^0.16.11"
+        "rolldown": "1.0.0-beta.44",
+        "rolldown-plugin-dts": "^0.16.12"
     },
     "peerDependencies": {
         "rolldown": "1.0.0-beta.41"

@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteOverlay } from '@litte/overlay'
+import { LitteOverlay } from 'litte'
 import * as React from 'react'
 
 export const Overlay = createComponent({

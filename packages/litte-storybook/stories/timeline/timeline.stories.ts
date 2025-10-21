@@ -1,7 +1,7 @@
-import type { TimelineProps } from '@litte/timeline'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/timeline'
+import type { TimelineProps } from 'litte/timeline'
+import 'litte'
 
 type TimelineStoryProps = TimelineProps & { content: string }
 

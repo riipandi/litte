@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteNumberField } from '@litte/number-field'
+import { LitteNumberField } from 'litte'
 import * as React from 'react'
 
 export const NumberField = createComponent({

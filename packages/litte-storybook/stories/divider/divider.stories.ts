@@ -1,7 +1,7 @@
-import type { DividerProps } from '@litte/divider'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/divider'
+import type { DividerProps } from 'litte/divider'
+import 'litte'
 
 type DividerStoryProps = DividerProps & { content: string }
 

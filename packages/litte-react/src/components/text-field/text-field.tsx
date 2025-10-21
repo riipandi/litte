@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteTextField } from '@litte/text-field'
+import { LitteTextField } from 'litte'
 import * as React from 'react'
 
 export const TextField = createComponent({

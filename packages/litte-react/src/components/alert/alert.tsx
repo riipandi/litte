@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteAlert } from '@litte/alert'
+import { LitteAlert } from 'litte'
 import * as React from 'react'
 
 export const Alert = createComponent({

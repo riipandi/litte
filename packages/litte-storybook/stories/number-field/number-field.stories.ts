@@ -1,7 +1,7 @@
-import type { NumberFieldProps } from '@litte/number-field'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/number-field'
+import type { NumberFieldProps } from 'litte/number-field'
+import 'litte'
 
 type NumberFieldStoryProps = NumberFieldProps & { content: string }
 

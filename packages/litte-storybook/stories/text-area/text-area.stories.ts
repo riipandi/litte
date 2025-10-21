@@ -1,7 +1,7 @@
-import type { TextAreaProps } from '@litte/text-area'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/text-area'
+import type { TextAreaProps } from 'litte/text-area'
+import 'litte'
 
 type TextAreaStoryProps = TextAreaProps & { content: string }
 

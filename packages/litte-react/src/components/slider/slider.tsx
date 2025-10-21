@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteSlider } from '@litte/slider'
+import { LitteSlider } from 'litte'
 import * as React from 'react'
 
 export const Slider = createComponent({

@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteTimeline } from '@litte/timeline'
+import { LitteTimeline } from 'litte'
 import * as React from 'react'
 
 export const Timeline = createComponent({

@@ -13,24 +13,22 @@
     },
     "dependencies": {
         "@litte/react": "workspace:*",
-        "@litte/element": "workspace:*",
         "@litte/themes": "workspace:*",
-
         "iconoir-react": "^7.11.0",
-        "next": "^15.5.5",
+        "next": "^15.5.6",
         "react": "^19.2.0",
         "react-dom": "^19.2.0"
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.6",
         "@repo/typescript-config": "workspace:*",
-        "@tailwindcss/postcss": "^4.1.14",
-        "@types/node": "^24.7.2",
+        "@tailwindcss/postcss": "^4.1.15",
+        "@types/node": "^24.9.1",
         "@types/react": "19.2.2",
         "@types/react-dom": "19.2.2",
         "postcss": "^8.5.6",
         "postcss-load-config": "^6.0.1",
-        "tailwindcss": "^4.1.14",
+        "tailwindcss": "^4.1.15",
         "typescript": "catalog:"
     }
 }

@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteRadio } from '@litte/radio'
+import { LitteRadio } from 'litte'
 import * as React from 'react'
 
 export const Radio = createComponent({

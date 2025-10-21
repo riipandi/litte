@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteCard } from '@litte/card'
+import { LitteCard } from 'litte'
 import * as React from 'react'
 
 export const Card = createComponent({

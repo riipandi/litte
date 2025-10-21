@@ -1,7 +1,7 @@
-import type { ContextMenuProps } from '@litte/context-menu'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/context-menu'
+import type { ContextMenuProps } from 'litte/context-menu'
+import 'litte'
 
 type ContextMenuStoryProps = ContextMenuProps & { content: string }
 

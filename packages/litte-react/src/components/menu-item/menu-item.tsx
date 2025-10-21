@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteMenuItem } from '@litte/menu-item'
+import { LitteMenuItem } from 'litte'
 import * as React from 'react'
 
 export const MenuItem = createComponent({

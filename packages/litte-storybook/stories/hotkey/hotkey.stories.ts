@@ -1,7 +1,7 @@
-import type { HotkeyProps } from '@litte/hotkey'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/hotkey'
+import type { HotkeyProps } from 'litte/hotkey'
+import 'litte'
 
 type HotkeyStoryProps = HotkeyProps & { content: string }
 

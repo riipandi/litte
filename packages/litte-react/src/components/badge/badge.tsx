@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteBadge } from '@litte/badge'
+import { LitteBadge } from 'litte'
 import * as React from 'react'
 
 export const Badge = createComponent({

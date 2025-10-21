@@ -1,7 +1,7 @@
-import type { CardProps } from '@litte/card'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/card'
+import type { CardProps } from 'litte/card'
+import 'litte'
 
 type CardStoryProps = CardProps & { content: string }
 

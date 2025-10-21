@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteTextArea } from '@litte/text-area'
+import { LitteTextArea } from 'litte'
 import * as React from 'react'
 
 export const TextArea = createComponent({

@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LittePopover } from '@litte/popover'
+import { LittePopover } from 'litte'
 import * as React from 'react'
 
 export const Popover = createComponent({

@@ -1,7 +1,7 @@
-import type { ToggleButtonProps } from '@litte/toggle-button'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/toggle-button'
+import type { ToggleButtonProps } from 'litte/toggle-button'
+import 'litte'
 
 type ToggleButtonStoryProps = ToggleButtonProps & { content: string }
 

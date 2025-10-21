@@ -1,7 +1,7 @@
-import type { PinFieldProps } from '@litte/pin-field'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/pin-field'
+import type { PinFieldProps } from 'litte/pin-field'
+import 'litte'
 
 type PinFieldStoryProps = PinFieldProps & { content: string }
 

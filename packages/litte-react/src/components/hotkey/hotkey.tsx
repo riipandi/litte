@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteHotkey } from '@litte/hotkey'
+import { LitteHotkey } from 'litte'
 import * as React from 'react'
 
 export const Hotkey = createComponent({

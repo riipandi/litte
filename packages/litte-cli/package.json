@@ -1,11 +1,12 @@
 {
     "name": "@litte/cli",
-    "version": "0.0.42",
+    "version": "0.0.0",
     "type": "module",
     "description": "Litte Command Line Interface.",
     "author": "Aris Ripandi <aris@duck.com>",
     "license": "MIT",
     "homepage": "https://litte.dev",
+    "funding": "https://github.com/riipandi/litte?sponsor=1",
     "repository": {
         "type": "git",
         "url": "https://github.com/riipandi/litte"
@@ -48,8 +49,8 @@
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.6",
-        "@types/node": "^24.7.2",
-        "rollup": "^4.52.4",
+        "@types/node": "^24.9.1",
+        "rollup": "^4.52.5",
         "typescript": "catalog:",
         "unbuild": "^3.6.1",
         "unplugin-purge-polyfills": "^0.1.0"

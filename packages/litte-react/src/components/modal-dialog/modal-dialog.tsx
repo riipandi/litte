@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteModalDialog } from '@litte/modal-dialog'
+import { LitteModalDialog } from 'litte'
 import * as React from 'react'
 
 export const ModalDialog = createComponent({

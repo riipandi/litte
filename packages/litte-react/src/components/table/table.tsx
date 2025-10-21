@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteTable } from '@litte/table'
+import { LitteTable } from 'litte'
 import * as React from 'react'
 
 export const Table = createComponent({

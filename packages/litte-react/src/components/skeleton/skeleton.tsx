@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteSkeleton } from '@litte/skeleton'
+import { LitteSkeleton } from 'litte'
 import * as React from 'react'
 
 export const Skeleton = createComponent({

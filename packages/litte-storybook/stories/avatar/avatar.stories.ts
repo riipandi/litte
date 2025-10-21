@@ -1,8 +1,8 @@
-import type { AvatarProps } from '@litte/avatar'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import { ifDefined } from 'lit/directives/if-defined.js'
-import '@litte/avatar'
+import type { AvatarProps } from 'litte/avatar'
+import 'litte'
 
 type AvatarStoryProps = AvatarProps
 

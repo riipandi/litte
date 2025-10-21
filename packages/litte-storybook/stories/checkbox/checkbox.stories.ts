@@ -1,7 +1,7 @@
-import type { CheckboxProps } from '@litte/checkbox'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/checkbox'
+import type { CheckboxProps } from 'litte/checkbox'
+import 'litte'
 
 type CheckboxStoryProps = CheckboxProps & { content: string }
 
