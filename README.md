@@ -11,7 +11,7 @@
     </a>
     <a href="https://github.com/riipandi/litte/graphs/contributors">
         <img src="https://img.shields.io/github/license/riipandi/litte?color=green" alt="License" />
-    <a href="https://www.npmjs.com/~litte">
+    <a href="https://www.npmjs.com/package/litte">
         <img src="https://img.shields.io/npm/dm/litte?color=orange" alt="npm downloads" />
     </a>
     </a>
