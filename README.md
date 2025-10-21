@@ -168,7 +168,7 @@ See the [LICENSE][license-mit] file for more information.
 
 <sub>🤫 Psst! If you like my work you can support me via [GitHub sponsors](https://github.com/sponsors/riipandi).</sub>
 
-[![Made by](https://badgen.net/badge/icon/Made%20by%20Aris%20Ripandi?icon=cocoapods&label&color=black&labelColor=black)][riipandi-x]
+[![Made by](https://badgen.net/badge/icon/Aris%20Ripandi?label=Made+by&color=black&labelColor=black)][riipandi-x]
 
 <!-- link reference definition -->
 [license-mit]: https://github.com/riipandi/litte/blob/main/LICENSE
