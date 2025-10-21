@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { ToastProps } from 'litte/toast'
-import 'litte'
 
 type ToastStoryProps = ToastProps & { content: string }
 

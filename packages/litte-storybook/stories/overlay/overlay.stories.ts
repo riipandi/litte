@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { OverlayProps } from 'litte/overlay'
-import 'litte'
 
 type OverlayStoryProps = OverlayProps & { content: string }
 

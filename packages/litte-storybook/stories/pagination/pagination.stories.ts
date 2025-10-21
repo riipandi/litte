@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { PaginationProps } from 'litte/pagination'
-import 'litte'
 
 type PaginationStoryProps = PaginationProps & { content: string }
 

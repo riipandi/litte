@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { FileUploadProps } from 'litte/file-upload'
-import 'litte'
 
 type FileUploadStoryProps = FileUploadProps & { content: string }
 

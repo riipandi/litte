@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { HotkeyProps } from 'litte/hotkey'
-import 'litte'
 
 type HotkeyStoryProps = HotkeyProps & { content: string }
 

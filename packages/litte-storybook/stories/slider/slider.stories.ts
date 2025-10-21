@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { SliderProps } from 'litte/slider'
-import 'litte'
 
 type SliderStoryProps = SliderProps & { content: string }
 

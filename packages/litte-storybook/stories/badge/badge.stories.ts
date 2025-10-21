@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { BadgeProps } from 'litte/badge'
-import 'litte'
 
 type BadgeStoryProps = BadgeProps & { content: string }
 

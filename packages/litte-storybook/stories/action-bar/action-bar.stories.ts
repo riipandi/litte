@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { ActionBarProps } from 'litte/action-bar'
-import 'litte'
 
 type ActionBarStoryProps = ActionBarProps & { content: string }
 

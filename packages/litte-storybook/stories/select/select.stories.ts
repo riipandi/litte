@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { SelectProps } from 'litte/select'
-import 'litte'
 
 type SelectStoryProps = SelectProps & { content: string }
 

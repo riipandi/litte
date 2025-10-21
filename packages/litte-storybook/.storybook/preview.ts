@@ -3,6 +3,9 @@ import type { Preview } from '@storybook/web-components-vite'
 import { withThemeProvider } from './decorators'
 import { customTheme } from './themes'
 
+// Import the Litte components
+import 'litte'
+
 // Load the application stylesheets and themes
 import '@litte/themes/bundle.css'
 

@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { ScrimProps } from 'litte/scrim'
-import 'litte'
 
 type ScrimStoryProps = ScrimProps & { content: string }
 

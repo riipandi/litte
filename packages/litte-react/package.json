@@ -259,8 +259,8 @@
     "dependencies": {
         "@lit/react": "^1.0.8",
         "litte": "workspace:*",
-        "react": "^19.2.0",
-        "react-dom": "^19.2.0"
+        "react-dom": "^19.2.0",
+        "react": "^19.2.0"
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.6",

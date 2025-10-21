@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
 import type { RadioProps } from 'litte/radio'
-import 'litte'
 
 type RadioStoryProps = RadioProps & { content: string }
 
