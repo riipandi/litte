@@ -9,11 +9,11 @@
     <a href="https://www.typescriptlang.org">
         <img src="https://img.shields.io/badge/TypeScript-v5.9-blue.svg?logo=TypeScript&logoColor=blue" alt="TypeScript v5.9" />
     </a>
-    <a href="https://github.com/riipandi/litte/graphs/contributors">
+    <a href="https://github.com/riipandi/litte/blob/main/LICENSE">
         <img src="https://img.shields.io/github/license/riipandi/litte?color=green" alt="License" />
-    <a href="https://www.npmjs.com/package/litte">
-        <img src="https://img.shields.io/npm/dm/litte?color=orange" alt="npm downloads" />
     </a>
+    <a href="https://www.npmjs.com/package/litte">
+        <img src="https://img.shields.io/npm/dm/litte?color=orange&label=downloads" alt="npm downloads" />
     </a>
     <a href="https://github.com/riipandi/litte/graphs/contributors">
         <img src="https://img.shields.io/badge/Contributions-welcome-gray.svg?labelColor=blue" alt="Contributions welcome" />
