@@ -9,7 +9,8 @@
     "funding": "https://github.com/riipandi/litte?sponsor=1",
     "repository": {
         "type": "git",
-        "url": "https://github.com/riipandi/litte"
+        "url": "https://github.com/riipandi/litte",
+        "directory": "packages/litte-themes"
     },
     "bugs": {
         "url": "https://github.com/riipandi/litte/issues"
@@ -60,10 +61,8 @@
         "dev": "vite build --watch",
         "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
         "prepublishOnly": "NODE_ENV=production vite build",
+        "publish:dry": "NODE_ENV=production pnpm publish --no-git-checks --dry-run",
         "publish:npm": "NODE_ENV=production pnpm publish --no-git-checks",
-        "publish:npm-dry": "NODE_ENV=production pnpm publish --no-git-checks --dry-run",
-        "publish:jsr": "pnpm dlx jsr publish --allow-dirty",
-        "publish:jsr-dry": "pnpm dlx jsr publish --allow-dirty --dry-run",
         "lint": "biome lint . --write",
         "check": "biome check . --write",
         "typecheck": "tsc --noEmit"

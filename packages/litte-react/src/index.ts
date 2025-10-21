@@ -1,5 +1,5 @@
 // Re-exports utilities from 'litte'
-export * from 'litte'
+export { clsx } from 'litte/utils'
 
 // Export React components
 export * from './components/action-bar'

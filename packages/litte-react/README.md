@@ -1,7 +1,5 @@
 # Litte React
 
-<!-- [![jsr score](https://jsr.io/badges/@litte/react/score)](https://jsr.io/@litte/react) -->
-<!-- [![jsr version](https://jsr.io/badges/@litte/react)](https://jsr.io/@litte/react) -->
 [![npm version](https://img.shields.io/npm/v/@litte/react)](https://www.npmjs.com/package/@litte/react)
 [![npm downloads](https://img.shields.io/npm/dm/@litte/react)](https://www.npmjs.com/package/@litte/react)
 [![license-mit](https://img.shields.io/badge/License-MIT-greens.svg)][license-mit]
