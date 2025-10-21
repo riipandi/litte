@@ -3,12 +3,16 @@
     "typescript.enablePromptUseWorkspaceTsdk": false,
     "editor.defaultFormatter": "biomejs.biome",
     "files.associations": {
-        "*.css": "css"
+        "*.css": "css",
+        "*.vto": "vento",
+        "*.yaml.example": "yaml",
+        "*.yml.example": "yaml"
     },
     "search.exclude": {
         "**/.husky": true,
         "**/.next": true,
         "**/.output": true,
+        "**/.sonda": true,
         "**/dist": true,
         "**/stub": true
     },
@@ -18,9 +22,9 @@
         ["(?:cn|cx|cva|clx|tv)\\(([^;]*)[\\);]", "[`'\"`]([^'\"`;]*)[`'\"`]"],
         ["classList={{([^;]*)}}", "\\s*?[\"'`]([^\"'`]*).*?:"]
     ],
-    "tailwindCSS.files.exclude": ["**/.github/**", "**/*.{md,js,ts,json}"],
-    "[astro]": {
-        "editor.defaultFormatter": "biomejs.biome"
+    "tailwindCSS.files.exclude": ["*.{json,md,js,ts,yml,yaml}"],
+    "tailwindCSS.includeLanguages": {
+        "vento": "html"
     },
     "[css]": {
         "editor.defaultFormatter": "biomejs.biome"
