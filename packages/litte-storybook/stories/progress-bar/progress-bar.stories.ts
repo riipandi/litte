@@ -1,7 +1,7 @@
-import type { ProgressBarProps } from '@litte/progress-bar'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/progress-bar'
+import type { ProgressBarProps } from 'litte/progress-bar'
+import 'litte'
 
 type ProgressBarStoryProps = ProgressBarProps & { content: string }
 

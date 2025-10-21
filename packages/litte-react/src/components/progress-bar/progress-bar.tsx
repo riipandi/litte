@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteProgressBar } from '@litte/progress-bar'
+import { LitteProgressBar } from 'litte'
 import * as React from 'react'
 
 export const ProgressBar = createComponent({

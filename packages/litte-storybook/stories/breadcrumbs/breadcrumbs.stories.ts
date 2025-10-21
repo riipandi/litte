@@ -1,7 +1,7 @@
-import type { BreadcrumbsProps } from '@litte/breadcrumbs'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/breadcrumbs'
+import type { BreadcrumbsProps } from 'litte/breadcrumbs'
+import 'litte'
 
 type BreadcrumbsStoryProps = BreadcrumbsProps & { content: string }
 

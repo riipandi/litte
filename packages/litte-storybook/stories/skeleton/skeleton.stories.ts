@@ -1,7 +1,7 @@
-import type { SkeletonProps } from '@litte/skeleton'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/skeleton'
+import type { SkeletonProps } from 'litte/skeleton'
+import 'litte'
 
 type SkeletonStoryProps = SkeletonProps & { content: string }
 

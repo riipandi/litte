@@ -1,7 +1,7 @@
-import type { TabsProps } from '@litte/tabs'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/tabs'
+import type { TabsProps } from 'litte/tabs'
+import 'litte'
 
 type TabsStoryProps = TabsProps & { content: string }
 

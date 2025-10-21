@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteSelect } from '@litte/select'
+import { LitteSelect } from 'litte'
 import * as React from 'react'
 
 export const Select = createComponent({

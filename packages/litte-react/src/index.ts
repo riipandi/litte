@@ -1,3 +1,7 @@
+// Re-exports utilities from 'litte'
+export * from 'litte'
+
+// Export React components
 export * from './components/action-bar'
 export * from './components/alert'
 export * from './components/autocomplete'
@@ -12,7 +16,6 @@ export * from './components/checkbox'
 export * from './components/context-menu'
 export * from './components/divider'
 export * from './components/dropdown-menu'
-export * from './components/element'
 export * from './components/file-upload'
 export * from './components/hotkey'
 export * from './components/link'

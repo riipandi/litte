@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteTooltip } from '@litte/tooltip'
+import { LitteTooltip } from 'litte'
 import * as React from 'react'
 
 export const Tooltip = createComponent({

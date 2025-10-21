@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteLoader } from '@litte/loader'
+import { LitteLoader } from 'litte'
 import * as React from 'react'
 
 export const Loader = createComponent({

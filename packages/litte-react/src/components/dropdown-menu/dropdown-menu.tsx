@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteDropdownMenu } from '@litte/dropdown-menu'
+import { LitteDropdownMenu } from 'litte'
 import * as React from 'react'
 
 export const DropdownMenu = createComponent({

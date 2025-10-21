@@ -1,7 +1,7 @@
-import type { PopoverProps } from '@litte/popover'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/popover'
+import type { PopoverProps } from 'litte/popover'
+import 'litte'
 
 type PopoverStoryProps = PopoverProps & { content: string }
 

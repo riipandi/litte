@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteCheckbox } from '@litte/checkbox'
+import { LitteCheckbox } from 'litte'
 import * as React from 'react'
 
 export const Checkbox = createComponent({

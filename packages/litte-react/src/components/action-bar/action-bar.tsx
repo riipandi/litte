@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteActionBar } from '@litte/action-bar'
+import { LitteActionBar } from 'litte'
 import * as React from 'react'
 
 export const ActionBar = createComponent({

@@ -1,7 +1,7 @@
-import type { ProgressIndicatorProps } from '@litte/progress-indicator'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/progress-indicator'
+import type { ProgressIndicatorProps } from 'litte/progress-indicator'
+import 'litte'
 
 type ProgressIndicatorStoryProps = ProgressIndicatorProps & { content: string }
 

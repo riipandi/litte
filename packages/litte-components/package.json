@@ -1,0 +1,295 @@
+{
+    "name": "litte",
+    "version": "0.0.42",
+    "type": "module",
+    "description": "UI components that you can use everywhere, designed for flexibility.",
+    "author": "Aris Ripandi <aris@duck.com>",
+    "license": "MIT",
+    "homepage": "https://litte.dev",
+    "funding": "https://github.com/riipandi/litte?sponsor=1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/riipandi/litte"
+    },
+    "bugs": {
+        "url": "https://github.com/riipandi/litte/issues"
+    },
+    "main": "./dist/esm/index.js",
+    "types": "./dist/esm/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/esm/index.d.ts",
+            "import": "./dist/esm/index.js",
+            "default": "./dist/esm/index.js"
+        },
+        "./action-bar": {
+            "types": "./dist/esm/components/action-bar/index.d.ts",
+            "import": "./dist/esm/components/action-bar/index.js",
+            "default": "./dist/esm/components/action-bar/index.js"
+        },
+        "./alert": {
+            "types": "./dist/esm/components/alert/index.d.ts",
+            "import": "./dist/esm/components/alert/index.js",
+            "default": "./dist/esm/components/alert/index.js"
+        },
+        "./autocomplete": {
+            "types": "./dist/esm/components/autocomplete/index.d.ts",
+            "import": "./dist/esm/components/autocomplete/index.js",
+            "default": "./dist/esm/components/autocomplete/index.js"
+        },
+        "./avatar": {
+            "types": "./dist/esm/components/avatar/index.d.ts",
+            "import": "./dist/esm/components/avatar/index.js",
+            "default": "./dist/esm/components/avatar/index.js"
+        },
+        "./badge": {
+            "types": "./dist/esm/components/badge/index.d.ts",
+            "import": "./dist/esm/components/badge/index.js",
+            "default": "./dist/esm/components/badge/index.js"
+        },
+        "./breadcrumbs": {
+            "types": "./dist/esm/components/breadcrumbs/index.d.ts",
+            "import": "./dist/esm/components/breadcrumbs/index.js",
+            "default": "./dist/esm/components/breadcrumbs/index.js"
+        },
+        "./button": {
+            "types": "./dist/esm/components/button/index.d.ts",
+            "import": "./dist/esm/components/button/index.js",
+            "default": "./dist/esm/components/button/index.js"
+        },
+        "./calendar": {
+            "types": "./dist/esm/components/calendar/index.d.ts",
+            "import": "./dist/esm/components/calendar/index.js",
+            "default": "./dist/esm/components/calendar/index.js"
+        },
+        "./card": {
+            "types": "./dist/esm/components/card/index.d.ts",
+            "import": "./dist/esm/components/card/index.js",
+            "default": "./dist/esm/components/card/index.js"
+        },
+        "./carousel": {
+            "types": "./dist/esm/components/carousel/index.d.ts",
+            "import": "./dist/esm/components/carousel/index.js",
+            "default": "./dist/esm/components/carousel/index.js"
+        },
+        "./checkbox": {
+            "types": "./dist/esm/components/checkbox/index.d.ts",
+            "import": "./dist/esm/components/checkbox/index.js",
+            "default": "./dist/esm/components/checkbox/index.js"
+        },
+        "./context-menu": {
+            "types": "./dist/esm/components/context-menu/index.d.ts",
+            "import": "./dist/esm/components/context-menu/index.js",
+            "default": "./dist/esm/components/context-menu/index.js"
+        },
+        "./divider": {
+            "types": "./dist/esm/components/divider/index.d.ts",
+            "import": "./dist/esm/components/divider/index.js",
+            "default": "./dist/esm/components/divider/index.js"
+        },
+        "./dropdown-menu": {
+            "types": "./dist/esm/components/dropdown-menu/index.d.ts",
+            "import": "./dist/esm/components/dropdown-menu/index.js",
+            "default": "./dist/esm/components/dropdown-menu/index.js"
+        },
+        "./file-upload": {
+            "types": "./dist/esm/components/file-upload/index.d.ts",
+            "import": "./dist/esm/components/file-upload/index.js",
+            "default": "./dist/esm/components/file-upload/index.js"
+        },
+        "./hotkey": {
+            "types": "./dist/esm/components/hotkey/index.d.ts",
+            "import": "./dist/esm/components/hotkey/index.js",
+            "default": "./dist/esm/components/hotkey/index.js"
+        },
+        "./link": {
+            "types": "./dist/esm/components/link/index.d.ts",
+            "import": "./dist/esm/components/link/index.js",
+            "default": "./dist/esm/components/link/index.js"
+        },
+        "./loader": {
+            "types": "./dist/esm/components/loader/index.d.ts",
+            "import": "./dist/esm/components/loader/index.js",
+            "default": "./dist/esm/components/loader/index.js"
+        },
+        "./menu-item": {
+            "types": "./dist/esm/components/menu-item/index.d.ts",
+            "import": "./dist/esm/components/menu-item/index.js",
+            "default": "./dist/esm/components/menu-item/index.js"
+        },
+        "./modal-dialog": {
+            "types": "./dist/esm/components/modal-dialog/index.d.ts",
+            "import": "./dist/esm/components/modal-dialog/index.js",
+            "default": "./dist/esm/components/modal-dialog/index.js"
+        },
+        "./number-field": {
+            "types": "./dist/esm/components/number-field/index.d.ts",
+            "import": "./dist/esm/components/number-field/index.js",
+            "default": "./dist/esm/components/number-field/index.js"
+        },
+        "./overlay": {
+            "types": "./dist/esm/components/overlay/index.d.ts",
+            "import": "./dist/esm/components/overlay/index.js",
+            "default": "./dist/esm/components/overlay/index.js"
+        },
+        "./pagination": {
+            "types": "./dist/esm/components/pagination/index.d.ts",
+            "import": "./dist/esm/components/pagination/index.js",
+            "default": "./dist/esm/components/pagination/index.js"
+        },
+        "./pin-field": {
+            "types": "./dist/esm/components/pin-field/index.d.ts",
+            "import": "./dist/esm/components/pin-field/index.js",
+            "default": "./dist/esm/components/pin-field/index.js"
+        },
+        "./popover": {
+            "types": "./dist/esm/components/popover/index.d.ts",
+            "import": "./dist/esm/components/popover/index.js",
+            "default": "./dist/esm/components/popover/index.js"
+        },
+        "./progress-bar": {
+            "types": "./dist/esm/components/progress-bar/index.d.ts",
+            "import": "./dist/esm/components/progress-bar/index.js",
+            "default": "./dist/esm/components/progress-bar/index.js"
+        },
+        "./progress-indicator": {
+            "types": "./dist/esm/components/progress-indicator/index.d.ts",
+            "import": "./dist/esm/components/progress-indicator/index.js",
+            "default": "./dist/esm/components/progress-indicator/index.js"
+        },
+        "./radio": {
+            "types": "./dist/esm/components/radio/index.d.ts",
+            "import": "./dist/esm/components/radio/index.js",
+            "default": "./dist/esm/components/radio/index.js"
+        },
+        "./scrim": {
+            "types": "./dist/esm/components/scrim/index.d.ts",
+            "import": "./dist/esm/components/scrim/index.js",
+            "default": "./dist/esm/components/scrim/index.js"
+        },
+        "./select": {
+            "types": "./dist/esm/components/select/index.d.ts",
+            "import": "./dist/esm/components/select/index.js",
+            "default": "./dist/esm/components/select/index.js"
+        },
+        "./skeleton": {
+            "types": "./dist/esm/components/skeleton/index.d.ts",
+            "import": "./dist/esm/components/skeleton/index.js",
+            "default": "./dist/esm/components/skeleton/index.js"
+        },
+        "./slider": {
+            "types": "./dist/esm/components/slider/index.d.ts",
+            "import": "./dist/esm/components/slider/index.js",
+            "default": "./dist/esm/components/slider/index.js"
+        },
+        "./stepper": {
+            "types": "./dist/esm/components/stepper/index.d.ts",
+            "import": "./dist/esm/components/stepper/index.js",
+            "default": "./dist/esm/components/stepper/index.js"
+        },
+        "./switch": {
+            "types": "./dist/esm/components/switch/index.d.ts",
+            "import": "./dist/esm/components/switch/index.js",
+            "default": "./dist/esm/components/switch/index.js"
+        },
+        "./table": {
+            "types": "./dist/esm/components/table/index.d.ts",
+            "import": "./dist/esm/components/table/index.js",
+            "default": "./dist/esm/components/table/index.js"
+        },
+        "./tabs": {
+            "types": "./dist/esm/components/tabs/index.d.ts",
+            "import": "./dist/esm/components/tabs/index.js",
+            "default": "./dist/esm/components/tabs/index.js"
+        },
+        "./text-area": {
+            "types": "./dist/esm/components/text-area/index.d.ts",
+            "import": "./dist/esm/components/text-area/index.js",
+            "default": "./dist/esm/components/text-area/index.js"
+        },
+        "./text-field": {
+            "types": "./dist/esm/components/text-field/index.d.ts",
+            "import": "./dist/esm/components/text-field/index.js",
+            "default": "./dist/esm/components/text-field/index.js"
+        },
+        "./timeline": {
+            "types": "./dist/esm/components/timeline/index.d.ts",
+            "import": "./dist/esm/components/timeline/index.js",
+            "default": "./dist/esm/components/timeline/index.js"
+        },
+        "./toast": {
+            "types": "./dist/esm/components/toast/index.d.ts",
+            "import": "./dist/esm/components/toast/index.js",
+            "default": "./dist/esm/components/toast/index.js"
+        },
+        "./toggle-button": {
+            "types": "./dist/esm/components/toggle-button/index.d.ts",
+            "import": "./dist/esm/components/toggle-button/index.js",
+            "default": "./dist/esm/components/toggle-button/index.js"
+        },
+        "./tooltip": {
+            "types": "./dist/esm/components/tooltip/index.d.ts",
+            "import": "./dist/esm/components/tooltip/index.js",
+            "default": "./dist/esm/components/tooltip/index.js"
+        },
+        "./utils": {
+            "types": "./dist/esm/utils/index.d.ts",
+            "import": "./dist/esm/utils/index.js",
+            "default": "./dist/esm/utils/index.js"
+        }
+    },
+    "scripts": {
+        "build:types": "tsc --project tsconfig.json",
+        "build:js": "rollup --config rollup.config.js",
+        "build": "pnpm -s build:types && pnpm -s build:js",
+        "dev": "rollup --watch --config rollup.config.js",
+        "cleanup": "pnpm dlx del-cli dist node_modules .turbo",
+        "prepublishOnly": "NODE_ENV=production rollup --config rollup.config.js",
+        "publish:npm": "NODE_ENV=production pnpm publish --no-git-checks",
+        "publish:npm-dry": "NODE_ENV=production pnpm publish --no-git-checks --dry-run",
+        "publish:jsr": "pnpm dlx jsr publish --allow-dirty",
+        "publish:jsr-dry": "pnpm dlx jsr publish --allow-dirty --dry-run",
+        "lint": "biome lint . --write",
+        "check": "biome check . --write",
+        "typecheck": "tsc --noEmit"
+    },
+    "peerDependencies": {
+        "lit": "^3.3.1"
+    },
+    "dependencies": {
+        "lit": "^3.3.1"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "^2.2.6",
+        "@repo/typescript-config": "workspace:*",
+        "@rollup/plugin-node-resolve": "^16.0.3",
+        "@rollup/plugin-typescript": "^12.1.4",
+        "@types/node": "^24.9.1",
+        "rollup-plugin-copy": "^3.5.0",
+        "rollup-plugin-esbuild": "^6.2.1",
+        "rollup-plugin-summary": "^3.0.1",
+        "rollup": "^4.52.5",
+        "tslib": "2.8.1",
+        "typescript": "catalog:"
+    },
+    "files": [
+        "dist/**/*",
+        "!tests/**/*",
+        "!dist/**/*.*.map",
+        "!tests/**/*.*.map",
+        "package.json",
+        "LICENSE",
+        "README.md"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "design system",
+        "component-library",
+        "ui-kit",
+        "lit",
+        "components",
+        "web components"
+    ]
+}

@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteToggleButton } from '@litte/toggle-button'
+import { LitteToggleButton } from 'litte'
 import * as React from 'react'
 
 export const ToggleButton = createComponent({

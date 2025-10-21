@@ -1,7 +1,7 @@
-import type { StepperProps } from '@litte/stepper'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/stepper'
+import type { StepperProps } from 'litte/stepper'
+import 'litte'
 
 type StepperStoryProps = StepperProps & { content: string }
 

@@ -6,6 +6,7 @@
     "author": "Aris Ripandi <aris@duck.com>",
     "license": "MIT",
     "homepage": "https://litte.dev",
+    "funding": "https://github.com/riipandi/litte?sponsor=1",
     "repository": {
         "type": "git",
         "url": "https://github.com/riipandi/litte"
@@ -70,12 +71,12 @@
     "devDependencies": {
         "@biomejs/biome": "^2.2.6",
         "@repo/typescript-config": "workspace:*",
-        "@types/node": "^24.7.2",
+        "@types/node": "^24.9.1",
         "cssnano": "^7.1.1",
         "postcss": "^8.5.6",
         "postcss-load-config": "^6.0.1",
         "typescript": "catalog:",
-        "vite": "^7.1.10",
+        "vite": "^7.1.11",
         "vite-plugin-dts": "^4.5.4",
         "vite-tsconfig-paths": "^5.1.4"
     },

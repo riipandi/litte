@@ -1,7 +1,7 @@
-import type { DropdownMenuProps } from '@litte/dropdown-menu'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/dropdown-menu'
+import type { DropdownMenuProps } from 'litte/dropdown-menu'
+import 'litte'
 
 type DropdownMenuStoryProps = DropdownMenuProps & { content: string }
 

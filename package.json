@@ -6,7 +6,7 @@
     "scripts": {
         "dev:docs": "turbo run dev --filter=docs",
         "dev:storybook": "turbo run dev --filter=storybook",
-        "dev": "turbo run dev --filter={!docs,storybook,@litte/themes,!@litte/cli}",
+        "dev": "turbo run dev --filter={storybook,@litte/themes,litte}",
         "build:docs": "turbo run build --filter=docs",
         "build:storybook": "turbo run build --filter=storybook",
         "build": "turbo run build --filter=@litte/* --filter=litte",
@@ -29,12 +29,12 @@
     },
     "devDependencies": {
         "@biomejs/biome": "^2.2.6",
-        "npm-check-updates": "^19.1.0",
+        "npm-check-updates": "^19.1.1",
         "serve": "^14.2.5",
         "turbo": "^2.5.8",
         "typescript": "catalog:"
     },
-    "packageManager": "pnpm@10.18.3",
+    "packageManager": "pnpm@10.19.0",
     "engines": {
         "node": ">=22"
     }

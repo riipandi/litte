@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LittePagination } from '@litte/pagination'
+import { LittePagination } from 'litte'
 import * as React from 'react'
 
 export const Pagination = createComponent({

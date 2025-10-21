@@ -1,7 +1,7 @@
-import type { BadgeProps } from '@litte/badge'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/badge'
+import type { BadgeProps } from 'litte/badge'
+import 'litte'
 
 type BadgeStoryProps = BadgeProps & { content: string }
 

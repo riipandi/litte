@@ -1,7 +1,7 @@
-import type { ModalDialogProps } from '@litte/modal-dialog'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/modal-dialog'
+import type { ModalDialogProps } from 'litte/modal-dialog'
+import 'litte'
 
 type ModalDialogStoryProps = ModalDialogProps & { content: string }
 

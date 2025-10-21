@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LittePinField } from '@litte/pin-field'
+import { LittePinField } from 'litte'
 import * as React from 'react'
 
 export const PinField = createComponent({

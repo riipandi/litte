@@ -1,5 +1,5 @@
 import { createComponent } from '@lit/react'
-import { LitteBreadcrumbs } from '@litte/breadcrumbs'
+import { LitteBreadcrumbs } from 'litte'
 import * as React from 'react'
 
 export const Breadcrumbs = createComponent({

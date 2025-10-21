@@ -1,7 +1,7 @@
-import type { ButtonProps, ButtonSize, ButtonVariant } from '@litte/button'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/button'
+import type { ButtonProps, ButtonSize, ButtonVariant } from 'litte/button'
+import 'litte'
 
 type ButtonStoryProps = ButtonProps & { content: string }
 

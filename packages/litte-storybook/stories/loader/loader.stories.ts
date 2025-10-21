@@ -1,7 +1,7 @@
-import type { LoaderProps } from '@litte/loader'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/loader'
+import type { LoaderProps } from 'litte/loader'
+import 'litte'
 
 type LoaderStoryProps = LoaderProps & { content: string }
 

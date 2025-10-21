@@ -1,7 +1,7 @@
-import type { LinkProps } from '@litte/link'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/link'
+import type { LinkProps } from 'litte/link'
+import 'litte'
 
 type LinkStoryProps = LinkProps & { content: string }
 

@@ -1,7 +1,7 @@
-import type { TextFieldProps } from '@litte/text-field'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/text-field'
+import type { TextFieldProps } from 'litte/text-field'
+import 'litte'
 
 type TextFieldStoryProps = TextFieldProps & { content: string }
 

@@ -1,7 +1,7 @@
-import type { MenuItemProps } from '@litte/menu-item'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/menu-item'
+import type { MenuItemProps } from 'litte/menu-item'
+import 'litte'
 
 type MenuItemStoryProps = MenuItemProps & { content: string }
 

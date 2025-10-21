@@ -1,7 +1,7 @@
-import type { CarouselProps } from '@litte/carousel'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/carousel'
+import type { CarouselProps } from 'litte/carousel'
+import 'litte'
 
 type CarouselStoryProps = CarouselProps & { content: string }
 

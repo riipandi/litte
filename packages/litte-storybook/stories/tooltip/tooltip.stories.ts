@@ -1,7 +1,7 @@
-import type { TooltipProps } from '@litte/tooltip'
 import type { Meta, StoryObj } from '@storybook/web-components-vite'
 import { html } from 'lit'
-import '@litte/tooltip'
+import type { TooltipProps } from 'litte/tooltip'
+import 'litte'
 
 type TooltipStoryProps = TooltipProps & { content: string }
 
