@@ -121,31 +121,10 @@ pnpm build
 
 ### Develop
 
-> **Note:** Running development servers for all packages and Storybook at once can consume significant
-system resources, especially on machines with limited memory or CPU. For a lighter setup, you can develop
-a single component alongside Storybook.
-
-To develop all packages, run the following command:
+To develop all components, themes and Storybook, run the following command:
 
 ```bash
 pnpm dev
-```
-
-If you want develop a single component alongside Storybook concurrently, run the following command:
-
-```bash
-pnpm dev --filter=@litte/COMPONENT_NAME
-```
-
-Replace `COMPONENT_NAME` with the name of the component you want to work on (for example, `button`, `card`, etc).
-This command will start both Storybook and the development server for the specified component concurrently.
-
-You can also run development servers for multiple components at once by specifying multiple `--filter` flags.
-
-For example:
-
-```bash
-pnpm dev --filter=@litte/button --filter=@litte/card
 ```
 
 ### Clean
