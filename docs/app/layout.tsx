@@ -1,4 +1,4 @@
-import { clsx } from '@litte/react'
+import { clsx } from '@litte/react/utils'
 import type { Metadata } from 'next'
 import { Bree_Serif, JetBrains_Mono, Mona_Sans } from 'next/font/google'
 

@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [{ protocol: 'https', hostname: '**' }],
     unoptimized: true,
   },
-  eslint: { ignoreDuringBuilds: true /* disable eslint on build */ },
+  turbopack: {},
   devIndicators: { position: 'bottom-right' },
   transpilePackages: ['@litte/react'],
   // Fix for issue: `[webpack.cache.PackFileCacheStrategy] Serializing big strings`

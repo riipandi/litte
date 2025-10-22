@@ -1,6 +1,3 @@
-// Re-exports utilities from 'litte'
-export { clsx } from 'litte/utils'
-
 // Export React components
 export * from './components/action-bar'
 export * from './components/alert'
@@ -44,3 +41,4 @@ export * from './components/timeline'
 export * from './components/toast'
 export * from './components/toggle-button'
 export * from './components/tooltip'
+export * from './utils'

@@ -233,6 +233,11 @@
             "types": "./dist/components/tooltip/tooltip.d.ts",
             "import": "./dist/components/tooltip/tooltip.js",
             "default": "./dist/components/tooltip/tooltip.js"
+        },
+        "./utils": {
+            "types": "./dist/utils.d.ts",
+            "import": "./dist/utils.js",
+            "default": "./dist/utils.js"
         }
     },
     "scripts": {
