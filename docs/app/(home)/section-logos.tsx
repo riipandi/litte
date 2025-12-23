@@ -40,7 +40,7 @@ export default function SectionLogos() {
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
-            <div className="-mb-2 -mx-2 flex flex-wrap justify-between">
+            <div className="-mx-2 -mb-2 flex flex-wrap justify-between">
               {LOGOS.map((logo) => (
                 <div key={logo.src} className="mb-2 w-1/2 px-2">
                   <div className="flex h-14 items-center justify-center rounded-lg bg-gray-50 px-12">

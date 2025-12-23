@@ -92,7 +92,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
             </div>
           </div>
         </div>
-        <div className="-mt-64 container relative mx-auto px-4">
+        <div className="container relative mx-auto -mt-64 px-4">
           <div className="-mx-4 mb-18 flex flex-wrap">
             <div className="mb-6 w-full px-4 md:mb-0 md:w-1/6">
               <div className="flex flex-row items-center gap-4 md:flex-col md:items-start">

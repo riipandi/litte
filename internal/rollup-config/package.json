@@ -16,9 +16,9 @@
         "cleanup": "pnpm dlx del-cli node_modules .turbo"
     },
     "devDependencies": {
-        "@biomejs/biome": "^2.2.6",
+        "@biomejs/biome": "^2.3.10",
         "@rollup/plugin-node-resolve": "^16.0.3",
-        "@rollup/plugin-typescript": "^12.1.4",
+        "@rollup/plugin-typescript": "^12.3.0",
         "rollup-plugin-esbuild": "^6.2.1",
         "rollup-plugin-summary": "^3.0.1"
     },

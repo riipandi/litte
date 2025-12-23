@@ -44,7 +44,7 @@ export default function Navigation() {
                 />
               </Link>
             </div>
-            <ul className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 hidden md:flex">
+            <ul className="absolute top-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-1/2 md:flex">
               {NAV_ITEMS.map((item) => (
                 <li key={item.label} className="mr-10 last:mr-0">
                   <Link
@@ -71,7 +71,7 @@ export default function Navigation() {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  <Icon.Github className="-ml-1 mr-2 size-5" />
+                  <Icon.Github className="mr-2 -ml-1 size-5" />
                   <span>Star on GitHub</span>
                 </Link>
               </div>

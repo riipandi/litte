@@ -16,8 +16,8 @@
         "cleanup": "pnpm dlx del-cli node_modules .turbo"
     },
     "devDependencies": {
-        "@biomejs/biome": "^2.2.6",
-        "@tailwindcss/node": "^4.1.15",
+        "@biomejs/biome": "^2.3.10",
+        "@tailwindcss/node": "^4.1.18",
         "lightningcss": "^1.30.2"
     },
     "peerDependencies": {

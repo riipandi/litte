@@ -1,5 +1,4 @@
 {
-    "biome.configurationPath": "biome.json",
     "typescript.enablePromptUseWorkspaceTsdk": false,
     "editor.defaultFormatter": "biomejs.biome",
     "files.associations": {

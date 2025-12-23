@@ -22,7 +22,6 @@
     h6 {
         @apply font-heading;
     }
-
     pre,
     code {
         @apply font-mono;
@@ -42,5 +41,5 @@
  * @ref: https://www.abeautifulsite.net/posts/flash-of-undefined-custom-elements
  */
 :not(:defined) {
-    visibility: hidden;
+  visibility: hidden;
 }

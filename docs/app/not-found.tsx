@@ -83,7 +83,7 @@ export default function NotFound() {
                     draggable={false}
                   />
                 </Link>
-                <ul className="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 left-1/2 hidden transform xl:flex">
+                <ul className="absolute top-1/2 left-1/2 hidden -translate-x-1/2 -translate-y-1/2 transform xl:flex">
                   {FOOTER_NAV_ITEMS.map((item, idx) => (
                     <li
                       key={item.label}
