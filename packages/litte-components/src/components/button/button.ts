@@ -39,7 +39,7 @@ export class LitteButton extends LitteElement implements ButtonProps {
   @property({ type: String, reflect: true })
   accessor backgroundColor: ButtonProps['backgroundColor'] = ''
 
-  private _handleClick(e: Event) {
+  private handleClick(e: Event) {
     if (this.disabled || this.loading) {
       e.preventDefault()
       e.stopPropagation()
@@ -71,7 +71,7 @@ export class LitteButton extends LitteElement implements ButtonProps {
         ?disabled=${this.disabled || this.loading}
         aria-disabled=${this.disabled ? 'true' : 'false'}
         aria-busy=${this.loading ? 'true' : 'false'}
-        @click=${this._handleClick}
+        @click=${this.handleClick}
       >
         ${
           this.loading

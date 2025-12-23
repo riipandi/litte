@@ -1,4 +1,4 @@
-import { type CSSResult, html /*nothing*/ } from 'lit'
+import { type CSSResult, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { LitteElement } from '../../base-element'
 import { tabsStyles } from './tabs.css'
@@ -17,7 +17,7 @@ export class LitteTabs extends LitteElement implements TabsProps {
   accessor loading: TabsProps['loading'] = false
 
   render() {
-    return html`/* Add html element implementation here*/`
+    return nothing
   }
 }
 

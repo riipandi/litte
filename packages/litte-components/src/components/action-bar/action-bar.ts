@@ -1,4 +1,4 @@
-import { type CSSResult, html /*nothing*/ } from 'lit'
+import { type CSSResult, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { LitteElement } from '../../base-element'
 import { actionBarStyles } from './action-bar.css'
@@ -17,7 +17,7 @@ export class LitteActionBar extends LitteElement implements ActionBarProps {
   accessor loading: ActionBarProps['loading'] = false
 
   render() {
-    return html`/* Add html element implementation here*/`
+    return nothing
   }
 }
 

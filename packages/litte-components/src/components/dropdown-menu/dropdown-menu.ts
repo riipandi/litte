@@ -1,4 +1,4 @@
-import { type CSSResult, html /*nothing*/ } from 'lit'
+import { type CSSResult, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { LitteElement } from '../../base-element'
 import { dropdownMenuStyles } from './dropdown-menu.css'
@@ -17,7 +17,7 @@ export class LitteDropdownMenu extends LitteElement implements DropdownMenuProps
   accessor loading: DropdownMenuProps['loading'] = false
 
   render() {
-    return html`/* Add html element implementation here*/`
+    return nothing
   }
 }
 

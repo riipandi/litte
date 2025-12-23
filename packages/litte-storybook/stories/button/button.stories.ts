@@ -143,18 +143,10 @@ export const CustomStylingShowcase: Story = {
     <div
       style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;"
     >
-      <litte-button backgroundColor="#ff6b6b" color="white"
-        >Custom Red</litte-button
-      >
-      <litte-button backgroundColor="#4ecdc4" color="white"
-        >Custom Teal</litte-button
-      >
-      <litte-button backgroundColor="#45b7d1" color="white"
-        >Custom Blue</litte-button
-      >
-      <litte-button backgroundColor="#f9ca24" color="#333"
-        >Custom Yellow</litte-button
-      >
+      <litte-button backgroundColor="#ff6b6b" color="white">Custom Red</litte-button>
+      <litte-button backgroundColor="#4ecdc4" color="white">Custom Teal</litte-button>
+      <litte-button backgroundColor="#45b7d1" color="white">Custom Blue</litte-button>
+      <litte-button backgroundColor="#f9ca24" color="#333">Custom Yellow</litte-button>
     </div>
   `,
 }

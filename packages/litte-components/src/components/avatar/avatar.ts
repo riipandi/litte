@@ -1,4 +1,4 @@
-import { type CSSResult, html, nothing, type TemplateResult } from 'lit'
+import { type CSSResult, html, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { LitteElement } from '../../base-element'
 import { avatarStyles } from './avatar.css'
@@ -19,7 +19,7 @@ export class LitteAvatar extends LitteElement implements AvatarProps {
   @property({ type: Number }) size = 36
   @property({ type: String }) class?: string
 
-  render(): TemplateResult {
+  render() {
     const classes = [
       'root',
       this.squared ? '--squared' : '',

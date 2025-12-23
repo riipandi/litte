@@ -1,4 +1,4 @@
-import { type CSSResult, html /*nothing*/ } from 'lit'
+import { type CSSResult, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { LitteElement } from '../../base-element'
 import { menuItemStyles } from './menu-item.css'
@@ -17,7 +17,7 @@ export class LitteMenuItem extends LitteElement implements MenuItemProps {
   accessor loading: MenuItemProps['loading'] = false
 
   render() {
-    return html`/* Add html element implementation here*/`
+    return nothing
   }
 }
 

@@ -1,4 +1,4 @@
-import { type CSSResult, html /*nothing*/ } from 'lit'
+import { type CSSResult, nothing } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 import { LitteElement } from '../../base-element'
 import { hotkeyStyles } from './hotkey.css'
@@ -17,7 +17,7 @@ export class LitteHotkey extends LitteElement implements HotkeyProps {
   accessor loading: HotkeyProps['loading'] = false
 
   render() {
-    return html`/* Add html element implementation here*/`
+    return nothing
   }
 }
 
