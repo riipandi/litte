@@ -1,7 +1,10 @@
 /** biome-ignore-all lint/suspicious/noExplicitAny: [] */
 
+import { createRequire } from 'node:module'
 import { dirname, join } from 'node:path'
 import type { StorybookConfig } from '@storybook/web-components-vite'
+
+const require = createRequire(import.meta.url)
 
 /**
  * This function is used to resolve the absolute path of a package.
@@ -31,11 +34,7 @@ function getAbsolutePath(value: string): string {
 
 const config: StorybookConfig = {
   stories: ['../stories/**/*.mdx', '../stories/**/*.stories.@(js|mjs|ts|mts)'],
-  addons: [
-    '@storybook/addon-links',
-    '@storybook/addon-a11y',
-    // '@storybook/addon-docs'
-  ],
+  addons: [getAbsolutePath('@storybook/addon-links'), getAbsolutePath('@storybook/addon-a11y')],
   framework: {
     name: getAbsolutePath('@storybook/web-components-vite'),
     options: {},
@@ -44,6 +43,7 @@ const config: StorybookConfig = {
     disableTelemetry: true, // 👈 Disables telemetry
     enableCrashReports: false, // 👈 Appends the crash reports to the telemetry events
     disableWhatsNewNotifications: true, // 👈 Disables the Whats New notifications
+    builder: '@storybook/builder-vite', // 👈 Use Vite as the builder
   },
   async viteFinal(config, { configType }) {
     const { mergeConfig } = await import('vite')

@@ -8,6 +8,9 @@ const meta: Meta<ButtonStoryProps> = {
   title: 'Components/Button',
   component: 'litte-button',
   tags: ['autodocs'],
+  parameters: {
+    layout: 'centered',
+  },
   argTypes: {
     type: {
       control: { type: 'select' },
