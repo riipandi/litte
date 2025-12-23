@@ -46,9 +46,11 @@ import 'litte'
 Add to your `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@litte/themes@PKG_VERSION/dist/bundle.min.css">
-<script src="https://unpkg.com/litte@PKG_VERSION/dist/umd/index.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@litte/themes@latest/dist/bundle.min.css">
+<script src="https://unpkg.com/litte@latest/dist/umd/index.js"></script>
 ```
+
+> You can change `latest` with a specific version.
 
 Use in your HTML:
 
